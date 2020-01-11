@@ -11,6 +11,9 @@ body {
   background: #ffffff;
   color: #000000;
 }
+p {
+  font-size: 1.08rem;
+}
 a {
   text-decoration: none;
   color: #000000;
@@ -133,9 +136,11 @@ h3 {
   padding-right: 1rem;
   margin-right: 1rem;
   border-right: 3px solid #07a0c3;
+  font-size: 1.5rem;
 }
 .navbar .navbarTitle .pageTitle {
   color: #ca1666;
+  font-size: 1.5rem;
 }
 .navbar .mobilePulldownIcon {
   display: none;
@@ -148,7 +153,7 @@ h3 {
 .navbar .navbarLinks a {
   padding: 1rem;
   border-top: 2px solid #ffffff;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 .navbar .navbarLinks a.active {
   color: #07a0c3;
@@ -215,6 +220,7 @@ h3 {
   text-decoration: underline solid #ca1666;
   font-weight: bold;
   margin-bottom: 3rem;
+  color: #ffffff;
 }
 .hero .heroTitle .subtitleLarge,
 .hero .heroTitle .subtitleSmall {
@@ -225,11 +231,13 @@ h3 {
   color: #ffffff;
   padding: 0.2rem 0;
 }
-.hero .heroTitle .subtitleLarge {
+.hero .heroTitle .subtitleLarge h2 {
   font-size: 1.5rem;
 }
 .hero .heroTitle .subtitleSmall {
   display: none;
+}
+.hero .heroTitle .subtitleSmall h2 {
   font-size: 1.3rem;
 }
 .hero .heroTitle .heroScrollHelper {

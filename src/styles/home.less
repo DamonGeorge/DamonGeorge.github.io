@@ -42,6 +42,7 @@
 			text-decoration: underline solid @clr-theme-secondary;
 			font-weight: bold;
 			margin-bottom: 3rem;
+			color: @white
 		}
 		
 		.subtitleLarge, .subtitleSmall {
@@ -53,13 +54,16 @@
 			}
 		}
 		.subtitleLarge {
-			font-size: 1.5rem;
+			& h2 {
+				font-size: 1.5rem;
+			}
 		}
 
 		.subtitleSmall {
 			display: none;
-			font-size: 1.3rem;
-			
+			& h2 {
+				font-size: 1.3rem;
+			}
 		}
 		
 		.heroScrollHelper {
