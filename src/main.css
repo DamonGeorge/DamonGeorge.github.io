@@ -323,8 +323,8 @@ h3 {
   }
 }
 .intro .profileImg {
-  background: url('images/me_at_the_dead.jpg') no-repeat center;
-  background-size: 100%;
+  background: url('images/profile_pic.jpeg') no-repeat center;
+  background-size: 106%;
   width: 22vw;
   height: 22vw;
   border-radius: 500px;
