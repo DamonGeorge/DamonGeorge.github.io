@@ -1,0 +1,432 @@
+/* Basics */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+body {
+  background: #ffffff;
+  color: #000000;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+table {
+  border-collapse: collapse;
+}
+/* remove margins */
+div,
+span,
+a,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+input,
+ul,
+p {
+  margin: 0px;
+  box-sizing: border-box;
+}
+.standardPadding {
+  padding: 1rem;
+}
+.clickable {
+  cursor: pointer;
+}
+/* Color default */
+h1,
+h2,
+h3 {
+  color: #07a0c3;
+  white-space: nowrap;
+}
+/* Flex */
+.flex {
+  display: flex;
+}
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+.flexAlignCenter {
+  display: flex;
+  align-items: center;
+}
+.flexJustifyCenter {
+  display: flex;
+  justify-content: center;
+}
+.flexFloatBottom {
+  margin-top: auto;
+}
+.flexFloatTop {
+  margin-bottom: auto;
+}
+.flexFloatLeft {
+  margin-right: auto;
+}
+.flexFloatRight {
+  margin-left: auto;
+}
+.hidden {
+  display: none;
+}
+.visible {
+  display: flex !important;
+}
+.link {
+  color: #07a0c3;
+}
+.link:hover,
+.link:focus,
+.link:active {
+  text-decoration: underline;
+}
+.material-icons {
+  font-size: 2rem;
+}
+#root {
+  height: 100%;
+  width: 100%;
+}
+.mainContent {
+  margin-top: 60px;
+  height: calc(100% - 60px);
+  width: 100%;
+}
+.scrollContainer {
+  overflow: auto;
+}
+.fullWidth {
+  width: 100%;
+}
+.fullHeight {
+  height: 100%;
+}
+/* Navigation Bar */
+.navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px #7b7b7b;
+  z-index: 10;
+}
+.navbar .navbarTitle {
+  margin-left: 1rem;
+  overflow: hidden;
+}
+.navbar .navbarTitle .name {
+  padding-right: 1rem;
+  margin-right: 1rem;
+  border-right: 3px solid #07a0c3;
+}
+.navbar .navbarTitle .pageTitle {
+  color: #ca1666;
+}
+.navbar .mobilePulldownIcon {
+  display: none;
+  margin-left: auto;
+  padding: 0.2rem;
+}
+.navbar .navbarLinks {
+  margin-left: auto;
+}
+.navbar .navbarLinks a {
+  padding: 1rem;
+  border-top: 2px solid #ffffff;
+  font-size: 1.1rem;
+}
+.navbar .navbarLinks a.active {
+  color: #07a0c3;
+  border-top: 2px solid #07a0c3;
+  font-weight: bold;
+}
+@media only screen and (max-width: 768px) {
+  .navbar {
+    opacity: 1 !important;
+  }
+  .navbar .navbarTitle {
+    margin-left: 0.5rem;
+  }
+  .navbar .navbarTitle .name {
+    padding-right: 0.5rem;
+    margin-right: 0.5rem;
+    border-right: 3px solid #07a0c3;
+  }
+  .navbar .navbarLinks {
+    display: none;
+    position: fixed;
+    right: 0px;
+    top: 60px;
+    width: 200px;
+    padding: 0 1rem;
+    flex-direction: column;
+    background: #ffffff;
+    box-shadow: -2px 3px 4px #7b7b7b;
+  }
+  .navbar .mobilePulldownIcon {
+    display: inline;
+  }
+}
+#heroScrollContainer {
+  height: 100%;
+  margin-top: 0px;
+}
+.hero {
+  background: url('images/hero/me_at_crater_lake.jpg') no-repeat center;
+  background-size: 100%;
+  height: 64.8vw;
+  width: 100%;
+  display: flex;
+  background-position-y: 0px;
+}
+.hero.fixed {
+  background-attachment: fixed;
+  background-position-y: -6vw;
+}
+.hero .heroTitle {
+  position: fixed;
+  top: 15vw;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 2vw;
+  pointer-events: none;
+}
+.hero .heroTitle .title {
+  text-align: center;
+  font-size: 3rem;
+  font-style: italic;
+  text-decoration: underline solid #ca1666;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+.hero .heroTitle .subtitleLarge,
+.hero .heroTitle .subtitleSmall {
+  pointer-events: none;
+}
+.hero .heroTitle .subtitleLarge > *,
+.hero .heroTitle .subtitleSmall > * {
+  color: #ffffff;
+  padding: 0.2rem 0;
+}
+.hero .heroTitle .subtitleLarge {
+  font-size: 1.5rem;
+}
+.hero .heroTitle .subtitleSmall {
+  display: none;
+  font-size: 1.3rem;
+}
+.hero .heroTitle .heroScrollHelper {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.5;
+  visibility: hidden;
+}
+.hero .heroTitle .heroScrollHelper i.material-icons {
+  font-size: 10rem;
+}
+.hero .heroTitle .heroScrollHelper span {
+  font-size: 1.23rem;
+  font-weight: bold;
+  margin-top: -2rem;
+}
+.hero .heroTitle .heroScrollHelper:hover {
+  opacity: 1;
+}
+@media only screen and (max-width: 1200px) {
+  .hero .heroTitle .title {
+    margin-bottom: 2rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .hero .heroTitle .title {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .hero {
+    background-attachment: fixed !important;
+  }
+  .hero .heroTitle {
+    align-items: flex-start;
+  }
+  .hero .heroTitle .title {
+    width: 100%;
+  }
+  .hero .heroTitle .subtitleLarge {
+    display: none;
+  }
+  .hero .heroTitle .subtitleSmall {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero {
+    background: url('images/hero/me_at_crater_lake_crop.jpg') no-repeat center;
+    background-attachment: scroll !important;
+    background-position-y: 60px !important;
+    background-size: 100%;
+    height: 118vw;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .hero .heroTitle {
+    top: 25vw;
+    position: relative;
+    top: 5vw;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .hero {
+    height: 128vw;
+  }
+  .hero .heroTitle {
+    align-items: flex-start;
+    margin-left: 0.5rem;
+  }
+  .hero .heroTitle .title {
+    margin-bottom: 1rem;
+  }
+  .hero .heroTitle .subtitleLarge {
+    display: none;
+  }
+  .hero .heroTitle .subtitleSmall {
+    font-size: 1.2rem;
+    display: flex;
+  }
+}
+.intro .profileImg {
+  background: url('images/me_at_the_dead.jpg') no-repeat center;
+  background-size: 100%;
+  width: 22vw;
+  height: 22vw;
+  border-radius: 500px;
+  margin: 2vw 4vw;
+  min-width: 200px;
+  min-height: 200px;
+}
+.intro .description {
+  max-width: 700px;
+}
+@media only screen and (max-width: 768px) {
+  .intro {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  .intro .description {
+    width: auto;
+  }
+}
+.aboutMeBullets {
+  display: flex;
+  align-content: flex-start;
+  padding: 1rem 0;
+}
+.aboutMeBullets h3 {
+  color: #ca1666;
+}
+.aboutMeBullets > * {
+  padding: 0.5rem;
+  flex: 1;
+}
+@media only screen and (max-width: 768px) {
+  .aboutMeBullets {
+    flex-direction: column;
+  }
+}
+.newsContainer .newsTable {
+  height: fit-content;
+}
+.newsContainer .newsTable td {
+  padding: 0.5rem;
+  vertical-align: top;
+  border-top: 4px solid #07a0c3;
+}
+.newsContainer .newsTable td:first-child {
+  padding-right: 2rem;
+  white-space: nowrap;
+  font-weight: bold;
+}
+.newsContainer .newsTable .newsDescription {
+  height: 100%;
+  max-width: 500px;
+}
+.newsContainer .newsTable .imageDescription {
+  font-style: italic;
+}
+.newsContainer .newsTable .imageContainer,
+.newsContainer .newsTable img {
+  max-width: 25vw;
+  min-width: 250px;
+}
+.newsContainer .newsTable img {
+  max-height: 40vh;
+}
+.newsContainer .newsTable h3 {
+  color: #ca1666;
+}
+@media only screen and (max-width: 768px) {
+  .newsContainer .newsTable tr {
+    border-top: 4px solid #07a0c3;
+    display: flex;
+    flex-direction: column;
+  }
+  .newsContainer .newsTable tr td {
+    border-top: none;
+  }
+}
+.projectContainer {
+  border-top: 4px solid #07a0c3;
+  margin: 0.5rem 0;
+}
+.projectContainer h2 {
+  color: #ca1666;
+}
+.projectContainer p {
+  max-width: 800px;
+}
+.projectContainer .projectContent {
+  padding: 0.5rem 1rem;
+}
+.projectContainer .projectContent .imageAndDescriptionContainer {
+  align-items: flex-start;
+}
+.projectContainer .projectContent .imageContainer {
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
+  max-width: 400px;
+}
+.projectContainer .projectContent .imageContainer.singleImage img {
+  width: 100%;
+}
+.projectContainer .projectContent .imageContainer:not(.singleImage) img {
+  max-height: 180px;
+  border: 1px solid #ffffff;
+}
+.projectContainer .extraDocs {
+  padding-top: 1rem;
+}
+@media only screen and (max-width: 768px) {
+  .projectContainer .imageAndDescriptionContainer {
+    flex-direction: column;
+  }
+}

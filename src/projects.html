@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel = "stylesheet" type = "text/css"  href = "main.css" />
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<title>Damon George | Projects and Research</title>
+</head>
+<body>
+	<header class="navbar">
+		<div class="flex navbarTitle">
+			<h2 class="name">Damon George</h2>
+			<h2 class="pageTitle">Projects</h2>
+		</div>
+		<i class="mobilePulldownIcon material-icons clickable" onclick="$('#navbarLinks').toggleClass('visible');">menu</i>
+		<div id="navbarLinks" class="flex navbarLinks">
+			<a href="index.html#center" >Home</a>
+			<a href="news.html">News</a>
+			<a href="projects.html"  class="active">Projects</a>
+			<a href="publications.html">Publications</a>
+			<a href="contact.html">Contact</a>
+			<a href="docs/George_Resume_2019.pdf" target="_blank">Resume</a>
+		</div>
+	</header>
+
+	
+	<div class="mainContent scrollContainer standardPadding">
+		<div class="flexColumn projectContainer">
+			<h2>The Smart Helmet</h2>
+
+			<div class="projectContent">
+				<div class="flex imageAndDescriptionContainer">
+					<div class="flexColumn imageContainer singleImage">
+						<img src="images/senior_design/collage.jpg" />
+					</div>
+					<div>
+						<p>
+							For my year long senior design project at Gonzaga, 
+							two fellow engineers and I designed, developed, and built the Smart Helmet.
+							The Smart Helmet is a helmet for cyclists that uses vehicle-to-everything 
+							communication to communicated with nearby vehicles and provide collision warnings to the biker.
+							<br>
+							<br>
+							For this project, my two teammates and I built the hardware for the helmet, including 3 revision of PCBs, 
+							designed and wrote the core firmware in C on our ultra low power Apollo 2 Blue microcontroller, 
+							and also wrote a Java desktop Traffic Simulator which provides the user with an advanced GUI 
+							for generating and driving cars, which we used for testing the Smart Helmet. I focused on the 
+							core firmware, which uses FreeRTOS as its real time operating system. I designed and wrote the logic and 
+							advanced collision detection on the helmet and in the Traffic Simulator, and I also helped write part of 
+							the GUI for the Simulator.
+							<br>
+							<br>
+						</p>
+					</div>
+				</div>
+
+				<div class="flexAlignCenter">
+					<a class="link clickable" onclick="$('#abstract, #dropDownIcon, #dropUpIcon').toggle();">Abstract:</a>
+					<i id="dropDownIcon" class="material-icons">arrow_drop_down</i>
+					<i id="dropUpIcon" class="material-icons hidden">arrow_drop_up</i>
+				</div>
+				<p id="abstract" class="hidden standardPadding">
+					As emerging smart vehicle technologies enter our roadways, Vehicle-to-Everything (V2X) communication will become essential for improving the safety of road users. However, as such technological advances are made in cars and trucks, which have ample power and space for advanced electronics, cyclists can easily be left behind. In this study, we attempt to incorporate cyclists in the growing V2X ecosystem by developing a prototype 'Smart Helmet'. This product broadcasts positional and inertial data about the cyclist to nearby cars using the predefined Dedicated Short Range Communications (DSRC) standard, and receives similar data from nearby cars in order to provide the cyclist with haptic and audible collision warnings from the helmet. We attempt to construct a custom printed circuit board for the system so that it can be easily incorporated into a bike helmet as a consumer product. Furthermore, we develop a traffic simulator program that can be easily used to test traffic scenarios with the product. Simulation results show that even with the limited processing power available, this product can adequately detect harmful collisions. Limited usability testing shows that the haptic and audible warnings could function well in a consumer product. However, the technologies involved, such as the V2X communication and advanced GPS, are still immature, and creating effective yet unobtrusive audio warnings will require much testing. Overall, this study proves that this V2X system could greatly increase cyclist safety and possibly become a common feature on roadways in the next decade as smart vehicle technologies continue to mature. 
+				</p>
+
+				<div class="flexColumn extraDocs">
+					<h4>Extra Documents:</h4>
+					<ul>
+						<li><a class="link" href="docs/Design_Expo_Poster_ENSC02.pdf" target="_blank">Poster</a></li>
+						<li><a class="link" href="docs/Final_Report_ENSC02.pdf" target="_blank">Final Report</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="flexColumn projectContainer">
+			<h2>Othello AI</h2>
+			<div class="projectContent">
+				<div class="flex imageAndDescriptionContainer">
+					<div class="flex imageContainer singleImage">
+						<img src="images/othello/othello.jpeg"/>
+					</div>
+					<p>
+						During my last semester at Gonzaga as an undergraduate, 
+						my partner and I built an Othello playing AI for my Artificial Intelligence elective.
+						I wrote this in Java, using Swing for the simple interface.
+						The program allows the user to play against the AI. 
+						At the end of the class, all the teams competed in a tournament
+						to determine the best AI, and mine won 1st!
+						<br>
+						<br>
+						This AI uses best first search with alpha-beta pruning to search the state space.
+						Each move by the AI was required to complete within ten seconds, allowing this AI
+						to search about 8-10 steps ahead in the game. The search uses an advanced heuristic
+						value function that uses 8 different characteristics of the board to determine the 
+						value of the board. These characteristics include the score, the number of moves available,
+						the number of corners taken or available, and the number of stable and unstable tokens. 
+						The AI also uses Zobrist Hashing to store all calculated heuristics in a hash table 
+						to increase the efficiency of the program.
+					</p>
+				</div>
+				
+				
+				<div class="flexColumn extraDocs">
+					<h4>Extra Documents:</h4>
+					<ul>
+						<li><a class="link" href="docs/AI_Final_Project_Summary.pdf" target="_blank">Final Report</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="flexColumn projectContainer">
+			<h2>Ethernet FPGA Communication</h2>
+			<div class="projectContent">
+				<div class="flex imageAndDescriptionContainer">
+					<div class="flex imageContainer singleImage">
+						<img src="images/altera_de2-115_fpga_board.jpeg"/>
+					</div>
+					<p>
+						As the final project for my senior year Digital Design class at Gonzaga,
+						a fellow student and I successfully designed and programmed two FPGA dev boards in VHDL
+						to use high speed Ethernet communication. The communication allowed the two dev boards
+						to turn each other's LEDs on in different patterns using their switches. 
+						For this project we used Intel's Ethernet IP in Quartus to program the Ethernet hardware
+						onto the FPGA.
+						<br><br>
+						This was one of my hardest projects at Gonzaga University. We were the only team in the class
+						to successfully commplete the project according the original specifications. Completing the project 
+						required a ton of extra hours before the deadline(most of which was spent reading the Ethernet Hardware specifications),
+						but it was definitely worth it when we were able to show off our working design to the class.
+					</p>
+				</div>
+				
+				<div class="flexColumn extraDocs">
+					<h4>Extra Documents:</h4>
+					
+					<ul>
+						<li><a class="link" href="docs/Final_Lab_Digital_Design.pdf" target="_blank">Final Report</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="flexColumn projectContainer">
+			<h2>Skyware Inventory 2</h2>
+			<div class="projectContent">
+				<div class="flex imageAndDescriptionContainer">
+					<!-- <div class="flex imageContainer singleImage">
+						<img src="images/altera_de2-115_fpga_board.jpeg"/>
+					</div> -->
+					<p>
+						As a Software Development Intern at 
+						<a class="link" href="https://www.openskysoftware.com" target="_blank">Open Sky Software, Inc.</a>, 
+						I spent multiple summer upgrading their flagship inventory tracking product, 
+						<a class="link" href="https://www.skywareinventory.com" target="_blank">Skyware Inventory</a>. 
+
+						<br /><br />
+						As a full stack Java web developer, I used the Spring Framework, along with Hibernate and Thymeleaf,
+						to completely redesign the entire application. I designed and coded an advanced transaction manager
+						in Java and MySQL that tracks inventory through time across multiple items, users, and locations.
+						I incorporated industry standard reporting, such as LIFO, FIFO, and AVG costing. I also developed 
+						advanced front-end Javascript to handle editable tables with custom fields, ajax autocomplete, and flexible form validation.
+						<br /><br />
+						This version 2.0 of Skyware Inventory is yet to be released, but I can't wait to share it once it is live!
+						The mobile version, which I designed and programmed almost completely by myself, is just beautiful.
+
+					</p>
+				</div>
+			</div>
+			<!-- <div class="flexColumn extraDocs">
+				<h4>Extra Documents:</h4>
+				
+			</div> -->
+			
+		</div>
+		
+		<div class="flexColumn projectContainer">
+			<h2>Association Rule Mining</h2>
+			<div class="projectContent">
+				<p>
+					This was the final project for my Parallel and Cloud Computing Elective.
+					This is a Java Hadoop MapReduce program to mine the confidence of
+					association rules that we ran on AWS. These association rules were parsed
+					from large input files of concept identification codes.  On
+					the AWS EMR clusters, the execution time of the program was tested for different cluster sizes, for
+					different amounts of input files, and using both the Hadoop file system and the Amazon S3 file
+					system.
+				</p>
+			</div>
+			<div class="flexColumn extraDocs">
+				<h4>Extra Documents:</h4>
+				<ul>
+					<li><a class="link" href="docs/Association_Rule_Mining_Final_Project_Report.pdf" target="_blank">Final Report</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="flexColumn projectContainer">
+			<h2>Zoolander</h2>
+			<div class="projectContent">
+				<p>
+					This final project for my Database Management class at Gonzaga 
+					is a Java command line interface that allows the user to interact
+					with a custom Zoo database. This imitates a program that might exist
+					for a Zoo to keep track of all its animals, their feeding patterns, and the feed purchases.
+					<br>
+					<br>
+					This project was designed to incorporate many advanced SQL queries,
+					such as joins, groups, aggregates, and subqueries. This program was written
+					using the Spring Shell, which provides a very nice CLI. 
+				</p>
+				
+				<!-- <div class="flexColumn extraDocs">
+					<h4>Extra Documents:</h4>
+					
+				</div> -->
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "personal_website",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "styles:lint": "lesshint src/styles/**/*.less",
+    "styles:watch": "npm run styles:build && chokidar \"src/styles/**/*.less\" -c \"npm run styles:build\"",
+    "styles:build": "npm run styles:lint && lessc src/styles/main.less src/main.css",
+    "scripts:lint": "eslint \"src/scripts/**\"",
+    "scripts:watch": "npm run scripts:lint && chokidar \"src/scripts/**/*.js\" -c \"npm run scripts:lint\""
+  },
+  "author": "Damon George",
+  "dependencies": {
+    "chokidar-cli": "^1.2.2",
+    "eslint": "^6.1.0",
+    "less": "^3.9.0",
+    "lesshint": "^6.3.7"
+  }
+}

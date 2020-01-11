@@ -1,0 +1,104 @@
+/* Basics */
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+
+body {
+	background: #ffffff;
+	color: @black;
+}
+
+a {
+	text-decoration: none;
+	color:@black;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+
+/* remove margins */
+div, span, a, hr, h1, h2, h3, h4, h5, h6, label, input, ul, p {
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+.standardPadding {
+	padding: 1rem;
+}
+
+.clickable {
+	cursor: pointer;
+}
+
+
+/* Color default */
+h1, h2, h3 {
+	color: @clr-theme-primary;
+	white-space: nowrap;
+}
+
+/* Flex */
+.flex {
+	display: flex;
+}
+
+.flexColumn {
+	display: flex;
+	flex-direction: column;
+}
+
+.flexAlignCenter {
+	display: flex;
+	align-items: center;
+}
+
+.flexJustifyCenter {
+	display: flex;
+	justify-content: center;
+}
+
+.flexFloatBottom {
+	margin-top: auto;
+}
+
+.flexFloatTop {
+	margin-bottom: auto;
+}
+
+.flexFloatLeft {
+	margin-right: auto;
+}
+
+.flexFloatRight {
+	margin-left: auto;
+}
+
+
+
+
+
+.hidden {
+	display: none;
+}
+
+.visible {
+	display: flex !important;
+}
+
+.link {
+	color: @clr-theme-primary;
+
+	&:hover, &:focus, &:active {
+		text-decoration: underline;
+	}
+}
+
+.material-icons {
+	font-size: 2rem;
+}

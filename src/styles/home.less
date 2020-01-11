@@ -1,0 +1,207 @@
+#heroScrollContainer {
+	height: 100%;
+	margin-top: 0px;
+
+	// @media @medium-down {
+	// 	height: calc(100vh - 60px);
+	// 	margin-top: 60px;
+	// }
+}
+
+.hero {
+	background: url('images/hero/me_at_crater_lake.jpg') no-repeat center;
+	background-size: 100%;
+	height: 64.8vw;
+	width: 100%;
+	display: flex;
+	background-position-y: 0px;
+
+
+	
+	&.fixed {
+		background-attachment: fixed;
+		background-position-y: -6vw;
+	}
+
+	.heroTitle {
+		position: fixed;
+		top: 15vw;
+		color: @white;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-left: 2vw;
+		pointer-events: none;
+
+
+
+		.title {
+			text-align: center;
+			font-size: 3rem;
+			font-style: italic;
+			text-decoration: underline solid @clr-theme-secondary;
+			font-weight: bold;
+			margin-bottom: 3rem;
+		}
+		
+		.subtitleLarge, .subtitleSmall {
+			pointer-events: none;
+
+			& > * {
+				color: @white;
+				padding: 0.2rem 0;
+			}
+		}
+		.subtitleLarge {
+			font-size: 1.5rem;
+		}
+
+		.subtitleSmall {
+			display: none;
+			font-size: 1.3rem;
+			
+		}
+		
+		.heroScrollHelper {
+			color: @white;
+			.flexColumn;
+			opacity: 0.5;
+			visibility: hidden;
+	
+	
+			i.material-icons {
+				font-size: 10rem;
+			}
+	
+			span {
+				font-size: 1.23rem;
+				font-weight: bold;
+				margin-top: -2rem;
+			}
+
+			&:hover {
+				opacity: 1.0;
+			}
+		}
+	}
+
+	@media @xlarge-down {
+		.heroTitle .title {
+			margin-bottom: 2rem;
+		}
+	}
+
+	@media @large-down {
+		.heroTitle .title {
+			font-size: 2.5rem;
+		}
+	}		
+	
+	@media @large-only {
+		background-attachment: fixed !important;
+		
+		.heroTitle {
+			align-items: flex-start;
+
+			.title {
+				width: 100%;
+			}
+			.subtitleLarge {
+				display: none;
+			}
+			.subtitleSmall {
+				display: flex;
+			}
+		}
+	}
+	
+	@media @medium-down {
+		background: url('images/hero/me_at_crater_lake_crop.jpg') no-repeat center;
+		background-attachment: scroll !important;
+		background-position-y: 60px !important;
+		background-size: 100%;
+		height: 118vw;
+		width: 100%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		// max-height: 100vh;
+
+
+		.heroTitle {
+			top: 25vw;
+			position: relative;
+			top: 5vw;
+		}
+	}
+
+	@media @small-down {
+		height: 128vw;
+		
+		.heroTitle {
+			align-items: flex-start;
+			margin-left: 0.5rem;
+			
+
+			.title {
+				margin-bottom: 1rem;
+			}
+
+			.subtitleLarge {
+				display: none;
+			}
+			.subtitleSmall {
+				font-size: 1.2rem;
+				display: flex;
+			}
+		}
+	}
+}
+
+.intro {
+
+	.profileImg {
+		background: url('images/me_at_the_dead.jpg') no-repeat center;
+		background-size: 100%;
+		width: 22vw;
+		height: 22vw;
+
+		border-radius: 500px;
+		margin: 2vw 4vw;
+		min-width: 200px;
+		min-height: 200px;
+		
+	}
+
+	.description {
+		max-width: 700px;
+	}
+
+	@media @medium-down {
+		flex-wrap: wrap-reverse;
+		justify-content: center;
+
+		.description {
+			width: auto;
+		}
+	}
+}
+
+.aboutMeBullets {
+	display: flex;
+	align-content: flex-start;
+	padding: 1rem 0;
+	
+
+	h3 {
+		color: @clr-theme-secondary;
+	}
+	& > * {
+		padding: 0.5rem;
+		flex: 1;
+	}
+
+	@media @medium-down {
+		flex-direction: column;
+	}
+}

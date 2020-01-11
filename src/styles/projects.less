@@ -1,0 +1,50 @@
+.projectContainer {
+    border-top: 4px solid @clr-theme-primary;
+    margin: 0.5rem 0;
+
+    h2 {
+        color: @clr-theme-secondary;
+    }
+    p {
+        max-width: 800px;
+    }
+
+    .projectContent {
+        padding: 0.5rem 1rem;
+
+        .imageAndDescriptionContainer {
+            align-items: flex-start;
+        }
+
+        .imageContainer {
+            padding-right: 0.5rem; 
+            padding-bottom: 0.5rem;
+            max-width: 400px;
+
+            &.singleImage {
+                img {
+                    .fullWidth;
+                }
+            }
+
+            &:not(.singleImage) {
+                img{
+                    max-height: 180px;
+                    border: 1px solid @white;
+                }
+            }
+            
+        }
+    }
+    
+    .extraDocs {
+        padding-top: 1rem;
+    }
+
+
+    @media @medium-down {
+        .imageAndDescriptionContainer {
+            flex-direction: column;
+        }
+    }
+}
