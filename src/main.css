@@ -160,6 +160,21 @@ h3 {
   border-top: 2px solid #07a0c3;
   font-weight: bold;
 }
+.navbar .navbarLinks .iconLinks {
+  display: flex;
+}
+.navbar .navbarLinks .iconLinks a {
+  margin: 0 1em 0 1em;
+  font-size: 1rem !important;
+}
+.navbar .navbarLinks .iconLinks a.githubLink {
+  background: url('images/icons/Github-Mark-64px.png') no-repeat center;
+  background-size: 100%;
+}
+.navbar .navbarLinks .iconLinks a.linkedinLink {
+  background: url('images/icons/LI-In-Bug.png') no-repeat center;
+  background-size: 100%;
+}
 @media only screen and (max-width: 768px) {
   .navbar {
     opacity: 1 !important;
@@ -182,6 +197,9 @@ h3 {
     flex-direction: column;
     background: #ffffff;
     box-shadow: -2px 3px 4px #7b7b7b;
+  }
+  .navbar .navbarLinks .iconLinks {
+    padding-bottom: 1em;
   }
   .navbar .mobilePulldownIcon {
     display: inline;

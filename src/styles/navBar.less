@@ -47,8 +47,27 @@
 				font-weight: bold;
 			}
 		}
+
+		.iconLinks {
+			display: flex;
+
+			a {
+				margin: 0 1em 0 1em;
+				font-size: 1rem !important;
+
+				&.githubLink {
+					background: url('images/icons/Github-Mark-64px.png') no-repeat center;
+					background-size: 100%;
+				}
+				&.linkedinLink {
+					background: url('images/icons/LI-In-Bug.png') no-repeat center;
+					background-size: 100%;
+				}
+			}
+		}
 	}
 
+	
 
 	@media @medium-down {
 		opacity: 1 !important;
@@ -73,6 +92,10 @@
 			flex-direction: column;
 			background: @white;
 			box-shadow: -2px 3px 4px #7b7b7b;
+
+			.iconLinks {
+				padding-bottom: 1em;
+			}
 		}
 
 		.mobilePulldownIcon {
