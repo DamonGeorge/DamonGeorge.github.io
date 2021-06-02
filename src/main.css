@@ -296,6 +296,8 @@ h3 {
   .hero .heroTitle .title {
     width: 100%;
   }
+}
+@media only screen and (max-width: 992px) {
   .hero .heroTitle .subtitleLarge {
     display: none;
   }
@@ -332,12 +334,8 @@ h3 {
   .hero .heroTitle .title {
     margin-bottom: 1rem;
   }
-  .hero .heroTitle .subtitleLarge {
-    display: none;
-  }
   .hero .heroTitle .subtitleSmall {
     font-size: 1.2rem;
-    display: flex;
   }
 }
 .intro .profileImg {
