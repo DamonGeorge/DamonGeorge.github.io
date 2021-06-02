@@ -287,9 +287,6 @@ h3 {
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 992px) {
-  .hero {
-    background-attachment: fixed !important;
-  }
   .hero .heroTitle {
     align-items: flex-start;
   }
