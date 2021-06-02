@@ -36,6 +36,169 @@
 
 	<div class="mainContent scrollContainer standardPadding">
 		<div class="flexColumn projectContainer">
+			<h2>MINDecoding</h2>
+			<div class="projectContent">
+				<div class="flex imageAndDescriptionContainer">
+					<div class="flex imageContainer singleImage">
+						<img src="images/mindecoding/GUI_and_Raw_Plots.gif" />
+					</div>
+					<p>
+						MINDecoding = Movement Intent Decoding
+						<br>
+						<br>
+						This project is a large part of my Master's research and thesis at Oregon State University.
+
+						<br>
+						<br>
+						From my NSF GRFP Research Proposal:
+						<i>
+							The objective of my research is to develop novel adaptive movement intent decoders that
+							leverage
+							(1) human movement models,
+							(2) extensive prosthetic sensor data, and
+							(3) human feedback
+							in order to learn from the user over time,
+							allowing naturalistic, fine-grained and intuitive control of prosthetic limbs.
+						</i>
+
+						<br>
+						<br>
+						This software application is comprised of a library of Deep Network-based Decoders, called
+						MINDecoders,
+						and the corresponding GUI, called The MINDecoding-Interface, that provides the functionality to
+						collect EMG or EEG from real subjects, train decoders with that biological data,
+						test those decoders either online with a real subject or offline with existing datasets,
+						and analyze those tests using a variety of result metrics.
+
+						<br>
+						<br>
+						Although the code is still private since I haven't submitted my first set of related
+						papers,
+						you can find the detailed (but in-progress) documentation
+						<a class="link" href="https://damongeorge.github.io/MINDecoding-Interface/"
+							target="_blank">here</a>.
+					</p>
+				</div>
+				<div class="flexColumn extraDocs">
+					<h4>Extras:</h4>
+					<ul>
+						<li><a class="link" href="https://damongeorge.github.io/MINDecoding-Interface/" target="_blank">
+								MINDecoding-Interface Docs
+							</a>
+						</li>
+						<!-- <li><a class="link" href="https://github.com/DamonGeorge/MINDecoding-Interface" target="_blank">
+								MINDecoding-Interface repo
+							</a>
+						</li>
+						<li><a class="link" href="https://github.com/DamonGeorge/MINDecoders" target="_blank">
+								MINDecoders repo
+							</a>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="flexColumn projectContainer">
+			<h2>Pyrameterized</h2>
+			<div class="projectContent">
+				<div class="flex imageAndDescriptionContainer">
+					<!-- <div class="flex imageContainer singleImage">
+						<img src="images/altera_de2-115_fpga_board.jpeg"/>
+					</div> -->
+					<p>
+						This is a Python utility library that I've developed and improved upon
+						while using it in many of my Python projects that contain a ton of configuration.
+						This library provides two classes, Parameterized and ParameterizedInterface,
+						that can be extended so that the attributes of a given Python class can
+						be shared and updated using dictionaries.
+						It also makes saving/loading objects to/from json quite simple.
+
+						<br>
+						<br>
+						Not only is this library very useful in certain projects;
+						it has also been a great learning experience for me.
+						I used this project to learn unit testing and Github workflows for Python.
+						If you check out the Github repo,
+						you can see I've created a pretty slick workflow
+						that checks formatting, lints, tests, reports the coverage to a github badge,
+						and also updates the release version badge as well.
+
+						<br>
+						<br>
+						Currently I'm using this project in my MINDecoding project (which is currently private).
+					</p>
+				</div>
+				<div class="flexColumn extraDocs">
+					<h4>Extras:</h4>
+					<ul>
+						<li><a class="link" href="https://github.com/DamonGeorge/Parameterized" target="_blank">
+								Pyrameterized Repo
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="flexColumn projectContainer">
+			<h2>Audio Stretch</h2>
+			<div class="projectContent">
+				<div class="flex imageAndDescriptionContainer">
+					<!-- <div class="flex imageContainer singleImage">
+						<img src="images/altera_de2-115_fpga_board.jpeg"/>
+					</div> -->
+					<p>
+						As a fun side project based upon my brother <a class="link"
+							href="https://www.thechristiangeorge.com/" target="_blank">Christian</a>'s work,
+						I created the Python3 AudioStretch program that matches the beats of a stored audio loop to a
+						live audio input.
+
+						<br>
+						<br>
+						To do this, I used python-sounddevice for audio I/O and py-soundfile for reading/writing audio
+						files.
+						And then I wrote my own Cython wrappers for c library rubberband for audio stretching and the
+						BTrack library for real time beat detection.
+						This was a great learning experience in Cython for me!
+						I also developed my own custom Python CircularBuffer class to store live audio buffers
+						efficiently.
+						And finally I wrote the master program that parses audio files to create loops,
+						and then stretches the loop to match the beats of either a live input or an mp3 input.
+
+						<br>
+						<br>
+						Although this is a fairly complicated signal processing problem,
+						the final program worked well in matching beats, even during tempo changes.
+						All that's missing are some more detailed safety checks to ensure that the beat tracker doesn't
+						skip beats.
+
+					</p>
+				</div>
+				<div class="flexColumn extraDocs">
+					<h4>Extras:</h4>
+					<ul>
+						<li><a class="link" href="https://github.com/DamonGeorge/AudioStretch" target="_blank">
+								AudioStretch Repo
+							</a>
+						</li>
+						<li><a class="link" href="https://github.com/DamonGeorge/Python-Rubberband" target="_blank">
+								Python-Rubberband repo
+							</a>
+						</li>
+						<li><a class="link" href="https://github.com/DamonGeorge/Python-BTrack" target="_blank">
+								Python-BTrack repo
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="flexColumn projectContainer">
 			<h2>The Smart Helmet</h2>
 
 			<div class="projectContent">
@@ -235,13 +398,14 @@
 					different amounts of input files, and using both the Hadoop file system and the Amazon S3 file
 					system.
 				</p>
-			</div>
-			<div class="flexColumn extraDocs">
-				<h4>Extras:</h4>
-				<ul>
-					<li><a class="link" href="docs/Association_Rule_Mining_Final_Project_Report.pdf"
-							target="_blank">Final Report</a></li>
-				</ul>
+
+				<div class="flexColumn extraDocs">
+					<h4>Extras:</h4>
+					<ul>
+						<li><a class="link" href="docs/Association_Rule_Mining_Final_Project_Report.pdf"
+								target="_blank">Final Report</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 
