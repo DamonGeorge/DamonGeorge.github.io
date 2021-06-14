@@ -9,17 +9,38 @@
         max-width: 800px;
     }
 
+    .projectHeader {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            li {
+                margin: 0 0.8em 0 0.8em;
+                // font-style: italic;
+                font-weight: bold;
+            }
+        }
+    }
+
     .projectContent {
-        padding: 0.5rem 1rem;
+        padding: 1rem 1rem;
 
         .imageAndDescriptionContainer {
             align-items: flex-start;
         }
 
+        .descriptionContainer{
+            flex: 1.5;
+        }
+
         .imageContainer {
             padding-right: 0.5rem; 
             padding-bottom: 0.5rem;
-            max-width: 400px;
+            max-width: 600px;
+            flex: 1;
 
             &.singleImage {
                 img {
@@ -44,7 +65,7 @@
 
     @media @medium-down {
         .imageAndDescriptionContainer {
-            flex-direction: column;
+            flex-direction: column-reverse;
         }
     }
 }

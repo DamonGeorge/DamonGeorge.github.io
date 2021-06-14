@@ -36,48 +36,61 @@
 
 	<div class="mainContent scrollContainer standardPadding">
 		<div class="flexColumn projectContainer">
-			<h2>MINDecoding</h2>
+			<div class="projectHeader">
+				<h2>MINDecoding</h2>
+				<ul>
+					<li>Python</li>
+					<li>AI / ML</li>
+					<li>PyTorch</li>
+					<li>Tensorflow</li>
+					<li>CUDA</li>
+					<li>NumPy / SciPy</li>
+				</ul>
+			</div>
 			<div class="projectContent">
 				<div class="flex imageAndDescriptionContainer">
+					<div class="descriptionContainer">
+						<p>
+							MINDecoding = Movement Intent Decoding
+							<br>
+							<br>
+							This project is a large part of my Master's research and thesis at Oregon State University.
+
+							<br>
+							<br>
+							From my NSF GRFP Research Proposal:
+							<i>
+								The objective of my research is to develop novel adaptive movement intent decoders that
+								leverage
+								(1) human movement models,
+								(2) extensive prosthetic sensor data, and
+								(3) human feedback
+								in order to learn from the user over time,
+								allowing naturalistic, fine-grained and intuitive control of prosthetic limbs.
+							</i>
+
+							<br>
+							<br>
+							This software application is comprised of a library of Deep Network-based Decoders, called
+							MINDecoders,
+							and the corresponding GUI, called The MINDecoding-Interface, that provides the functionality
+							to
+							collect EMG or EEG from real subjects, train decoders with that biological data,
+							test those decoders either online with a real subject or offline with existing datasets,
+							and analyze those tests using a variety of result metrics.
+
+							<br>
+							<br>
+							Although the code is still private since I haven't submitted my first set of related
+							papers,
+							you can find the detailed (but in-progress) documentation
+							<a class="link" href="https://damongeorge.github.io/MINDecoding-Interface/"
+								target="_blank">here</a>.
+						</p>
+					</div>
 					<div class="flex imageContainer singleImage">
 						<img src="images/mindecoding/GUI_and_Raw_Plots.gif" />
 					</div>
-					<p>
-						MINDecoding = Movement Intent Decoding
-						<br>
-						<br>
-						This project is a large part of my Master's research and thesis at Oregon State University.
-
-						<br>
-						<br>
-						From my NSF GRFP Research Proposal:
-						<i>
-							The objective of my research is to develop novel adaptive movement intent decoders that
-							leverage
-							(1) human movement models,
-							(2) extensive prosthetic sensor data, and
-							(3) human feedback
-							in order to learn from the user over time,
-							allowing naturalistic, fine-grained and intuitive control of prosthetic limbs.
-						</i>
-
-						<br>
-						<br>
-						This software application is comprised of a library of Deep Network-based Decoders, called
-						MINDecoders,
-						and the corresponding GUI, called The MINDecoding-Interface, that provides the functionality to
-						collect EMG or EEG from real subjects, train decoders with that biological data,
-						test those decoders either online with a real subject or offline with existing datasets,
-						and analyze those tests using a variety of result metrics.
-
-						<br>
-						<br>
-						Although the code is still private since I haven't submitted my first set of related
-						papers,
-						you can find the detailed (but in-progress) documentation
-						<a class="link" href="https://damongeorge.github.io/MINDecoding-Interface/"
-							target="_blank">here</a>.
-					</p>
 				</div>
 				<div class="flexColumn extraDocs">
 					<h4>Extras:</h4>
@@ -101,12 +114,17 @@
 
 
 		<div class="flexColumn projectContainer">
-			<h2>Pyrameterized</h2>
+			<div class="projectHeader">
+				<h2>Pyrameterized</h2>
+				<ul>
+					<li>Python</li>
+					<li>Unit Testing</li>
+					<li>Github Workflows</li>
+					<li>Continous Integration</li>
+				</ul>
+			</div>
 			<div class="projectContent">
-				<div class="flex imageAndDescriptionContainer">
-					<!-- <div class="flex imageContainer singleImage">
-						<img src="images/altera_de2-115_fpga_board.jpeg"/>
-					</div> -->
+				<div class="descriptionContainer">
 					<p>
 						This is a Python utility library that I've developed and improved upon
 						while using it in many of my Python projects that contain a ton of configuration.
@@ -144,23 +162,31 @@
 
 
 		<div class="flexColumn projectContainer">
-			<h2>Audio Stretch</h2>
+			<div class="projectHeader">
+				<h2>Audio Stretch</h2>
+				<ul>
+					<li>Side Project</li>
+					<li>Python</li>
+					<li>Cython & C++</li>
+					<li>Signal Processing</li>
+				</ul>
+			</div>
 			<div class="projectContent">
-				<div class="flex imageAndDescriptionContainer">
-					<!-- <div class="flex imageContainer singleImage">
-						<img src="images/altera_de2-115_fpga_board.jpeg"/>
-					</div> -->
+				<div class="descriptionContainer">
 					<p>
 						As a fun side project based upon my brother <a class="link"
 							href="https://www.thechristiangeorge.com/" target="_blank">Christian</a>'s work,
-						I created the Python3 AudioStretch program that matches the beats of a stored audio loop to a
+						I created the Python3 AudioStretch program that matches the beats of a stored audio loop to
+						a
 						live audio input.
 
 						<br>
 						<br>
-						To do this, I used python-sounddevice for audio I/O and py-soundfile for reading/writing audio
+						To do this, I used python-sounddevice for audio I/O and py-soundfile for reading/writing
+						audio
 						files.
-						And then I wrote my own Cython wrappers for c library rubberband for audio stretching and the
+						And then I wrote my own Cython wrappers for c library rubberband for audio stretching and
+						the
 						BTrack library for real time beat detection.
 						This was a great learning experience in Cython for me!
 						I also developed my own custom Python CircularBuffer class to store live audio buffers
@@ -172,7 +198,8 @@
 						<br>
 						Although this is a fairly complicated signal processing problem,
 						the final program worked well in matching beats, even during tempo changes.
-						All that's missing are some more detailed safety checks to ensure that the beat tracker doesn't
+						All that's missing are some more detailed safety checks to ensure that the beat tracker
+						doesn't
 						skip beats.
 
 					</p>
@@ -199,14 +226,20 @@
 
 
 		<div class="flexColumn projectContainer">
-			<h2>The Smart Helmet</h2>
+			<div class="projectHeader">
+				<h2>The Smart Helmet</h2>
+				<ul>
+					<li>Undergrad Project</li>
+					<li>Java</li>
+					<li>Embedded C</li>
+					<li>Unit Testing</li>
+					<li>Free RTOS</li>
+				</ul>
+			</div>
 
 			<div class="projectContent">
 				<div class="flex imageAndDescriptionContainer">
-					<div class="flexColumn imageContainer singleImage">
-						<img src="images/senior_design/collage.jpg" />
-					</div>
-					<div>
+					<div class="descriptionContainer">
 						<p>
 							For my year long senior design project at Gonzaga,
 							two fellow engineers and I designed, developed, and built the Smart Helmet.
@@ -230,6 +263,9 @@
 							<br>
 							<br>
 						</p>
+					</div>
+					<div class="flexColumn imageContainer singleImage">
+						<img src="images/senior_design/collage.jpg" />
 					</div>
 				</div>
 
@@ -270,18 +306,27 @@
 		</div>
 
 		<div class="flexColumn projectContainer">
-			<h2>Skyware Inventory 2</h2>
+			<div class="projectHeader">
+				<h2>Skyware Inventory 2</h2>
+				<ul>
+					<li>Industry App</li>
+					<li>Full Stack Web Dev</li>
+					<li>Java</li>
+					<li>MySQL</li>
+					<li>HTML, CSS, JS</li>
+					<li>Spring Framework</li>
+					<li>Hibernate ORM</li>
+				</ul>
+			</div>
 			<div class="projectContent">
-				<div class="flex imageAndDescriptionContainer">
-					<!-- <div class="flex imageContainer singleImage">
-						<img src="images/altera_de2-115_fpga_board.jpeg"/>
-					</div> -->
+				<div class="descriptionContainer">
 					<p>
 						As a Software Development Intern at
 						<a class="link" href="https://www.openskysoftware.com" target="_blank">Open Sky Software,
 							Inc.</a>,
 						I spent multiple summer upgrading their flagship inventory tracking product,
-						<a class="link" href="https://www.skywareinventory.com" target="_blank">Skyware Inventory</a>.
+						<a class="link" href="https://www.skywareinventory.com" target="_blank">Skyware
+							Inventory</a>.
 
 						<br /><br />
 						As a full stack Java web developer, I used the Spring Framework, along with Hibernate and
@@ -292,7 +337,8 @@
 						locations.
 						I incorporated industry standard reporting, such as LIFO, FIFO, and AVG costing. I also
 						developed
-						advanced front-end Javascript to handle editable tables with custom fields, ajax autocomplete,
+						advanced front-end Javascript to handle editable tables with custom fields, ajax
+						autocomplete,
 						and flexible form validation.
 						<br /><br />
 						This version 2.0 of Skyware Inventory was just released earlier this spring!
@@ -310,30 +356,40 @@
 		</div>
 
 		<div class="flexColumn projectContainer">
-			<h2>Othello AI</h2>
+			<div class="projectHeader">
+				<h2>Othello AI</h2>
+				<ul>
+					<li>Undergrad Project</li>
+					<li>Java</li>
+					<li>Search Algorithms</li>
+					<li>Swing</li>
+				</ul>
+			</div>
 			<div class="projectContent">
 				<div class="flex imageAndDescriptionContainer">
+					<div class="descriptionContainer">
+						<p>
+							During my last semester at Gonzaga as an undergraduate,
+							my partner and I built an Othello playing AI for my Artificial Intelligence elective.
+							I wrote this in Java, using Swing for the simple interface.
+							The program allows the user to play against the AI.
+							At the end of the class, all the teams competed in a tournament
+							to determine the best AI, and mine won 1st!
+							<br>
+							<br>
+							This AI uses best first search with alpha-beta pruning to search the state space.
+							Each move by the AI was required to complete within ten seconds, allowing this AI
+							to search about 8-10 steps ahead in the game. The search uses an advanced heuristic
+							value function that uses 8 different characteristics of the board to determine the
+							value of the board. These characteristics include the score, the number of moves available,
+							the number of corners taken or available, and the number of stable and unstable tokens.
+							The AI also uses Zobrist Hashing to store all calculated heuristics in a hash table
+							to increase the efficiency of the program.
+						</p>
+					</div>
 					<div class="flex imageContainer singleImage">
 						<img src="images/othello/othello.jpeg" />
 					</div>
-					<p>
-						During my last semester at Gonzaga as an undergraduate,
-						my partner and I built an Othello playing AI for my Artificial Intelligence elective.
-						I wrote this in Java, using Swing for the simple interface.
-						The program allows the user to play against the AI.
-						At the end of the class, all the teams competed in a tournament
-						to determine the best AI, and mine won 1st!
-						<br>
-						<br>
-						This AI uses best first search with alpha-beta pruning to search the state space.
-						Each move by the AI was required to complete within ten seconds, allowing this AI
-						to search about 8-10 steps ahead in the game. The search uses an advanced heuristic
-						value function that uses 8 different characteristics of the board to determine the
-						value of the board. These characteristics include the score, the number of moves available,
-						the number of corners taken or available, and the number of stable and unstable tokens.
-						The AI also uses Zobrist Hashing to store all calculated heuristics in a hash table
-						to increase the efficiency of the program.
-					</p>
 				</div>
 
 
@@ -351,27 +407,40 @@
 		</div>
 
 		<div class="flexColumn projectContainer">
-			<h2>Ethernet FPGA Communication</h2>
+			<div class="projectHeader">
+				<h2>Ethernet FPGA Communication</h2>
+				<ul>
+					<li>Undergrad Project</li>
+					<li>VHDL</li>
+					<li>FPGA</li>
+					<li>Networking</li>
+				</ul>
+			</div>
 			<div class="projectContent">
 				<div class="flex imageAndDescriptionContainer">
+					<div class="descriptionContainer">
+						<p>
+							As the final project for my senior year Digital Design class at Gonzaga,
+							a fellow student and I successfully designed and programmed two FPGA dev boards in VHDL
+							to use high speed Ethernet communication. The communication allowed the two dev boards
+							to turn each other's LEDs on in different patterns using their switches.
+							For this project we used Intel's Ethernet IP in Quartus to program the Ethernet hardware
+							onto the FPGA.
+							<br><br>
+							This was one of my hardest projects at Gonzaga University. We were the only team in the
+							class
+							to successfully commplete the project according the original specifications. Completing the
+							project
+							required a ton of extra hours before the deadline(most of which was spent reading the
+							Ethernet
+							Hardware specifications),
+							but it was definitely worth it when we were able to show off our working design to the
+							class.
+						</p>
+					</div>
 					<div class="flex imageContainer singleImage">
 						<img src="images/altera_de2-115_fpga_board.jpeg" />
 					</div>
-					<p>
-						As the final project for my senior year Digital Design class at Gonzaga,
-						a fellow student and I successfully designed and programmed two FPGA dev boards in VHDL
-						to use high speed Ethernet communication. The communication allowed the two dev boards
-						to turn each other's LEDs on in different patterns using their switches.
-						For this project we used Intel's Ethernet IP in Quartus to program the Ethernet hardware
-						onto the FPGA.
-						<br><br>
-						This was one of my hardest projects at Gonzaga University. We were the only team in the class
-						to successfully commplete the project according the original specifications. Completing the
-						project
-						required a ton of extra hours before the deadline(most of which was spent reading the Ethernet
-						Hardware specifications),
-						but it was definitely worth it when we were able to show off our working design to the class.
-					</p>
 				</div>
 
 				<div class="flexColumn extraDocs">
@@ -387,18 +456,29 @@
 
 
 		<div class="flexColumn projectContainer">
-			<h2>Association Rule Mining</h2>
+			<div class="projectHeader">
+				<h2>Association Rule Mining</h2>
+				<ul>
+					<li>Undergrad Project</li>
+					<li>Java</li>
+					<li>Apache Hadoop</li>
+					<li>MapReduce</li>
+					<li>AWS</li>
+				</ul>
+			</div>
 			<div class="projectContent">
-				<p>
-					This was the final project for my Parallel and Cloud Computing Elective.
-					This is a Java Hadoop MapReduce program to mine the confidence of
-					association rules that we ran on AWS. These association rules were parsed
-					from large input files of concept identification codes. On
-					the AWS EMR clusters, the execution time of the program was tested for different cluster sizes, for
-					different amounts of input files, and using both the Hadoop file system and the Amazon S3 file
-					system.
-				</p>
-
+				<div class="descriptionContainer">
+					<p>
+						This was the final project for my Parallel and Cloud Computing Elective.
+						This is a Java Hadoop MapReduce program to mine the confidence of
+						association rules that we ran on AWS. These association rules were parsed
+						from large input files of concept identification codes. On
+						the AWS EMR clusters, the execution time of the program was tested for different cluster sizes,
+						for
+						different amounts of input files, and using both the Hadoop file system and the Amazon S3 file
+						system.
+					</p>
+				</div>
 				<div class="flexColumn extraDocs">
 					<h4>Extras:</h4>
 					<ul>
@@ -410,20 +490,29 @@
 		</div>
 
 		<div class="flexColumn projectContainer">
-			<h2>Zoolander</h2>
+			<div class="projectHeader">
+				<h2>Zoolander</h2>
+				<ul>
+					<li>Undergrad Project</li>
+					<li>Java</li>
+					<li>Spring Shell Framework</li>
+					<li>MySQL</li>
+				</ul>
+			</div>
 			<div class="projectContent">
-				<p>
-					This final project for my Database Management class at Gonzaga
-					is a Java command line interface that allows the user to interact
-					with a custom Zoo database. This imitates a program that might exist
-					for a Zoo to keep track of all its animals, their feeding patterns, and the feed purchases.
-					<br>
-					<br>
-					This project was designed to incorporate many advanced SQL queries,
-					such as joins, groups, aggregates, and subqueries. This program was written
-					using the Spring Shell, which provides a very nice CLI.
-				</p>
-
+				<div class="descriptionContainer">
+					<p>
+						This final project for my Database Management class at Gonzaga
+						is a Java command line interface that allows the user to interact
+						with a custom Zoo database. This imitates a program that might exist
+						for a Zoo to keep track of all its animals, their feeding patterns, and the feed purchases.
+						<br>
+						<br>
+						This project was designed to incorporate many advanced SQL queries,
+						such as joins, groups, aggregates, and subqueries. This program was written
+						using the Spring Shell, which provides a very nice CLI.
+					</p>
+				</div>
 				<div class="flexColumn extraDocs">
 					<h4>Extras:</h4>
 					<ul>
