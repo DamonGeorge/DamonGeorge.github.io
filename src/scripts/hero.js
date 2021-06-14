@@ -1,7 +1,8 @@
-$(function() {
+$(function () {
     initHero();
 });
 
+var lastBounce = Date.now();
 
 
 function initHero() {
@@ -23,20 +24,20 @@ function initHero() {
 
     //stop scroll helper
     function stopTimer() {
-         showScrollHelper = false;
-         if(timer)
+        showScrollHelper = false;
+        if (timer)
             clearInterval(timer);
-         hideScrollHelper();
+        hideScrollHelper();
     }
 
     //make the hero image fixed
     function fixHero() {
-        console.log("FIX"); 
+        console.log("FIX");
         imageFixed = true;
         $hero.addClass("fixed");
-        
 
-        $navbar.css("opacity",1.0);
+
+        $navbar.css("opacity", 1.0);
         $navbar.css("pointer-events", "all");
     }
 
@@ -50,13 +51,13 @@ function initHero() {
 
     //update the image based on the scroll 
     function updateImage(scrollContainer) {
-        if(imageFixed) {
-            if($hero[0].clientHeight - $scrollContainer[0].clientHeight >= $scrollContainer[0].scrollTop) {
+        if (imageFixed) {
+            if ($hero[0].clientHeight - $scrollContainer[0].clientHeight >= $scrollContainer[0].scrollTop) {
                 //if we haven't scrolled to bottom of image
                 unFixHero();
             }
         } else {
-            if($hero[0].clientHeight - $scrollContainer[0].clientHeight <= $scrollContainer[0].scrollTop) {
+            if ($hero[0].clientHeight - $scrollContainer[0].clientHeight <= $scrollContainer[0].scrollTop) {
                 //if we have scrolled to bottom of image
                 fixHero();
                 $hero.css("background-position-y", $scrollContainer[0].clientHeight - $hero[0].clientHeight);
@@ -68,9 +69,9 @@ function initHero() {
 
 
     //init the image based on window size
-    if($hero[0].clientHeight <= $scrollContainer[0].clientHeight) {
+    if ($hero[0].clientHeight <= $scrollContainer[0].clientHeight) {
         //here the image is smaller than the window
-        if(!imageFixed) {
+        if (!imageFixed) {
             fixHero();
         }
         $hero.css("background-position-y", 0);
@@ -79,26 +80,26 @@ function initHero() {
         //image is larger than the window so don't fix it
 
         //scroll to center if url asks us to
-        if(window.location.href.endsWith("#center")) {
+        if (window.location.href.endsWith("#center")) {
             var scroll = $hero[0].clientHeight - $scrollContainer[0].clientHeight;
             $scrollContainer.scrollTop(scroll + 1);
         }
     }
 
     //do in timeout to get past the scrolling if url has #center
-    setTimeout(function() {
+    setTimeout(function () {
         //start timer if necessary
-        if($scrollContainer[0].clientHeight - $hero[0].clientHeight <= 25)
+        if ($scrollContainer[0].clientHeight - $hero[0].clientHeight <= 25)
             startTimer();
     }, 100);
-   
+
 
     //watch for window resize
-    $( window ).resize(function() { 
-        if($hero[0].clientHeight <= $scrollContainer[0].clientHeight) {
+    $(window).resize(function () {
+        if ($hero[0].clientHeight <= $scrollContainer[0].clientHeight) {
             //image smaller than window
 
-            if(!imageFixed) {
+            if (!imageFixed) {
                 fixHero();
             }
             $hero.css("background-position-y", 0);
@@ -108,22 +109,26 @@ function initHero() {
         }
     });
 
-    $scrollContainer.scroll(function() {
+    $scrollContainer.scroll(function () {
         updateImage(this);
         console.log("scroll");
 
-        if(scrollHelperVisible) {
+        if (scrollHelperVisible) {
             stopTimer();
         }
     });
 
-    
+
 }
 
 function showScrollHelper() {
     var $scrollHelper = $(".heroScrollHelper");
     $scrollHelper.css("visibility", "visible");
-    $scrollHelper.effect("bounce", {times: 3, distance: 50}, 600);
+    if (!document.hidden) {
+        $scrollHelper.effect("bounce", { times: 3, distance: 50 }, 600);
+    } else {
+        console.log("Skipping bounce...")
+    }
 }
 
 function hideScrollHelper() {
@@ -132,24 +137,24 @@ function hideScrollHelper() {
 
 
 
-function throttle(func, limit){
+function throttle(func, limit) {
     var lastFunc;
     var lastRan;
-    return function() {
-      var context = this;
-      var args = arguments;
+    return function () {
+        var context = this;
+        var args = arguments;
 
-      if (!lastRan) {
-        func.apply(context, args);
-        lastRan = Date.now();
-      } else {
-        clearTimeout(lastFunc);
-        lastFunc = setTimeout(function() {
-          if ((Date.now() - lastRan) >= limit) {
+        if (!lastRan) {
             func.apply(context, args);
             lastRan = Date.now();
-          }
-        }, limit - (Date.now() - lastRan));
-      }
+        } else {
+            clearTimeout(lastFunc);
+            lastFunc = setTimeout(function () {
+                if ((Date.now() - lastRan) >= limit) {
+                    func.apply(context, args);
+                    lastRan = Date.now();
+                }
+            }, limit - (Date.now() - lastRan));
+        }
     };
-  }
+}
