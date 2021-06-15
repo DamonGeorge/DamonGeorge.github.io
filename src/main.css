@@ -490,6 +490,33 @@ h3 {
 .projectFilteringContainer h2 {
   color: #36AB59;
 }
+.projectFilteringContainer #filterSearchInput {
+  width: 250px;
+  height: 2em;
+  margin-left: 0.6em;
+  border-radius: 4px;
+  border: 1px solid #36AB59;
+  outline: 0 none;
+}
+.projectFilteringContainer #filterSearchInput:focus,
+.projectFilteringContainer #filterSearchInput:focus-visible {
+  box-shadow: 0 0 1px 1px #36AB59;
+}
+.projectFilteringContainer #filterSearchClearIcon {
+  margin-left: -30px;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.projectFilteringContainer #noTagsMessage {
+  padding-left: 0.5em;
+}
+.projectFilteringContainer #extraTagsContainer {
+  padding-left: 0.5em;
+  padding-top: 1em;
+}
+.projectFilteringContainer #extraTagsContainer h4 {
+  margin-right: 0.5em;
+}
 .projectFilteringContainer ul {
   display: flex;
   list-style: none;

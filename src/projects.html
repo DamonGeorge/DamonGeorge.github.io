@@ -38,10 +38,22 @@
 	<div class="mainContent scrollContainer standardPadding">
 		<div class="projectFilteringContainer">
 			<h2>Filter Projects By Tags</h2>
-			<!-- <input type="text" id="searchInput" /> -->
-			<ul>
+			<div id="filteredTagsContainer">
+				<div class="flexAlignCenter">
+					<input type="text" id="filterSearchInput" placeholder="Search Tags" />
+					<i id="filterSearchClearIcon" class='material-icons'>close</i>
+				</div>
+				<ul>
 
-			</ul>
+				</ul>
+				<span id="noTagsMessage" class="hidden">No tags found...</span>
+			</div>
+			<div id="extraTagsContainer" class="flexColumn">
+				<h4>Other Active Tags: </h4>
+				<ul>
+
+				</ul>
+			</div>
 		</div>
 		<div class="flexColumn projectContainer">
 			<div class="projectHeader">
