@@ -24,9 +24,12 @@ function initTags() {
 
     tagsList = $(".projectFilteringContainer ul");
 
-    for (var t in tagsMapping) {
+    validTags = Object.getOwnPropertyNames(tagsMapping);
+    validTags.sort();
+    validTags.forEach(function (t) {
         tagsList.append("<li>" + t + "<i class='material-icons'>close</i></li>");
-    }
+    });
+
 
     tagsList.click(function (event) {
         target = $(event.target);

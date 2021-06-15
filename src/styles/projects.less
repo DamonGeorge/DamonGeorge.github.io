@@ -17,13 +17,21 @@
         ul {
             display: flex;
             flex-wrap: wrap;
+            list-style: none;
+            padding-left: 2em;
+
             li {
-                margin: 0 0.8em 0 0.8em;
                 // font-style: italic;
                 font-weight: bold;
+                padding-left: 0.5em;
+
+                &:not(:last-child):after{
+                    content: "\2022";
+                    padding-left: 0.5em;
+                }
 
                 &.active {
-                    background: yellow;
+                    background: @clr-theme-highlight;
                 }
             }
         }
@@ -71,20 +79,40 @@
         .imageAndDescriptionContainer {
             flex-direction: column-reverse;
         }
+
+        .projectHeader ul {
+                padding-left: 0.5em;
+        }
     }
 }
 
 
 .projectFilteringContainer {
+    padding: 0.5em;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    border: 2px solid @clr-theme-highlight-dark;
+
+    h2 {
+        color: @clr-theme-highlight-dark;
+    }
+
     ul {
         display: flex;
         list-style: none;
         flex-wrap: wrap;
+        padding-left: 0;
 
         li {
-            padding: 0 0.5em 0 0.5em;
+            padding-left: 0.5em;
             cursor: pointer;
             display: flex;
+            margin: 1px;
+
+            &:not(:last-child):after{
+                content: "\2022";
+                padding-left: 0.5em;
+            }
 
             i {
                 display: none;
@@ -93,14 +121,26 @@
             }
 
             &.active {
-                border: solid 1px @black;
                 border-radius: 20px;
-                background: red;
+                background: @clr-theme-highlight;
 
                 i {
                     display: block;
+                    color: @clr-theme-primary;
+                }
+
+                &::after{
+                    content: none;
+                    padding-left: 0;
                 }
             }
         }
+        @media @medium-up {
+            li:hover{
+                border-radius: 20px;
+                background: @clr-theme-highlight;
+            }
+        }
     }
+    
 }

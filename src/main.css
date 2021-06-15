@@ -434,13 +434,19 @@ h3 {
 .projectContainer .projectHeader ul {
   display: flex;
   flex-wrap: wrap;
+  list-style: none;
+  padding-left: 2em;
 }
 .projectContainer .projectHeader ul li {
-  margin: 0 0.8em 0 0.8em;
   font-weight: bold;
+  padding-left: 0.5em;
+}
+.projectContainer .projectHeader ul li:not(:last-child):after {
+  content: "\2022";
+  padding-left: 0.5em;
 }
 .projectContainer .projectHeader ul li.active {
-  background: yellow;
+  background: #cdefd7;
 }
 .projectContainer .projectContent {
   padding: 1rem 1rem;
@@ -471,16 +477,34 @@ h3 {
   .projectContainer .imageAndDescriptionContainer {
     flex-direction: column-reverse;
   }
+  .projectContainer .projectHeader ul {
+    padding-left: 0.5em;
+  }
+}
+.projectFilteringContainer {
+  padding: 0.5em;
+  border-radius: 5px;
+  margin-bottom: 1em;
+  border: 2px solid #36AB59;
+}
+.projectFilteringContainer h2 {
+  color: #36AB59;
 }
 .projectFilteringContainer ul {
   display: flex;
   list-style: none;
   flex-wrap: wrap;
+  padding-left: 0;
 }
 .projectFilteringContainer ul li {
-  padding: 0 0.5em 0 0.5em;
+  padding-left: 0.5em;
   cursor: pointer;
   display: flex;
+  margin: 1px;
+}
+.projectFilteringContainer ul li:not(:last-child):after {
+  content: "\2022";
+  padding-left: 0.5em;
 }
 .projectFilteringContainer ul li i {
   display: none;
@@ -488,10 +512,20 @@ h3 {
   pointer-events: none;
 }
 .projectFilteringContainer ul li.active {
-  border: solid 1px #000000;
   border-radius: 20px;
-  background: red;
+  background: #cdefd7;
 }
 .projectFilteringContainer ul li.active i {
   display: block;
+  color: #07a0c3;
+}
+.projectFilteringContainer ul li.active::after {
+  content: none;
+  padding-left: 0;
+}
+@media only screen and (min-width: 768px) {
+  .projectFilteringContainer ul li:hover {
+    border-radius: 20px;
+    background: #cdefd7;
+  }
 }
