@@ -439,6 +439,9 @@ h3 {
   margin: 0 0.8em 0 0.8em;
   font-weight: bold;
 }
+.projectContainer .projectHeader ul li.active {
+  background: yellow;
+}
 .projectContainer .projectContent {
   padding: 1rem 1rem;
 }
@@ -468,4 +471,27 @@ h3 {
   .projectContainer .imageAndDescriptionContainer {
     flex-direction: column-reverse;
   }
+}
+.projectFilteringContainer ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.projectFilteringContainer ul li {
+  padding: 0 0.5em 0 0.5em;
+  cursor: pointer;
+  display: flex;
+}
+.projectFilteringContainer ul li i {
+  display: none;
+  font-size: 1.2em;
+  pointer-events: none;
+}
+.projectFilteringContainer ul li.active {
+  border: solid 1px #000000;
+  border-radius: 20px;
+  background: red;
+}
+.projectFilteringContainer ul li.active i {
+  display: block;
 }
