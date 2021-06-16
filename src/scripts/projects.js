@@ -58,6 +58,7 @@ function initTags() {
             }
             target.toggleClass("active");
             filterProjects();
+            highlightProjects();
         }
     });
 
@@ -70,6 +71,7 @@ function initTags() {
             target.hide();
             tagsListItems.eq(validTags.indexOf(clickedTag)).removeClass("active");
             filterProjects();
+            highlightProjects();
         }
     });
 
@@ -128,7 +130,6 @@ function initTags() {
                 projIdxs = tagsMapping[t];
                 projIdxs.forEach(function (i) {
                     $(projects[i]).show();
-                    highlightProjects($(projects[i]));
                 });
             });
         } else {
@@ -138,7 +139,7 @@ function initTags() {
         }
     };
 
-    var highlightProjects = function (projectContainer) {
+    var highlightProjects = function () {
         projects.each(function (i, el) {
             $(el).find(".projectHeader li").each(function (i, tagEl) {
                 var t = tagEl.textContent;

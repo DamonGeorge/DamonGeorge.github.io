@@ -420,9 +420,6 @@ h3 {
   border-top: 4px solid #07a0c3;
   margin: 0.5rem 0;
 }
-.projectContainer h2 {
-  color: #ca1666;
-}
 .projectContainer p {
   max-width: 800px;
 }
@@ -430,6 +427,14 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
+}
+.projectContainer .projectHeader h2 {
+  color: #ca1666;
+  flex-basis: 100%;
+}
+.projectContainer .projectHeader .projectYear {
+  color: #07a0c3;
+  padding-left: 1em;
 }
 .projectContainer .projectHeader ul {
   display: flex;
