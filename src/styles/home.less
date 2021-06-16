@@ -25,7 +25,7 @@
 
 	.heroTitle {
 		position: fixed;
-		top: 15vw;
+		top: 8vw;
 		color: @white;
 		display: flex;
 		flex-direction: column;
@@ -38,11 +38,9 @@
 		.title {
 			text-align: center;
 			font-size: 3rem;
-			font-style: italic;
-			text-decoration: underline solid @clr-theme-secondary;
-			font-weight: bold;
-			margin-bottom: 3rem;
-			color: @white
+			font-weight: 600;
+			color: @white;
+			text-shadow: 0 0 3px @black;
 		}
 		
 		.subtitleLarge, .subtitleSmall {
@@ -52,6 +50,7 @@
 				color: @white;
 				padding: 0.2rem 0;
 				text-shadow: 0 0 3px @black;
+				font-weight: 600;
 			}
 		}
 		.subtitleLarge {
@@ -90,39 +89,24 @@
 		}
 	}
 
-	@media @xlarge-down {
-		.heroTitle .title {
-			margin-bottom: 2rem;
-		}
-	}
+
 
 	@media @large-down {
-		.heroTitle .title {
-			font-size: 2.5rem;
-		}
-	}		
-	
-	@media @large-only {		
 		.heroTitle {
-			align-items: flex-start;
+			top: 8vw;
 
 			.title {
-				width: 100%;
+				font-size: 2.5rem;
+			}
+			.subtitleLarge, .subtitleSmall {
+				& > * {
+					padding: 0;
+				}
 			}
 		}
-	}
+	}		
 
-	@media @large-down  {		
-		.heroTitle {
-			.subtitleLarge {
-				display: none;
-			}
-			.subtitleSmall {
-				display: flex;
-			}
-		}
-	}
-	
+
 	@media @medium-down {
 		background: url('images/hero/coast_mobile.jpeg') no-repeat center;
 		background-attachment: scroll !important;
@@ -132,14 +116,20 @@
 		width: 100%;
 		display: flex;
 		justify-content: flex-start;
-		align-items: center;
+		align-items: flex-start;
 		// max-height: 100vh;
 
 
 		.heroTitle {
-			top: 25vw;
 			position: relative;
-			top: 5vw;
+			top: 12vw;
+
+			.subtitleLarge {
+				display: none;
+			}
+			.subtitleSmall {
+				display: flex;
+			}
 		}
 	}
 
@@ -149,14 +139,20 @@
 		.heroTitle {
 			align-items: flex-start;
 			margin-left: 0.5rem;
+			top: 22vw;
+			justify-content: space-between;
+			height: calc(100% - 20vw - 60px);
 			
-
 			.title {
 				margin-bottom: 1rem;
 			}
 
 			.subtitleSmall {
 				font-size: 1.2rem;
+			}
+
+			.heroScrollHelper {
+				display: none;
 			}
 		}
 	}

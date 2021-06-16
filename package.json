@@ -15,5 +15,9 @@
     "eslint": "^6.8.0",
     "less": "^3.13.1",
     "lesshint": "^6.3.7"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.3.0"
   }
 }

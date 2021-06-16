@@ -1,3 +1,4 @@
+/* eslint-disable strict */
 $(function () {
     initHero();
 });
@@ -38,7 +39,7 @@ function initHero() {
 
 
         $navbar.css("opacity", 1.0);
-        $navbar.css("pointer-events", "all");
+        // $navbar.css("pointer-events", "all");
     }
 
     //make the hero image scroll
