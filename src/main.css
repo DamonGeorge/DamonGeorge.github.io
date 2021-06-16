@@ -106,6 +106,12 @@ h3 {
   margin-top: 60px;
   height: calc(100% - 60px);
   width: 100%;
+  padding: 1rem;
+}
+@media only screen and (max-width: 480px) {
+  .mainContent {
+    padding: 1rem 0.5rem;
+  }
 }
 .scrollContainer {
   overflow: auto;
@@ -211,6 +217,7 @@ h3 {
 #heroScrollContainer {
   height: 100%;
   margin-top: 0px;
+  padding: 0 !important;
 }
 .hero {
   background: url('images/hero/coast_desktop.jpeg') no-repeat center;
@@ -429,16 +436,18 @@ h3 {
 }
 .projectContainer .projectHeader h2 {
   color: #ca1666;
-  flex-basis: 100%;
 }
 .projectContainer .projectHeader .projectYear {
   color: #07a0c3;
+  margin-left: auto;
 }
 .projectContainer .projectHeader ul {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  padding-left: 2em;
+  margin-left: -0.5em;
+  flex-basis: 100%;
+  padding: 0;
 }
 .projectContainer .projectHeader ul li {
   font-weight: bold;
@@ -480,12 +489,9 @@ h3 {
   .projectContainer .imageAndDescriptionContainer {
     flex-direction: column-reverse;
   }
-  .projectContainer .projectHeader ul {
-    padding-left: 0.5em;
-  }
 }
 .projectFilteringContainer {
-  padding: 0.5em;
+  padding: 0.5em 1em;
   border-radius: 5px;
   margin-bottom: 1em;
   border: 2px solid #36AB59;
@@ -496,7 +502,6 @@ h3 {
 .projectFilteringContainer #filterSearchInput {
   width: 250px;
   height: 2em;
-  margin-left: 0.6em;
   border-radius: 4px;
   border: 1px solid #36AB59;
   outline: 0 none;
@@ -525,12 +530,15 @@ h3 {
   list-style: none;
   flex-wrap: wrap;
   padding-left: 0;
+  margin-left: -0.5em;
+  margin-right: -0.5em;
 }
 .projectFilteringContainer ul li {
   padding-left: 0.5em;
   cursor: pointer;
   display: flex;
   margin: 1px;
+  align-items: center;
 }
 .projectFilteringContainer ul li:not(:last-child):after {
   content: "\2022";
@@ -557,5 +565,10 @@ h3 {
   .projectFilteringContainer ul li:hover {
     border-radius: 20px;
     background: #cdefd7;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .projectFilteringContainer {
+    padding: 0.5em;
   }
 }

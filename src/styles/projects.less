@@ -14,18 +14,20 @@
 
         h2 {
             color: @clr-theme-secondary;
-            flex-basis: 100%;
         }
 
         .projectYear {
             color: @clr-theme-primary;
+            margin-left: auto;
         }
 
         ul {
             display: flex;
             flex-wrap: wrap;
             list-style: none;
-            padding-left: 2em;
+            margin-left: -0.5em;
+            flex-basis: 100%;
+            padding: 0;
 
             li {
                 // font-style: italic;
@@ -86,16 +88,12 @@
         .imageAndDescriptionContainer {
             flex-direction: column-reverse;
         }
-
-        .projectHeader ul {
-                padding-left: 0.5em;
-        }
     }
 }
 
 
 .projectFilteringContainer {
-    padding: 0.5em;
+    padding: 0.5em 1em;
     border-radius: 5px;
     margin-bottom: 1em;
     border: 2px solid @clr-theme-highlight-dark;
@@ -107,7 +105,6 @@
     #filterSearchInput {
         width: 250px;
         height: 2em;
-        margin-left: 0.6em;
 
         border-radius: 4px;
         border: 1px solid @clr-theme-highlight-dark;
@@ -141,12 +138,15 @@
         list-style: none;
         flex-wrap: wrap;
         padding-left: 0;
+        margin-left: -0.5em;
+        margin-right: -0.5em;
 
         li {
             padding-left: 0.5em;
             cursor: pointer;
             display: flex;
             margin: 1px;
+            align-items: center;
 
             &:not(:last-child):after{
                 content: "\2022";
@@ -180,6 +180,10 @@
                 background: @clr-theme-highlight;
             }
         }
+    }
+
+    @media @medium-down {
+        padding: 0.5em;
     }
     
 }
