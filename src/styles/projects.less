@@ -9,16 +9,23 @@
 
     .projectHeader {
         display: flex;
-        flex-wrap: wrap;
-        align-items: baseline;
+        flex-direction: column;
+
+        &>div {
+            display: flex;
+            flex-basis: 100%;
+            align-items: baseline;
+        }
 
         h2 {
             color: @clr-theme-secondary;
         }
-
-        .projectYear {
+        
+        .projectType, .projectDate {
             color: @clr-theme-primary;
             margin-left: auto;
+            white-space: nowrap;
+            padding-left: 0.5em;
         }
 
         ul {

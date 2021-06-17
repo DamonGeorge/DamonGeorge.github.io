@@ -431,15 +431,22 @@ h3 {
 }
 .projectContainer .projectHeader {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+}
+.projectContainer .projectHeader > div {
+  display: flex;
+  flex-basis: 100%;
   align-items: baseline;
 }
 .projectContainer .projectHeader h2 {
   color: #ca1666;
 }
-.projectContainer .projectHeader .projectYear {
+.projectContainer .projectHeader .projectType,
+.projectContainer .projectHeader .projectDate {
   color: #07a0c3;
   margin-left: auto;
+  white-space: nowrap;
+  padding-left: 0.5em;
 }
 .projectContainer .projectHeader ul {
   display: flex;

@@ -1,16 +1,19 @@
 /* eslint-disable strict */
 
 $(function () {
-    initTags();
+    initFiltering();
 });
 
 
-function initTags() {
+function initFiltering() {
     var tagsMapping = {};
+    var typesMapping = {};
     var activeTags = [];
+    var activeTypes = [];
 
     // elements
     var projects = $(".projectContainer");
+    // tags
     var tagsContainer = $("#filteredTagsContainer");
     var tagsList = $("#filteredTagsContainer ul");
     var searchInput = $("#filterSearchInput");
@@ -18,20 +21,32 @@ function initTags() {
     var noTagsMessage = $("#filteredTagsContainer #noTagsMessage");
     var extraTagsContainer = $("#extraTagsContainer");
     var extraTagsList = $("#extraTagsContainer ul");
+    //types
+    var typesContainer = $("#filteredTypesContainer")
+    var typesList = $("#filteredTypesContainer ul");
 
+    //default hidden elements
     extraTagsContainer.hide();
 
-    // find all tags and fill tagsMapping
+    // find all tags and fill tagsMapping and types Mapping
     projects.each(function (i, el) {
+        // tags
         var tags = $(el).find(".projectHeader li");
         tags.each(function (j, tagEl) {
             var tag = tagEl.textContent;
-            if (tag in tags) {
+            if (tag in tagsMapping) {
                 tagsMapping[tag].push(i);
             } else {
                 tagsMapping[tag] = [i];
             }
         })
+        //type
+        var type = $(el).find(".projectType")[0].textContent;
+        if (type in typesMapping) {
+            typesMapping[type].push(i);
+        } else {
+            typesMapping[type] = [i];
+        }
     });
 
     // gen html for all tags
@@ -42,9 +57,19 @@ function initTags() {
         extraTagsList.append("<li class='active hidden'>" + t + "<i class='material-icons'>close</i></li>");
     });
 
+    var validTypes = Object.getOwnPropertyNames(typesMapping);
+    validTypes.sort();
+    validTypes.forEach(function (t) {
+        typesList.append("<li>" + t + "<i class='material-icons'>close</i></li>");
+    });
+
+
     // lists of all the jquery list elements for the tags
     var tagsListItems = tagsList.children("li");
     var extraTagsListItems = extraTagsList.children("li");
+
+    // list of all list elements for the types
+    var typesListItems = typesList.children("li");
 
     // click handler for each tag in the main list
     tagsContainer.click(function (event) {
@@ -75,12 +100,26 @@ function initTags() {
         }
     });
 
-    //handler for search Input
-    searchInput.on("input", function (e) {
-        filterTags($(this).val().toLowerCase());
-
+    //click handler for types
+    typesContainer.click(function (event) {
+        var target = $(event.target);
+        if (target.is("li")) {
+            var clickedType = target[0].childNodes[0].textContent;
+            if (target.hasClass("active")) {
+                activeTypes.splice(activeTypes.indexOf(clickedType), 1);
+            } else {
+                activeTypes.push(clickedType);
+            }
+            target.toggleClass("active");
+            filterProjects();
+            highlightProjects();
+        }
     });
 
+    //handlers for search Input
+    searchInput.on("input", function (e) {
+        filterTags($(this).val().toLowerCase());
+    });
     clearSearchIcon.click(function (e) {
         searchInput.val("");
         filterTags("");
@@ -121,22 +160,31 @@ function initTags() {
     }
 
     var filterProjects = function () {
-        if (activeTags.length) {
-            projects.each(function (i, el) {
-                $(el).hide();
-            });
+        filteredProjectsByType = {};
+        filteredProjectsByTag = {};
+        projects.each(function (i, el) {
+            $(el).hide();
+            filteredProjectsByType[i] = activeTypes.length === 0;
+            filteredProjectsByTag[i] = activeTags.length === 0;
+        });
 
-            activeTags.forEach(function (t) {
-                projIdxs = tagsMapping[t];
-                projIdxs.forEach(function (i) {
-                    $(projects[i]).show();
-                });
+        activeTypes.forEach(function (t) {
+            typesMapping[t].forEach(function (i) {
+                filteredProjectsByType[i] = true;
             });
-        } else {
-            projects.each(function (i, el) {
+        });
+
+        activeTags.forEach(function (t) {
+            tagsMapping[t].forEach(function (i) {
+                filteredProjectsByTag[i] = true;
+            });
+        });
+
+        projects.each(function (i, el) {
+            if (filteredProjectsByType[i] && filteredProjectsByTag[i]) {
                 $(el).show();
-            });
-        }
+            }
+        });
     };
 
     var highlightProjects = function () {
