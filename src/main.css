@@ -240,6 +240,7 @@ h3 {
   align-items: center;
   margin-left: 2vw;
   pointer-events: none;
+  height: calc(100% - 8vw - 60px);
 }
 .hero .heroTitle .title {
   text-align: center;
@@ -251,6 +252,7 @@ h3 {
 .hero .heroTitle .subtitleLarge,
 .hero .heroTitle .subtitleSmall {
   pointer-events: none;
+  margin-bottom: auto;
 }
 .hero .heroTitle .subtitleLarge > *,
 .hero .heroTitle .subtitleSmall > * {
@@ -287,9 +289,6 @@ h3 {
   opacity: 1;
 }
 @media only screen and (max-width: 992px) {
-  .hero .heroTitle {
-    top: 8vw;
-  }
   .hero .heroTitle .title {
     font-size: 2.5rem;
   }
@@ -313,12 +312,15 @@ h3 {
   .hero .heroTitle {
     position: relative;
     top: 12vw;
+    height: calc(100% - 12vw - 60px);
+    align-items: flex-start;
   }
   .hero .heroTitle .subtitleLarge {
     display: none;
   }
   .hero .heroTitle .subtitleSmall {
     display: flex;
+    margin-bottom: -1rem;
   }
 }
 @media only screen and (max-width: 480px) {
