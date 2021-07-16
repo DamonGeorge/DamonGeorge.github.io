@@ -196,6 +196,7 @@
 
     @media @medium-down {
         padding: 0.5em;
+        margin-bottom: 0.5em;
     }
     
 }
@@ -214,14 +215,21 @@
     a {
         cursor: pointer;
         margin: 1px;
-
-        &:hover{
-            border-radius: 20px;
-            background: @clr-theme-highlight;
+        
+        @media @medium-up {
+            &:hover{
+                border-radius: 20px;
+                background: @clr-theme-highlight;
+            }
         }
+        
         &:not(:last-child):after{
             content: "\2022";
             padding-left: 0.5em;
         }
+    }
+
+    @media @medium-down {
+        padding: 0.5em;
     }
 }

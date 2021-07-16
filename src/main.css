@@ -585,6 +585,7 @@ h3 {
 @media only screen and (max-width: 768px) {
   .projectFilteringContainer {
     padding: 0.5em;
+    margin-bottom: 0.5em;
   }
 }
 .topProjectsContainer {
@@ -600,11 +601,18 @@ h3 {
   cursor: pointer;
   margin: 1px;
 }
-.topProjectsContainer a:hover {
-  border-radius: 20px;
-  background: #cdefd7;
+@media only screen and (min-width: 768px) {
+  .topProjectsContainer a:hover {
+    border-radius: 20px;
+    background: #cdefd7;
+  }
 }
 .topProjectsContainer a:not(:last-child):after {
   content: "\2022";
   padding-left: 0.5em;
+}
+@media only screen and (max-width: 768px) {
+  .topProjectsContainer {
+    padding: 0.5em;
+  }
 }
