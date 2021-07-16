@@ -93,14 +93,14 @@
 				<div class="flex imageAndDescriptionContainer">
 					<div class="descriptionContainer">
 						<p>
-							MINDecoding = Movement Intent Decoding
+							<!-- MINDecoding = Movement Intent Decoding
 							<br>
-							<br>
-							This project is a large part of my Master's research and thesis at Oregon State University.
+							<br> -->
+							This project is the focus of my Master's at Oregon State University.
 
 							<br>
 							<br>
-							From my NSF GRFP Research Proposal:
+							From my NSF Research Fellowship Proposal:
 							<i>
 								The objective of my research is to develop novel adaptive movement intent decoders that
 								leverage
@@ -113,7 +113,7 @@
 
 							<br>
 							<br>
-							This software application is comprised of a library of Deep Network-based Decoders, called
+							This software is comprised of a library of Deep Network-based Decoders, called
 							MINDecoders,
 							and the corresponding GUI, called The MINDecoding-Interface, that provides the functionality
 							to
@@ -123,34 +123,31 @@
 
 							<br>
 							<br>
-							Although the code is still private since I haven't submitted my first set of related
+							My research is focused on label estimation methods and online learning to enable the
+							semi-supervised adaptation of the deep networks within these decoders.
+							<!-- Although the code is still private since I haven't submitted my first set of related
 							papers,
 							you can find the detailed (but in-progress) documentation
 							<a class="link" href="https://damongeorge.github.io/MINDecoding-Interface/"
-								target="_blank">here</a>.
+								target="_blank">here</a>. -->
 						</p>
+						<div class="flexColumn extraDocs">
+							<h4>Extras:</h4>
+							<ul>
+								<li><a class="link" href="https://damongeorge.github.io/MINDecoding-Interface/"
+										target="_blank">
+										MINDecoding Documentation
+									</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 					<div class="flex imageContainer singleImage">
 						<img src="images/mindecoding/GUI_and_Raw_Plots.gif" />
+						<span class="imageDescription">The MINDecoding GUI</span>
 					</div>
 				</div>
-				<div class="flexColumn extraDocs">
-					<h4>Extras:</h4>
-					<ul>
-						<li><a class="link" href="https://damongeorge.github.io/MINDecoding-Interface/" target="_blank">
-								MINDecoding-Interface Docs
-							</a>
-						</li>
-						<!-- <li><a class="link" href="https://github.com/DamonGeorge/MINDecoding-Interface" target="_blank">
-								MINDecoding-Interface repo
-							</a>
-						</li>
-						<li><a class="link" href="https://github.com/DamonGeorge/MINDecoders" target="_blank">
-								MINDecoders repo
-							</a>
-						</li> -->
-					</ul>
-				</div>
+
 			</div>
 		</div>
 
@@ -173,36 +170,28 @@
 			<div class="projectContent">
 				<div class="descriptionContainer">
 					<p>
-						This is a Python utility library that I've developed and improved upon
-						while using it in many of my Python projects that contain a ton of configuration.
-						This library provides two classes, Parameterized and ParameterizedInterface,
-						that can be extended so that the attributes of a given Python class can
-						be shared and updated using dictionaries.
+						This is a Python configuration utility library that I've developed to
+						make the parameterers of Python classes shareable and updateable using dictionaries.
 						It also makes saving/loading objects to/from json quite simple.
-
 						<br>
 						<br>
-						Not only is this library very useful in certain projects;
-						it has also been a great learning experience for me.
-						I used this project to learn unit testing and Github workflows for Python.
-						If you check out the Github repo,
-						you can see I've created a pretty slick workflow
-						that checks formatting, lints, tests, reports the coverage to a github badge,
-						and also updates the release version badge as well.
-
+						In addition to using this project in Python projects containing shareable configurations,
+						I have used this project to learn unit testing and Github workflows for Python.
+						The Github repo contains a slick workflow
+						that formats, lints, and tests the code, and creates test coverage and release version badges.
 						<br>
 						<br>
-						Currently I'm using this project in my MINDecoding project (which is currently private).
+						Currently I'm using this project in the MINDecoding project.
 					</p>
-				</div>
-				<div class="flexColumn extraDocs">
-					<h4>Extras:</h4>
-					<ul>
-						<li><a class="link" href="https://github.com/DamonGeorge/Parameterized" target="_blank">
-								Pyrameterized Repo
-							</a>
-						</li>
-					</ul>
+					<div class="flexColumn extraDocs">
+						<h4>Extras:</h4>
+						<ul>
+							<li><a class="link" href="https://github.com/DamonGeorge/Parameterized" target="_blank">
+									Pyrameterized Repo
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -227,7 +216,7 @@
 					<p>
 						A fellow OSU mechanical engineering student and I
 						are developing a 3D-printed robotic hand for use in my
-						research in ML-based prosthetic arms.
+						research on ML-based control of prosthetic arms.
 
 						For this project, I created a simple C++ PID Controller for the Teensy microcontroller
 						in the 5 fingered robotic hand, using the Arduino IDE for programming.
@@ -239,15 +228,6 @@
 						with version 2.0 featuring a wrist and/or forearm attachment for intact subjects.
 					</p>
 				</div>
-				<!-- <div class="flexColumn extraDocs">
-					<h4>Extras:</h4>
-					<ul>
-						<li><a class="link" href="https://github.com/DamonGeorge/Parameterized" target="_blank">
-								Pyrameterized Repo
-							</a>
-						</li>
-					</ul>
-				</div> -->
 			</div>
 		</div>
 
@@ -267,36 +247,52 @@
 				</div>
 			</div>
 			<div class="projectContent">
-				<div class="descriptionContainer">
-					<p>
-						For my graduate Computational Theory project, fellow student <a class="link"
-							href="https://jacobkrantz.github.io/" target="_blank">Jacob Krantz</a> and I
-						created a Dataset Transformer that culls episodes from <a class="link"
-							href="https://embodied-ai.org/" target="_blank">embodied navigation</a> datasets.
-						More specifically, we developed a Python tool that uses SAT Solvers to find the largest subset
-						of
-						episodes in existing embodied navigation datasets such that an agent can inter-navigate between
-						them all.
-						<br /><br />
-						I derived the reduction to the minimum vertex cover problem (MVC) and the maximum independent
-						set problem (MIS),
-						and derived the MAX-SAT equations necessary for solving these problems with off-the-shelf SAT
-						Solvers.
-						This SAT-based method proved to be even more efficient than standard MVC solvers in common
-						Python libraries, as we show in our final paper.
-					</p>
+				<div class="flex imageAndDescriptionContainer">
+					<div class="descriptionContainer">
+						<p>
+							For my graduate Computational Theory project, fellow student <a class="link"
+								href="https://jacobkrantz.github.io/" target="_blank">Jacob Krantz</a> and I
+							created a Dataset Transformer that culls episodes from <a class="link"
+								href="https://embodied-ai.org/" target="_blank">embodied navigation</a> datasets.
+							More specifically, we developed a Python tool that uses SAT Solvers to find the largest
+							subset
+							of
+							episodes in existing embodied navigation datasets such that an agent can inter-navigate
+							between
+							them all.
+							<br /><br />
+							I derived the reduction to the minimum vertex cover problem (MVC) and the maximum
+							independent
+							set problem (MIS),
+							and derived the MAX-SAT equations necessary for solving these problems with off-the-shelf
+							SAT
+							Solvers.
+							This SAT-based method proved to be even more efficient than standard MVC solvers in common
+							Python libraries, as we show in our final paper.
+						</p>
+						<div class="flexColumn extraDocs">
+							<h4>Extras:</h4>
+							<ul>
+								<li><a class="link" href="docs/Final_Paper_CS517.pdf" target="_blank">
+										Final Paper
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="flex imageContainer singleImage">
+						<img src="images/VLN_comparison_snapshot.png" />
+						<span class="imageDescription">Habitat Simulator from Jacob's
+							<a class="link" target="_blank" href="https://jacobkrantz.github.io/vlnce/"> VLN-CE Paper
+							</a></span>
+					</div>
 				</div>
-				<div class="flexColumn extraDocs">
-					<h4>Extras:</h4>
-					<ul>
-						<li><a class="link" href="docs/Final_Paper_CS517.pdf" target="_blank">
-								Final Paper
-							</a>
-						</li>
-					</ul>
-				</div>
+
 			</div>
 		</div>
+
+
+
 
 		<div class="flexColumn projectContainer">
 			<div class="projectHeader">
@@ -311,13 +307,13 @@
 						<li>C/C++</li>
 						<li>Signal Processing</li>
 					</ul>
-					<span class="projectType">Fun Project</span>
+					<span class="projectType">For Fun</span>
 				</div>
 			</div>
 			<div class="projectContent">
 				<div class="descriptionContainer">
 					<p>
-						As a fun Fun Project based upon my brother <a class="link"
+						As a fun project based upon my brother <a class="link"
 							href="https://www.thechristiangeorge.com/" target="_blank">Christian</a>'s work,
 						I created the Python3 AudioStretch program that matches the beats of a stored audio loop to
 						a
@@ -325,47 +321,79 @@
 
 						<br>
 						<br>
-						To do this, I used python-sounddevice for audio I/O and py-soundfile for reading/writing
-						audio
-						files.
-						And then I wrote my own Cython wrappers for c library rubberband for audio stretching and
-						the
-						BTrack library for real time beat detection.
-						This was a great learning experience in Cython for me!
+						To do this, I used standard Python libraries for audio I/O, and then wrote my own Cython
+						wrappers for the popular C library <i>rubberband</i> for audio stretching and
+						the <i>BTrack</i> library for real time beat detection.
 						I also developed my own custom Python CircularBuffer class to store live audio buffers
 						efficiently.
-						And finally I wrote the master program that parses audio files to create loops,
+						And finally I developed the master program that parses audio files to create loops,
 						and then stretches the loop to match the beats of either a live input or an mp3 input.
-
+						This was a great learning experience for Cython and real time signal processing in Python.
 						<br>
 						<br>
-						Although this is a fairly complicated signal processing problem,
-						the final program worked well in matching beats, even during tempo changes.
+						Although beat detection and tempo matching is a difficult signal processing problem,
+						the final program works well in matching beats, even during tempo changes.
 						All that's missing are some more detailed safety checks to ensure that the beat tracker
-						doesn't
-						skip beats.
-
+						doesn't skip beats.
 					</p>
-				</div>
-				<div class="flexColumn extraDocs">
-					<h4>Extras:</h4>
-					<ul>
-						<li><a class="link" href="https://github.com/DamonGeorge/AudioStretch" target="_blank">
-								AudioStretch Repo
-							</a>
-						</li>
-						<li><a class="link" href="https://github.com/DamonGeorge/Python-Rubberband" target="_blank">
-								Python-Rubberband repo
-							</a>
-						</li>
-						<li><a class="link" href="https://github.com/DamonGeorge/Python-BTrack" target="_blank">
-								Python-BTrack repo
-							</a>
-						</li>
-					</ul>
+					<div class="flexColumn extraDocs">
+						<h4>Extras:</h4>
+						<ul>
+							<li><a class="link" href="https://github.com/DamonGeorge/AudioStretch" target="_blank">
+									AudioStretch Repo
+								</a>
+							</li>
+							<li><a class="link" href="https://github.com/DamonGeorge/Python-Rubberband" target="_blank">
+									Python-Rubberband Repo
+								</a>
+							</li>
+							<li><a class="link" href="https://github.com/DamonGeorge/Python-BTrack" target="_blank">
+									Python-BTrack Repo
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
+
+
+
+		<div class="flexColumn projectContainer">
+			<div class="projectHeader">
+				<div>
+					<h2>Mt Bachelor Parking</h2>
+					<span class="projectDate">2020</span>
+				</div>
+				<div>
+					<ul>
+						<li>Python</li>
+						<li>REST</li>
+						<li>Networking</li>
+					</ul>
+					<span class="projectType">For Fun</span>
+				</div>
+			</div>
+			<div class="projectContent">
+				<div class="descriptionContainer">
+					<p>
+						As an avid alpine skier, the past year of covid made access to skiing more difficult,
+						with Mt. Bachelor offering only limited parking reservations.
+						Therefore, I developed this simple Python Flask http server,
+						to poll Mt. Bachelor's parking system through Parkwhiz's REST API.
+						<br /><br />
+						This simple web server allows the user to enter requested parking dates,
+						and then once the system finds a parking reservations,
+						it texts the user's cell phone using Twilio.
+						The Twilio texting interface also lets the user add, accept or cancel
+						parking reservations via text.
+						This was a great side project for learning about simple web servers,
+						Twilio's texting interface, and integrating with standard REST APIs.
+					</p>
+				</div>
+			</div>
+		</div>
+
 
 
 		<div class="flexColumn projectContainer">
@@ -380,7 +408,7 @@
 						<li>C/C++</li>
 						<li>Embedded</li>
 						<li>Unit Testing</li>
-						<li>Free RTOS</li>
+						<li>RTOS</li>
 					</ul>
 					<span class="projectType">Undergrad</span>
 				</div>
@@ -389,18 +417,18 @@
 				<div class="flex imageAndDescriptionContainer">
 					<div class="descriptionContainer">
 						<p>
-							For my year long senior design project at Gonzaga,
+							For my year-long senior design project at Gonzaga,
 							two fellow engineers and I designed, developed, and built the Smart Helmet.
 							The Smart Helmet is a helmet for cyclists that uses vehicle-to-everything
-							communication to communicated with nearby vehicles and provide collision warnings to the
-							biker.
+							communication (V2X) to communicate with nearby vehicles and provide collision warnings to
+							the biker.
 							<br>
 							<br>
 							For this project, my two teammates and I built the hardware for the helmet, including 3
 							revision of PCBs,
-							designed and wrote the core firmware in C on our ultra low power Apollo 2 Blue
+							designed and wrote the core firmware in C on the ultra low power Apollo 2 Blue
 							microcontroller,
-							and also wrote a Java desktop Traffic Simulator which provides the user with an advanced GUI
+							and also wrote a Java desktop Traffic Simulator which provides an advanced GUI
 							for generating and driving cars, which we used for testing the Smart Helmet. I focused on
 							the
 							core firmware, which uses FreeRTOS as its real time operating system. I designed and wrote
@@ -411,44 +439,62 @@
 							<br>
 							<br>
 						</p>
+						<div class="flexAlignCenter">
+							<a class="link clickable"
+								onclick="$('#abstract, #dropDownIcon, #dropUpIcon').toggle();">Abstract:</a>
+							<i id="dropDownIcon" class="material-icons">arrow_drop_down</i>
+							<i id="dropUpIcon" class="material-icons hidden">arrow_drop_up</i>
+						</div>
+						<p id="abstract" class="hidden standardPadding">
+							As emerging smart vehicle technologies enter our roadways, Vehicle-to-Everything (V2X)
+							communication
+							will become essential for improving the safety of road users. However, as such technological
+							advances are made in cars and trucks, which have ample power and space for advanced
+							electronics,
+							cyclists can easily be left behind. In this study, we attempt to incorporate cyclists in the
+							growing
+							V2X ecosystem by developing a prototype 'Smart Helmet'. This product broadcasts positional
+							and
+							inertial data about the cyclist to nearby cars using the predefined Dedicated Short Range
+							Communications (DSRC) standard, and receives similar data from nearby cars in order to
+							provide the
+							cyclist with haptic and audible collision warnings from the helmet. We attempt to construct
+							a custom
+							printed circuit board for the system so that it can be easily incorporated into a bike
+							helmet as a
+							consumer product. Furthermore, we develop a traffic simulator program that can be easily
+							used to
+							test traffic scenarios with the product. Simulation results show that even with the limited
+							processing power available, this product can adequately detect harmful collisions. Limited
+							usability
+							testing shows that the haptic and audible warnings could function well in a consumer
+							product.
+							However, the technologies involved, such as the V2X communication and advanced GPS, are
+							still
+							immature, and creating effective yet unobtrusive audio warnings will require much testing.
+							Overall,
+							this study proves that this V2X system could greatly increase cyclist safety and possibly
+							become a
+							common feature on roadways in the next decade as smart vehicle technologies continue to
+							mature.
+						</p>
+
+						<div class="flexColumn extraDocs">
+							<h4>Extras:</h4>
+							<ul>
+								<li><a class="link" href="docs/Design_Expo_Poster_ENSC02.pdf" target="_blank">Poster</a>
+								</li>
+								<li><a class="link" href="docs/Final_Report_ENSC02.pdf" target="_blank">Final Report</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 					<div class="flexColumn imageContainer singleImage">
 						<img src="images/senior_design/collage.jpg" />
+						<span class="imageDescription">From left to right, top to bottom:
+							The Smart Helmet, the perfboard prototype, the PCB design, the Traffic Simulator</span>
+
 					</div>
-				</div>
-
-				<div class="flexAlignCenter">
-					<a class="link clickable"
-						onclick="$('#abstract, #dropDownIcon, #dropUpIcon').toggle();">Abstract:</a>
-					<i id="dropDownIcon" class="material-icons">arrow_drop_down</i>
-					<i id="dropUpIcon" class="material-icons hidden">arrow_drop_up</i>
-				</div>
-				<p id="abstract" class="hidden standardPadding">
-					As emerging smart vehicle technologies enter our roadways, Vehicle-to-Everything (V2X) communication
-					will become essential for improving the safety of road users. However, as such technological
-					advances are made in cars and trucks, which have ample power and space for advanced electronics,
-					cyclists can easily be left behind. In this study, we attempt to incorporate cyclists in the growing
-					V2X ecosystem by developing a prototype 'Smart Helmet'. This product broadcasts positional and
-					inertial data about the cyclist to nearby cars using the predefined Dedicated Short Range
-					Communications (DSRC) standard, and receives similar data from nearby cars in order to provide the
-					cyclist with haptic and audible collision warnings from the helmet. We attempt to construct a custom
-					printed circuit board for the system so that it can be easily incorporated into a bike helmet as a
-					consumer product. Furthermore, we develop a traffic simulator program that can be easily used to
-					test traffic scenarios with the product. Simulation results show that even with the limited
-					processing power available, this product can adequately detect harmful collisions. Limited usability
-					testing shows that the haptic and audible warnings could function well in a consumer product.
-					However, the technologies involved, such as the V2X communication and advanced GPS, are still
-					immature, and creating effective yet unobtrusive audio warnings will require much testing. Overall,
-					this study proves that this V2X system could greatly increase cyclist safety and possibly become a
-					common feature on roadways in the next decade as smart vehicle technologies continue to mature.
-				</p>
-
-				<div class="flexColumn extraDocs">
-					<h4>Extras:</h4>
-					<ul>
-						<li><a class="link" href="docs/Design_Expo_Poster_ENSC02.pdf" target="_blank">Poster</a></li>
-						<li><a class="link" href="docs/Final_Report_ENSC02.pdf" target="_blank">Final Report</a></li>
-					</ul>
 				</div>
 			</div>
 		</div>
@@ -465,9 +511,11 @@
 						<li>Java</li>
 						<li>MySQL</li>
 						<li>HTML, CSS & JS</li>
-						<li>Spring</li>
-						<li>Hibernate</li>
-						<li>Thymeleaf</li>
+						<li>Spring Framework</li>
+						<li>HTML Templating</li>
+						<li>ORM</li>
+						<li>Agile</li>
+						<li>REST</li>
 					</ul>
 					<span class="projectType">Industry</span>
 				</div>
@@ -496,9 +544,8 @@
 						and flexible form validation.
 						<br /><br />
 						This version 2.0 of Skyware Inventory was just released earlier this spring!
-						It is gorgeous, especially the new mobile version (which I designed and programmed almost
+						It is gorgeous, especially the new mobile version (which I created almost
 						completely by myself).
-
 					</p>
 				</div>
 			</div>
@@ -513,7 +560,7 @@
 				<div>
 					<ul>
 						<li>Java</li>
-						<li>Search Algorithms</li>
+						<li>Graph Search</li>
 						<li>Swing</li>
 					</ul>
 					<span class="projectType">Undergrad</span>
@@ -524,7 +571,7 @@
 					<div class="descriptionContainer">
 						<p>
 							During my last semester at Gonzaga as an undergraduate,
-							my partner and I built an Othello playing AI for my Artificial Intelligence elective.
+							my teammate and I built an Othello playing AI for my Artificial Intelligence elective.
 							I wrote this in Java, using Swing for the simple interface.
 							The program allows the user to play against the AI.
 							At the end of the class, all the teams competed in a tournament
@@ -535,28 +582,30 @@
 							Each move by the AI was required to complete within ten seconds, allowing this AI
 							to search about 8-10 steps ahead in the game. The search uses an advanced heuristic
 							value function that uses 8 different characteristics of the board to determine the
-							value of the board. These characteristics include the score, the number of moves available,
+							value of the board's configuration. These characteristics include the score, the number of
+							moves available,
 							the number of corners taken or available, and the number of stable and unstable tokens.
 							The AI also uses Zobrist Hashing to store all calculated heuristics in a hash table
-							to increase the efficiency of the program.
+							to increase the efficiency of the search.
 						</p>
+						<div class="flexColumn extraDocs">
+							<h4>Extras:</h4>
+							<ul>
+								<li><a class="link" href="docs/AI_Final_Project_Summary.pdf" target="_blank">Final
+										Report</a>
+								</li>
+								<li><a class="link" href="https://github.com/DamonGeorge/AI-CPSC427" target="_blank">
+										Github Repo</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 					<div class="flex imageContainer singleImage">
 						<img src="images/othello/othello.jpeg" />
+						<span class="imageDescription">The Othello Swing UI</span>
 					</div>
 				</div>
 
-
-				<div class="flexColumn extraDocs">
-					<h4>Extras:</h4>
-					<ul>
-						<li><a class="link" href="docs/AI_Final_Project_Summary.pdf" target="_blank">Final Report</a>
-						</li>
-						<li><a class="link" href="https://github.com/DamonGeorge/AI-CPSC427" target="_blank">
-								Github Repo</a>
-						</li>
-					</ul>
-				</div>
 			</div>
 		</div>
 
@@ -596,20 +645,22 @@
 							but it was definitely worth it when we were able to show off our working design to the
 							class.
 						</p>
+						<div class="flexColumn extraDocs">
+							<h4>Extras:</h4>
+							<ul>
+								<li><a class="link" href="docs/Final_Lab_Digital_Design.pdf" target="_blank">Final
+										Report</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 					<div class="flex imageContainer singleImage">
 						<img src="images/altera_de2-115_fpga_board.jpeg" />
+						<span class="imageDescription">The Altera FPGA development board</span>
 					</div>
 				</div>
 
-				<div class="flexColumn extraDocs">
-					<h4>Extras:</h4>
 
-					<ul>
-						<li><a class="link" href="docs/Final_Lab_Digital_Design.pdf" target="_blank">Final Report</a>
-						</li>
-					</ul>
-				</div>
 			</div>
 		</div>
 
@@ -623,8 +674,9 @@
 				<div>
 					<ul>
 						<li>Java</li>
-						<li>Apache Hadoop</li>
+						<li>Hadoop</li>
 						<li>AWS</li>
+						<li>Distributed Computing</li>
 					</ul>
 					<span class="projectType">Undergrad</span>
 				</div>
@@ -641,13 +693,13 @@
 						different amounts of input files, and using both the Hadoop file system and the Amazon S3 file
 						system.
 					</p>
-				</div>
-				<div class="flexColumn extraDocs">
-					<h4>Extras:</h4>
-					<ul>
-						<li><a class="link" href="docs/Association_Rule_Mining_Final_Project_Report.pdf"
-								target="_blank">Final Report</a></li>
-					</ul>
+					<div class="flexColumn extraDocs">
+						<h4>Extras:</h4>
+						<ul>
+							<li><a class="link" href="docs/Association_Rule_Mining_Final_Project_Report.pdf"
+									target="_blank">Final Report</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -661,7 +713,7 @@
 				<div>
 					<ul>
 						<li>Java</li>
-						<li>Spring Shell Framework</li>
+						<li>Spring Framework</li>
 						<li>MySQL</li>
 					</ul>
 					<span class="projectType">Undergrad</span>
@@ -680,14 +732,14 @@
 						such as joins, groups, aggregates, and subqueries. This program was written
 						using the Spring Shell, which provides a very nice CLI.
 					</p>
-				</div>
-				<div class="flexColumn extraDocs">
-					<h4>Extras:</h4>
-					<ul>
-						<li><a class="link" href="https://github.com/DamonGeorge/Zoolander" target="_blank">
-								Github Repo</a>
-						</li>
-					</ul>
+					<div class="flexColumn extraDocs">
+						<h4>Extras:</h4>
+						<ul>
+							<li><a class="link" href="https://github.com/DamonGeorge/Zoolander" target="_blank">
+									Github Repo</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -407,6 +407,7 @@ h3 {
 .newsContainer .newsTable img {
   max-width: 25vw;
   min-width: 250px;
+  align-items: flex-end;
 }
 .newsContainer .newsTable img {
   max-height: 40vh;
@@ -483,6 +484,8 @@ h3 {
   padding-bottom: 0.5rem;
   max-width: 600px;
   flex: 1;
+  flex-direction: column;
+  align-items: flex-end;
 }
 .projectContainer .projectContent .imageContainer.singleImage img {
   width: 100%;
@@ -490,6 +493,9 @@ h3 {
 .projectContainer .projectContent .imageContainer:not(.singleImage) img {
   max-height: 180px;
   border: 1px solid #ffffff;
+}
+.projectContainer .projectContent .imageContainer .imageDescription {
+  font-style: italic;
 }
 .projectContainer .extraDocs {
   padding-top: 1rem;
