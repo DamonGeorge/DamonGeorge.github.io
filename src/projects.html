@@ -88,7 +88,6 @@
 						<li>PyTorch</li>
 						<li>Tensorflow</li>
 						<li>CUDA</li>
-						<li>SciPy</li>
 						<li>Signal Processing</li>
 					</ul>
 					<span class="projectType">Grad School</span>
@@ -399,6 +398,47 @@
 			</div>
 		</div>
 
+		<div class="flexColumn projectContainer">
+			<div class="projectHeader">
+				<div>
+					<h2>Crossword Recognition</h2>
+					<span class="projectDate">2020</span>
+				</div>
+				<div>
+					<ul>
+						<li>Python</li>
+						<li>Computer Vision</li>
+						<li title="Machine Learning, Deep Learning, and Artificial Intelligence">ML, DL, AI</li>
+					</ul>
+					<span class="projectType">For Fun</span>
+				</div>
+			</div>
+			<div class="projectContent">
+				<div class="flex imageAndDescriptionContainer">
+					<div class="descriptionContainer">
+						<p>
+							For this fun project, I used my computer vision skills to create a crossword
+							recognizer.
+							This recognizer uses standard computer vision techniques, such as image filtering, contour
+							and keypoint detection, and perspective transformations, to first straighten and crop the
+							crossword.
+							Then the individual cells of the crossword are detected using similar techniques.
+							Lastly, I used a pretrained deep network for optical character recognition,
+							i.e. to detect all the hints for the crossword.
+							All of this was implemented in Python using OpenCV.
+						</p>
+					</div>
+					<div class="flex imageContainer singleImage">
+						<img src="images/crossword/full_cross.jpeg" />
+						<span class="imageDescription">From left to right: original crossword, detected text, cropped
+							crossword, and the identified crossword shape.
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
 
 
 		<div class="flexColumn projectContainer">
@@ -412,6 +452,8 @@
 						<li>Python</li>
 						<li title="Machine Learning, Deep Learning, and Artificial Intelligence">ML, DL, AI</li>
 						<li>Computer Vision</li>
+						<li>PyTorch</li>
+						<li>CUDA</li>
 					</ul>
 					<span class="projectType">Grad School</span>
 				</div>
@@ -448,6 +490,62 @@
 						<span class="imageDescription">A qualitative example of the reconstruction improvement.
 							From left to right, top to bottom: sim reconstruction, autoencoder, our improvement,
 							original image.
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="flexColumn projectContainer">
+			<div class="projectHeader">
+				<div>
+					<h2>Superlative Learning</h2>
+					<span class="projectDate">2020</span>
+				</div>
+				<div>
+					<ul>
+						<li>Python</li>
+						<li title="Machine Learning, Deep Learning, and Artificial Intelligence">ML, DL, AI</li>
+						<li>Computer Vision</li>
+						<li>PyTorch</li>
+						<li>CUDA</li>
+					</ul>
+					<span class="projectType">Grad School</span>
+				</div>
+			</div>
+			<div class="projectContent">
+				<div class="flex imageAndDescriptionContainer">
+					<div class="descriptionContainer">
+						<p>
+							Superlative reasoning, which requires identifying an instance from a set with the highest
+							or lowest degree of some attribute, is often overlooked in the analysis of deep networks,
+							despite the increased complexity of superlative tasks as compared to non-superlative tasks.
+							We attempt to determine whether deep networks can learn superlative tasks and whether the
+							increased complexity results in decreased performance. We first test a simple visual
+							superlative task by teaching a CNN to identify the longest lines or largest polygons in an
+							image. Our simple CNN learns this task easily. We further extend the problem to semantic
+							goal navigation (SGN), where an agent must navigate an environment following language
+							instructions. We extend the gym-miniworld virtual environment to support language grounding
+							and superlative instructions, and train a Gated-Attention network using PPO on both
+							superlative and non-superlative instructions. Unfortunately, results indicate that our
+							agent was unable to learn SGN in this environment, eliminating our ability to analyze the
+							performance of the network on superlative tasks.
+						</p>
+						<div class="flexColumn extraDocs">
+							<h4>Extras:</h4>
+							<ul>
+								<li><a class="link" href="docs/Deep_Learning_Final_Paper.pdf" target="_blank">
+										Final Paper
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="flex imageContainer singleImage">
+						<img src="images/superlative_gym_env.jpg" />
+						<span class="imageDescription">An example scene from our custom gym-miniworld environment,
+							for which an example instruction could be "Go to the tallest green object."
 						</span>
 					</div>
 				</div>
