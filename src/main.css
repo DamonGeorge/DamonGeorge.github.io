@@ -427,7 +427,7 @@ h3 {
 }
 .projectContainer {
   border-top: 4px solid #07a0c3;
-  margin: 0.5rem 0;
+  margin: 1em 0;
 }
 .projectContainer p {
   max-width: 800px;
@@ -592,7 +592,7 @@ h3 {
 .topProjectsContainer {
   padding: 0.5em 1em;
   border-radius: 5px;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   border: 2px solid #36AB59;
 }
 .topProjectsContainer h2 {
@@ -615,5 +615,6 @@ h3 {
 @media only screen and (max-width: 768px) {
   .topProjectsContainer {
     padding: 0.5em;
+    margin-bottom: 1em;
   }
 }
