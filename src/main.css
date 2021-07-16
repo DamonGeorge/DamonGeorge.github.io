@@ -496,6 +496,7 @@ h3 {
 }
 .projectContainer .projectContent .imageContainer .imageDescription {
   font-style: italic;
+  text-align: right;
 }
 .projectContainer .extraDocs {
   padding-top: 1rem;
