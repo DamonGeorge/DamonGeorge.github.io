@@ -68,18 +68,23 @@
 			</div>
 
 		</div>
-
+		<div class="topProjectsContainer">
+			<h2>Top Projects</h2>
+			<a href="#MINDecoders">MINDecoding</a>
+			<a href="#SmartHelmet">Smart Helmet</a>
+			<a href="#Skyware">Skyware Inventory</a>
+		</div>
 
 		<div class="flexColumn projectContainer">
 			<div class="projectHeader">
 				<div>
-					<h2>MINDecoding</h2>
+					<h2 id="MINDecoders">MINDecoding</h2>
 					<span class="projectDate">2019 - Present</span>
 				</div>
 				<div>
 					<ul>
 						<li>Python</li>
-						<li>Machine Learning</li>
+						<li title="Machine Learning, Deep Learning, and Artificial Intelligence">ML, DL, AI</li>
 						<li>PyTorch</li>
 						<li>Tensorflow</li>
 						<li>CUDA</li>
@@ -162,7 +167,7 @@
 					<ul>
 						<li>Python</li>
 						<li>Unit Testing</li>
-						<li>Continous Integration</li>
+						<li title="Continous Integration">CI</li>
 					</ul>
 					<span class="projectType">Grad School</span>
 				</div>
@@ -240,7 +245,7 @@
 				<div>
 					<ul>
 						<li>Python</li>
-						<li>SAT</li>
+						<li title="Boolean Satisfiability">SAT</li>
 						<li>Embodied AI</li>
 					</ul>
 					<span class="projectType">Grad School</span>
@@ -399,7 +404,61 @@
 		<div class="flexColumn projectContainer">
 			<div class="projectHeader">
 				<div>
-					<h2>The Smart Helmet</h2>
+					<h2>Scene Reconstruction in 3D Sims</h2>
+					<span class="projectDate">2020</span>
+				</div>
+				<div>
+					<ul>
+						<li>Python</li>
+						<li title="Machine Learning, Deep Learning, and Artificial Intelligence">ML, DL, AI</li>
+						<li>Computer Vision</li>
+					</ul>
+					<span class="projectType">Grad School</span>
+				</div>
+			</div>
+			<div class="projectContent">
+				<div class="flex imageAndDescriptionContainer">
+					<div class="descriptionContainer">
+						<p>
+							AI agents that can interact with physical environments are often trained in perceptually
+							rich simulations before being deployed into the real world. To mimic affordances of physical
+							environments such as unconstrained movement and vision, simulated 3D scenes can be
+							reconstructed from real-world scenes using sparsely- captured high-resolution RGBD images.
+							In this work, we analyze the discrepancy of visual fidelity between camera captures in
+							reconstructed scenes and raw RGBD images of the Matterport3D dataset, home to many embodied
+							AI tasks such as vision-and-language navigation, PointGoal navigation, and embodied question
+							answering. We show that a classifier can be trained to discriminate between reconstructed
+							scene viewpoints and raw RGBD images. Further, we rank scenes by reconstruction quality
+							using a keypoint matching algorithm. Finally, we apply a domain adaptation method,
+							“Goggles”, to improve the visual quality of agent perception used previously on the Gibson
+							dataset.
+						</p>
+						<div class="flexColumn extraDocs">
+							<h4>Extras:</h4>
+							<ul>
+								<li><a class="link" href="docs/CV1_Final_Project.pdf" target="_blank">
+										Final Paper
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="flex imageContainer singleImage">
+						<img src="images/scene_reconstruction_rect.jpg" />
+						<span class="imageDescription">A qualitative example the reconstruction improvement.
+							From left to right, top to bottom: sim reconstruction, autoencoder, our improvement,
+							original image.
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="flexColumn projectContainer">
+			<div class="projectHeader">
+				<div>
+					<h2 id="SmartHelmet">The Smart Helmet</h2>
 					<span class="projectDate">2018-2019</span>
 				</div>
 				<div>
@@ -408,7 +467,7 @@
 						<li>C/C++</li>
 						<li>Embedded</li>
 						<li>Unit Testing</li>
-						<li>RTOS</li>
+						<li title="Real Time Operation Systems">RTOS</li>
 					</ul>
 					<span class="projectType">Undergrad</span>
 				</div>
@@ -502,7 +561,7 @@
 		<div class="flexColumn projectContainer">
 			<div class="projectHeader">
 				<div>
-					<h2>Skyware Inventory 2</h2>
+					<h2 id="Skyware">Skyware Inventory 2</h2>
 					<span class="projectDate">Summers 2015-2019</span>
 				</div>
 				<div>
@@ -513,7 +572,7 @@
 						<li>HTML, CSS & JS</li>
 						<li>Spring Framework</li>
 						<li>HTML Templating</li>
-						<li>ORM</li>
+						<li title="Object Relational Mapper">ORM</li>
 						<li>Agile</li>
 						<li>REST</li>
 					</ul>
@@ -617,8 +676,8 @@
 				</div>
 				<div>
 					<ul>
-						<li>VHDL</li>
-						<li>FPGA</li>
+						<li title="VHSIC Hardware Description Language">VHDL</li>
+						<li title="Field Programmable Gate Arrays">FPGA</li>
 						<li>Networking</li>
 					</ul>
 					<span class="projectType">Undergrad</span>
@@ -675,7 +734,7 @@
 					<ul>
 						<li>Java</li>
 						<li>Hadoop</li>
-						<li>AWS</li>
+						<li title="Amazon Web Services">AWS</li>
 						<li>Distributed Computing</li>
 					</ul>
 					<span class="projectType">Undergrad</span>

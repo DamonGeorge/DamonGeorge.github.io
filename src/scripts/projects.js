@@ -10,6 +10,7 @@ function initFiltering() {
     var typesMapping = {};
     var activeTags = [];
     var activeTypes = [];
+    var tagsTitles = {};
 
     // elements
     var projects = $(".projectContainer");
@@ -39,6 +40,11 @@ function initFiltering() {
             } else {
                 tagsMapping[tag] = [i];
             }
+            var title = $(tagEl).attr("title");
+            if (typeof title !== typeof undefined && title !== false) {
+                // tag has title
+                tagsTitles[tag] = title;
+            }
         })
         //type
         var type = $(el).find(".projectType")[0].textContent;
@@ -53,8 +59,14 @@ function initFiltering() {
     var validTags = Object.getOwnPropertyNames(tagsMapping);
     validTags.sort();
     validTags.forEach(function (t) {
-        tagsList.append("<li>" + t + "<i class='material-icons'>close</i></li>");
-        extraTagsList.append("<li class='active hidden'>" + t + "<i class='material-icons'>close</i></li>");
+        if (tagsTitles.hasOwnProperty(t)) {
+            title = tagsTitles[t];
+            tagsList.append("<li title='" + title + "'>" + t + "<i class='material-icons'>close</i></li>");
+            extraTagsList.append("<li class='active hidden' title='" + title + "'>" + t + "<i class='material-icons'>close</i></li>");
+        } else {
+            tagsList.append("<li>" + t + "<i class='material-icons'>close</i></li>");
+            extraTagsList.append("<li class='active hidden'>" + t + "<i class='material-icons'>close</i></li>");
+        }
     });
 
     var validTypes = Object.getOwnPropertyNames(typesMapping);

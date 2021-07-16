@@ -587,3 +587,24 @@ h3 {
     padding: 0.5em;
   }
 }
+.topProjectsContainer {
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  margin-bottom: 1em;
+  border: 2px solid #36AB59;
+}
+.topProjectsContainer h2 {
+  color: #36AB59;
+}
+.topProjectsContainer a {
+  cursor: pointer;
+  margin: 1px;
+}
+.topProjectsContainer a:hover {
+  border-radius: 20px;
+  background: #cdefd7;
+}
+.topProjectsContainer a:not(:last-child):after {
+  content: "\2022";
+  padding-left: 0.5em;
+}

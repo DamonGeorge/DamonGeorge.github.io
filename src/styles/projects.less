@@ -199,3 +199,29 @@
     }
     
 }
+
+
+.topProjectsContainer {
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    border: 2px solid @clr-theme-highlight-dark;
+
+    h2 {
+        color: @clr-theme-highlight-dark;
+    }
+
+    a {
+        cursor: pointer;
+        margin: 1px;
+
+        &:hover{
+            border-radius: 20px;
+            background: @clr-theme-highlight;
+        }
+        &:not(:last-child):after{
+            content: "\2022";
+            padding-left: 0.5em;
+        }
+    }
+}
