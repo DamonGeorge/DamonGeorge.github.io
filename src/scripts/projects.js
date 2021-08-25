@@ -79,6 +79,17 @@ function initFiltering() {
     // lists of all the jquery list elements for the tags
     var tagsListItems = tagsList.children("li");
     var extraTagsListItems = extraTagsList.children("li");
+    var numTags = tagsListItems.length;
+
+    //the shor more link
+    var showMoreLocation = Math.floor(numTags / 3);
+    var showShowMoreLink = tagsContainer.height() / $(window).height() > 0.3;
+    $(tagsListItems[showMoreLocation]).after("<a id='showMoreTagsLink' class='link' style='padding-left:0.5em;display:none;' >Show More...</a>");
+    var showMoreTagsLink = tagsList.children("#showMoreTagsLink");
+    showMoreTagsLink.click(function () {
+        removeShowMore();
+        showShowMoreLink = false;
+    });
 
     // list of all list elements for the types
     var typesListItems = typesList.children("li");
@@ -137,8 +148,32 @@ function initFiltering() {
         filterTags("");
     });
 
+    var addShowMore = function () {
+        // insert Show More button halfway through list
+        if (showShowMoreLink) {
+            showMoreTagsLink.show();
+            tagsList.children("li").splice(showMoreLocation + 1).forEach(function (el) {
+                $(el).hide();
+            })
+        }
+    }
+
+    var removeShowMore = function () {
+        if (showShowMoreLink) {
+            tagsList.children("li").splice(showMoreLocation + 1).forEach(function (el) {
+                $(el).show();
+            })
+            showMoreTagsLink.hide();
+        }
+    }
+
+    addShowMore();
+
 
     var filterTags = function (search) {
+        if (search) {
+            removeShowMore();
+        }
         var extra = false;
         var found = false;
         validTags.forEach(function (t, i) {
@@ -168,6 +203,9 @@ function initFiltering() {
             extraTagsContainer.show();
         } else {
             extraTagsContainer.hide();
+        }
+        if (!search) {
+            addShowMore();
         }
     }
 
