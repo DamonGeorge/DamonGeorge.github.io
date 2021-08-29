@@ -39,994 +39,1052 @@
 	</header>
 
 
-	<div class="mainContent scrollContainer mainContentPadding">
-		<div class="projectFilteringContainer">
-			<h2>Filter Projects by Tags</h2>
-			<div id="filteredTagsContainer">
-				<div class="flexAlignCenter" style="margin: 0.25em 0;">
-					<input type="text" id="filterSearchInput" placeholder="Search Tags" />
-					<i id="filterSearchClearIcon" class='material-icons'>close</i>
-				</div>
-				<ul>
-					<!-- auto generated here -->
-				</ul>
-				<span id="noTagsMessage" class="hidden">No tags found...</span>
-			</div>
-			<div id="extraTagsContainer" class="flexColumn">
-				<h4>Other Active Tags: </h4>
-				<ul>
-
-				</ul>
-			</div>
-		</div>
-		<div class="projectFilteringContainer">
-			<h2>Filter Projects by Type</h2>
-			<div id="filteredTypesContainer">
-				<ul>
-					<!-- auto generated here -->
-				</ul>
-			</div>
-
-		</div>
-		<div class="topProjectsContainer">
-			<h2>Top Projects</h2>
-			<a href="#MINDecoders">MINDecoding</a>
-			<a href="#SmartHelmet">Smart Helmet</a>
-			<a href="#Skyware">Skyware Inventory</a>
-		</div>
-
-		<div class="flexColumn projectContainer">
-			<div class="projectHeader">
-				<div>
-					<h2 id="MINDecoders">MINDecoding</h2>
-					<span class="projectDate">2020 - Present</span>
-				</div>
-				<div>
+	<div class="mainContent scrollContainer ">
+		<div class="mainContentPadding">
+			<div class="projectFilteringContainer">
+				<h2>Filter Projects by Tags</h2>
+				<div id="filteredTagsContainer">
+					<div class="flexAlignCenter" style="margin: 0.25em 0;">
+						<input type="text" id="filterSearchInput" placeholder="Search Tags" />
+						<i id="filterSearchClearIcon" class='material-icons'>close</i>
+					</div>
 					<ul>
-						<li>Python</li>
-						<li title="Machine Learning, Deep Learning, and Artificial Intelligence">ML, DL, AI</li>
-						<li>PyTorch</li>
-						<li>Tensorflow</li>
-						<li>CUDA</li>
-						<li>Signal Processing</li>
+						<!-- auto generated here -->
 					</ul>
-					<span class="projectType">Grad School</span>
+					<span id="noTagsMessage" class="hidden">No tags found...</span>
+				</div>
+				<div id="extraTagsContainer" class="flexColumn">
+					<h4>Other Active Tags: </h4>
+					<ul>
+
+					</ul>
 				</div>
 			</div>
-			<div class="projectContent">
-				<div class="flex imageAndDescriptionContainer">
-					<div class="descriptionContainer">
-						<p>
-							<!-- MINDecoding = Movement Intent Decoding
+			<div class="projectFilteringContainer">
+				<h2>Filter Projects by Type</h2>
+				<div id="filteredTypesContainer">
+					<ul>
+						<!-- auto generated here -->
+					</ul>
+				</div>
+
+			</div>
+			<div class="topProjectsContainer">
+				<h2>Top Projects</h2>
+				<a href="#MINDecoders">MINDecoding</a>
+				<a href="#SmartHelmet">Smart Helmet</a>
+				<a href="#Skyware">Skyware Inventory</a>
+			</div>
+
+			<div class="flexColumn projectContainer">
+				<div class="projectHeader">
+					<div>
+						<h2 id="MINDecoders">MINDecoding</h2>
+						<span class="projectDate">2020 - Present</span>
+					</div>
+					<div>
+						<ul>
+							<li>Python</li>
+							<li title="Machine Learning, Deep Learning, and Artificial Intelligence">ML, DL, AI</li>
+							<li>PyTorch</li>
+							<li>Tensorflow</li>
+							<li>CUDA</li>
+							<li>Signal Processing</li>
+						</ul>
+						<span class="projectType">Grad School</span>
+					</div>
+				</div>
+				<div class="projectContent">
+					<div class="flex imageAndDescriptionContainer">
+						<div class="descriptionContainer">
+							<p>
+								<!-- MINDecoding = Movement Intent Decoding
 							<br>
 							<br> -->
-							This project is the focus of my Master's at Oregon State University.
+								This project is the focus of my Master's at Oregon State University.
 
-							<br>
-							<br>
-							From my NSF Research Fellowship Proposal:
-							<i>
-								The objective of my research is to develop novel adaptive movement intent decoders that
-								leverage
-								(1) human movement models,
-								(2) extensive prosthetic sensor data, and
-								(3) human feedback
-								in order to learn from the user over time,
-								allowing naturalistic, fine-grained and intuitive control of prosthetic limbs.
-							</i>
+								<br>
+								<br>
+								From my NSF Research Fellowship Proposal:
+								<i>
+									The objective of my research is to develop novel adaptive movement intent decoders
+									that
+									leverage
+									(1) human movement models,
+									(2) extensive prosthetic sensor data, and
+									(3) human feedback
+									in order to learn from the user over time,
+									allowing naturalistic, fine-grained and intuitive control of prosthetic limbs.
+								</i>
 
-							<br>
-							<br>
-							This software is comprised of a library of Deep Network-based Decoders, called
-							MINDecoders,
-							and the corresponding GUI, called The MINDecoding-Interface, that provides the functionality
-							to
-							collect EMG or EEG from real subjects, train decoders with that biological data,
-							test those decoders either online with a real subject or offline with existing datasets,
-							and analyze those tests using a variety of result metrics.
+								<br>
+								<br>
+								This software is comprised of a library of Deep Network-based Decoders, called
+								MINDecoders,
+								and the corresponding GUI, called The MINDecoding-Interface, that provides the
+								functionality
+								to
+								collect EMG or EEG from real subjects, train decoders with that biological data,
+								test those decoders either online with a real subject or offline with existing datasets,
+								and analyze those tests using a variety of result metrics.
 
-							<br>
-							<br>
-							My research is focused on label estimation methods and online learning to enable the
-							semi-supervised adaptation of the deep networks within these decoders.
-							<!-- Although the code is still private since I haven't submitted my first set of related
+								<br>
+								<br>
+								My research is focused on label estimation methods and online learning to enable the
+								semi-supervised adaptation of the deep networks within these decoders.
+								<!-- Although the code is still private since I haven't submitted my first set of related
 							papers,
 							you can find the detailed (but in-progress) documentation
 							<a class="link" href="https://damongeorge.github.io/MINDecoding-Interface/"
 								target="_blank">here</a>. -->
+							</p>
+							<div class="flexColumn extraDocs">
+								<h4>Extras:</h4>
+								<ul>
+									<li><a class="link" href="https://damongeorge.github.io/MINDecoding-Interface/"
+											target="_blank">
+											MINDecoding Documentation
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="flex imageContainer singleImage">
+							<img src="images/mindecoding/GUI_and_Raw_Plots.gif" />
+							<span class="imageDescription">The MINDecoding GUI</span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="flexColumn projectContainer">
+				<div class="projectHeader">
+					<div>
+						<h2>Real-Time DTW</h2>
+						<span class="projectDate">2021</span>
+					</div>
+					<div>
+						<ul>
+							<li>Cython</li>
+							<li>Signal Processing</li>
+						</ul>
+						<span class="projectType">Grad School</span>
+					</div>
+				</div>
+				<div class="projectContent">
+					<div class="descriptionContainer">
+						<p>
+							As part of my Master's Thesis research, I derived and implemented a new variation of
+							real-time Dynamic Time Warping (DTW).
+							This algorithm builds upon the pre-existing real-time DTW algorithm called SPRING,
+							which is designed for pattern detection.
+							More specifically, this method finds subsequences in a real-time input sequence
+							that match a pre-defined template according to the DTW distance metric.
+							<br>
+							<br>
+							This novel variation incorporates an adaptive vertical scaling factor between the
+							stored template and the real-time input.
+							This allows the algorithm to detect subsequences of varying amplitudes,
+							despite using a template of a predefined amplitude.
+							I'm currently working on a publication for this algorithm.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="flexColumn projectContainer">
+				<div class="projectHeader">
+					<div>
+						<h2>Pyrameterized</h2>
+						<span class="projectDate">2021</span>
+					</div>
+					<div>
+						<ul>
+							<li>Python</li>
+							<li>Unit Testing</li>
+							<li>Continous Integration</li>
+						</ul>
+						<span class="projectType">Grad School</span>
+					</div>
+				</div>
+				<div class="projectContent">
+					<div class="descriptionContainer">
+						<p>
+							This is a Python configuration utility library that I've developed to
+							make the parameterers of Python classes shareable and updateable using dictionaries.
+							It also makes saving/loading objects to/from json quite simple.
+							<br>
+							<br>
+							In addition to using this project in Python projects containing shareable configurations,
+							I have used this project to learn unit testing and Github workflows for Python.
+							The Github repo contains a slick workflow
+							that formats, lints, and tests the code, and creates test coverage and release version
+							badges.
 						</p>
 						<div class="flexColumn extraDocs">
 							<h4>Extras:</h4>
 							<ul>
-								<li><a class="link" href="https://damongeorge.github.io/MINDecoding-Interface/"
+								<li><a class="link" href="https://github.com/DamonGeorge/Parameterized" target="_blank">
+										Pyrameterized Repo
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="flexColumn projectContainer">
+				<div class="projectHeader">
+					<div>
+						<h2>Robotic Hand</h2>
+						<span class="projectDate">2021</span>
+					</div>
+					<div>
+						<ul>
+							<li>C/C++</li>
+							<li>Arduino</li>
+							<li>Control Systems</li>
+						</ul>
+						<span class="projectType">Grad School</span>
+					</div>
+				</div>
+				<div class="projectContent">
+					<div class="descriptionContainer">
+						<p>
+							A fellow OSU mechanical engineering student and I
+							are developing a 3D-printed robotic hand for use in my
+							research on ML-based control of prosthetic arms.
+
+							For this project, I created a simple C++ PID Controller for the Teensy microcontroller
+							in the 5 fingered robotic hand, using the Arduino IDE for programming.
+
+							I also created the Serial interface that allows the MINDecoding-Interface software
+							to control this robotic hand.
+
+							We will be completing version 1.0 of the hand soon,
+							with version 2.0 featuring a wrist and/or forearm attachment for intact subjects.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="flexColumn projectContainer">
+				<div class="projectHeader">
+					<div>
+						<h2>Embodied Dataset Transformer</h2>
+						<span class="projectDate">2021</span>
+					</div>
+					<div>
+						<ul>
+							<li>Python</li>
+							<li title="Boolean Satisfiability">SAT</li>
+							<li>Embodied AI</li>
+						</ul>
+						<span class="projectType">Grad School</span>
+					</div>
+				</div>
+				<div class="projectContent">
+					<div class="flex imageAndDescriptionContainer">
+						<div class="descriptionContainer">
+							<p>
+								For my graduate Computational Theory project, fellow student <a class="link"
+									href="https://jacobkrantz.github.io/" target="_blank">Jacob Krantz</a> and I
+								created a Dataset Transformer that culls episodes from <a class="link"
+									href="https://embodied-ai.org/" target="_blank">embodied navigation</a> datasets.
+								More specifically, we developed a Python tool that uses SAT Solvers to find the largest
+								subset
+								of
+								episodes in existing embodied navigation datasets such that an agent can inter-navigate
+								between
+								them all.
+								<br /><br />
+								I derived the reduction to the minimum vertex cover problem (MVC) and the maximum
+								independent
+								set problem (MIS),
+								and derived the MAX-SAT equations necessary for solving these problems with
+								off-the-shelf
+								SAT
+								Solvers.
+								This SAT-based method proved to be even more efficient than standard MVC solvers in
+								common
+								Python libraries, as we show in our final paper.
+							</p>
+							<div class="flexColumn extraDocs">
+								<h4>Extras:</h4>
+								<ul>
+									<li><a class="link" href="docs/Final_Paper_CS517.pdf" target="_blank">
+											Final Paper
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="flex imageContainer singleImage">
+							<img src="images/VLN_comparison_snapshot.png" />
+							<span class="imageDescription">Habitat Simulator from Jacob's
+								<a class="link" target="_blank" href="https://jacobkrantz.github.io/vlnce/"> VLN-CE
+									Paper
+								</a></span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+
+
+			<div class="flexColumn projectContainer">
+				<div class="projectHeader">
+					<div>
+						<h2>Audio Stretch</h2>
+						<span class="projectDate">2020</span>
+					</div>
+					<div>
+						<ul>
+							<li>Python</li>
+							<li>Cython</li>
+							<li>C/C++</li>
+							<li>Signal Processing</li>
+						</ul>
+						<span class="projectType">For Fun</span>
+					</div>
+				</div>
+				<div class="projectContent">
+					<div class="descriptionContainer">
+						<p>
+							As a fun project based upon my brother <a class="link"
+								href="https://www.thechristiangeorge.com/" target="_blank">Christian</a>'s work,
+							I created the Python3 AudioStretch program that matches the beats of a stored audio loop to
+							a
+							live audio input.
+
+							<br>
+							<br>
+							To do this, I used standard Python libraries for audio I/O, and then wrote my own Cython
+							wrappers for the popular C library <i>rubberband</i> for audio stretching and
+							the <i>BTrack</i> library for real time beat detection.
+							I also developed my own custom Python CircularBuffer class to store live audio buffers
+							efficiently.
+							And finally I developed the master program that parses audio files to create loops,
+							and then stretches the loop to match the beats of either a live input or an mp3 input.
+							This was a great learning experience for Cython and real time signal processing in Python.
+							<br>
+							<br>
+							Although beat detection and tempo matching is a difficult signal processing problem,
+							the final program works well in matching beats, even during tempo changes.
+							All that's missing are some more detailed safety checks to ensure that the beat tracker
+							doesn't skip beats.
+						</p>
+						<div class="flexColumn extraDocs">
+							<h4>Extras:</h4>
+							<ul>
+								<li><a class="link" href="https://github.com/DamonGeorge/AudioStretch" target="_blank">
+										AudioStretch Repo
+									</a>
+								</li>
+								<li><a class="link" href="https://github.com/DamonGeorge/Python-Rubberband"
 										target="_blank">
-										MINDecoding Documentation
+										Python-Rubberband Repo
+									</a>
+								</li>
+								<li><a class="link" href="https://github.com/DamonGeorge/Python-BTrack" target="_blank">
+										Python-BTrack Repo
 									</a>
 								</li>
 							</ul>
 						</div>
 					</div>
-					<div class="flex imageContainer singleImage">
-						<img src="images/mindecoding/GUI_and_Raw_Plots.gif" />
-						<span class="imageDescription">The MINDecoding GUI</span>
+				</div>
+			</div>
+
+
+
+			<div class="flexColumn projectContainer">
+				<div class="projectHeader">
+					<div>
+						<h2>Mt Bachelor Parking</h2>
+						<span class="projectDate">2020</span>
 					</div>
-				</div>
-
-			</div>
-		</div>
-
-		<div class="flexColumn projectContainer">
-			<div class="projectHeader">
-				<div>
-					<h2>Real-Time DTW</h2>
-					<span class="projectDate">2021</span>
-				</div>
-				<div>
-					<ul>
-						<li>Cython</li>
-						<li>Signal Processing</li>
-					</ul>
-					<span class="projectType">Grad School</span>
-				</div>
-			</div>
-			<div class="projectContent">
-				<div class="descriptionContainer">
-					<p>
-						As part of my Master's Thesis research, I derived and implemented a new variation of
-						real-time Dynamic Time Warping (DTW).
-						This algorithm builds upon the pre-existing real-time DTW algorithm called SPRING,
-						which is designed for pattern detection.
-						More specifically, this method finds subsequences in a real-time input sequence
-						that match a pre-defined template according to the DTW distance metric.
-						<br>
-						<br>
-						This novel variation incorporates an adaptive vertical scaling factor between the
-						stored template and the real-time input.
-						This allows the algorithm to detect subsequences of varying amplitudes,
-						despite using a template of a predefined amplitude.
-						I'm currently working on a publication for this algorithm.
-					</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="flexColumn projectContainer">
-			<div class="projectHeader">
-				<div>
-					<h2>Pyrameterized</h2>
-					<span class="projectDate">2021</span>
-				</div>
-				<div>
-					<ul>
-						<li>Python</li>
-						<li>Unit Testing</li>
-						<li>Continous Integration</li>
-					</ul>
-					<span class="projectType">Grad School</span>
-				</div>
-			</div>
-			<div class="projectContent">
-				<div class="descriptionContainer">
-					<p>
-						This is a Python configuration utility library that I've developed to
-						make the parameterers of Python classes shareable and updateable using dictionaries.
-						It also makes saving/loading objects to/from json quite simple.
-						<br>
-						<br>
-						In addition to using this project in Python projects containing shareable configurations,
-						I have used this project to learn unit testing and Github workflows for Python.
-						The Github repo contains a slick workflow
-						that formats, lints, and tests the code, and creates test coverage and release version badges.
-					</p>
-					<div class="flexColumn extraDocs">
-						<h4>Extras:</h4>
+					<div>
 						<ul>
-							<li><a class="link" href="https://github.com/DamonGeorge/Parameterized" target="_blank">
-									Pyrameterized Repo
-								</a>
-							</li>
+							<li>Python</li>
+							<li>REST</li>
+							<li>Networking</li>
 						</ul>
+						<span class="projectType">For Fun</span>
 					</div>
 				</div>
-			</div>
-		</div>
-
-		<div class="flexColumn projectContainer">
-			<div class="projectHeader">
-				<div>
-					<h2>Robotic Hand</h2>
-					<span class="projectDate">2021</span>
-				</div>
-				<div>
-					<ul>
-						<li>C/C++</li>
-						<li>Arduino</li>
-						<li>Control Systems</li>
-					</ul>
-					<span class="projectType">Grad School</span>
-				</div>
-			</div>
-			<div class="projectContent">
-				<div class="descriptionContainer">
-					<p>
-						A fellow OSU mechanical engineering student and I
-						are developing a 3D-printed robotic hand for use in my
-						research on ML-based control of prosthetic arms.
-
-						For this project, I created a simple C++ PID Controller for the Teensy microcontroller
-						in the 5 fingered robotic hand, using the Arduino IDE for programming.
-
-						I also created the Serial interface that allows the MINDecoding-Interface software
-						to control this robotic hand.
-
-						We will be completing version 1.0 of the hand soon,
-						with version 2.0 featuring a wrist and/or forearm attachment for intact subjects.
-					</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="flexColumn projectContainer">
-			<div class="projectHeader">
-				<div>
-					<h2>Embodied Dataset Transformer</h2>
-					<span class="projectDate">2021</span>
-				</div>
-				<div>
-					<ul>
-						<li>Python</li>
-						<li title="Boolean Satisfiability">SAT</li>
-						<li>Embodied AI</li>
-					</ul>
-					<span class="projectType">Grad School</span>
-				</div>
-			</div>
-			<div class="projectContent">
-				<div class="flex imageAndDescriptionContainer">
+				<div class="projectContent">
 					<div class="descriptionContainer">
 						<p>
-							For my graduate Computational Theory project, fellow student <a class="link"
-								href="https://jacobkrantz.github.io/" target="_blank">Jacob Krantz</a> and I
-							created a Dataset Transformer that culls episodes from <a class="link"
-								href="https://embodied-ai.org/" target="_blank">embodied navigation</a> datasets.
-							More specifically, we developed a Python tool that uses SAT Solvers to find the largest
-							subset
-							of
-							episodes in existing embodied navigation datasets such that an agent can inter-navigate
-							between
-							them all.
+							As an avid alpine skier, the past year of covid made access to skiing more difficult,
+							with Mt. Bachelor offering only limited parking reservations.
+							Therefore, I developed this simple Python Flask http server,
+							to poll Mt. Bachelor's parking system through Parkwhiz's REST API.
 							<br /><br />
-							I derived the reduction to the minimum vertex cover problem (MVC) and the maximum
-							independent
-							set problem (MIS),
-							and derived the MAX-SAT equations necessary for solving these problems with off-the-shelf
-							SAT
-							Solvers.
-							This SAT-based method proved to be even more efficient than standard MVC solvers in common
-							Python libraries, as we show in our final paper.
+							This simple web server allows the user to enter requested parking dates,
+							and then once the system finds a parking reservations,
+							it texts the user's cell phone using Twilio.
+							The Twilio texting interface also lets the user add, accept or cancel
+							parking reservations via text.
+							This was a great side project for learning about simple web servers,
+							Twilio's texting interface, and integrating with standard REST APIs.
 						</p>
-						<div class="flexColumn extraDocs">
-							<h4>Extras:</h4>
-							<ul>
-								<li><a class="link" href="docs/Final_Paper_CS517.pdf" target="_blank">
-										Final Paper
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="flex imageContainer singleImage">
-						<img src="images/VLN_comparison_snapshot.png" />
-						<span class="imageDescription">Habitat Simulator from Jacob's
-							<a class="link" target="_blank" href="https://jacobkrantz.github.io/vlnce/"> VLN-CE Paper
-							</a></span>
 					</div>
 				</div>
-
 			</div>
-		</div>
 
-
-
-
-		<div class="flexColumn projectContainer">
-			<div class="projectHeader">
-				<div>
-					<h2>Audio Stretch</h2>
-					<span class="projectDate">2020</span>
-				</div>
-				<div>
-					<ul>
-						<li>Python</li>
-						<li>Cython</li>
-						<li>C/C++</li>
-						<li>Signal Processing</li>
-					</ul>
-					<span class="projectType">For Fun</span>
-				</div>
-			</div>
-			<div class="projectContent">
-				<div class="descriptionContainer">
-					<p>
-						As a fun project based upon my brother <a class="link"
-							href="https://www.thechristiangeorge.com/" target="_blank">Christian</a>'s work,
-						I created the Python3 AudioStretch program that matches the beats of a stored audio loop to
-						a
-						live audio input.
-
-						<br>
-						<br>
-						To do this, I used standard Python libraries for audio I/O, and then wrote my own Cython
-						wrappers for the popular C library <i>rubberband</i> for audio stretching and
-						the <i>BTrack</i> library for real time beat detection.
-						I also developed my own custom Python CircularBuffer class to store live audio buffers
-						efficiently.
-						And finally I developed the master program that parses audio files to create loops,
-						and then stretches the loop to match the beats of either a live input or an mp3 input.
-						This was a great learning experience for Cython and real time signal processing in Python.
-						<br>
-						<br>
-						Although beat detection and tempo matching is a difficult signal processing problem,
-						the final program works well in matching beats, even during tempo changes.
-						All that's missing are some more detailed safety checks to ensure that the beat tracker
-						doesn't skip beats.
-					</p>
-					<div class="flexColumn extraDocs">
-						<h4>Extras:</h4>
+			<div class="flexColumn projectContainer">
+				<div class="projectHeader">
+					<div>
+						<h2>Crossword Recognition</h2>
+						<span class="projectDate">2020</span>
+					</div>
+					<div>
 						<ul>
-							<li><a class="link" href="https://github.com/DamonGeorge/AudioStretch" target="_blank">
-									AudioStretch Repo
-								</a>
-							</li>
-							<li><a class="link" href="https://github.com/DamonGeorge/Python-Rubberband" target="_blank">
-									Python-Rubberband Repo
-								</a>
-							</li>
-							<li><a class="link" href="https://github.com/DamonGeorge/Python-BTrack" target="_blank">
-									Python-BTrack Repo
-								</a>
-							</li>
+							<li>Python</li>
+							<li>Computer Vision</li>
+							<li title="Machine Learning, Deep Learning, and Artificial Intelligence">ML, DL, AI</li>
 						</ul>
+						<span class="projectType">For Fun</span>
+					</div>
+				</div>
+				<div class="projectContent">
+					<div class="flex imageAndDescriptionContainer">
+						<div class="descriptionContainer">
+							<p>
+								For this fun project, I used my computer vision skills to create a crossword
+								recognizer.
+								This recognizer uses standard computer vision techniques, such as image filtering,
+								contour
+								and keypoint detection, and perspective transformations, to first straighten and crop
+								the
+								crossword.
+								Then the individual cells of the crossword are detected using similar techniques.
+								Lastly, I used a pretrained deep network for optical character recognition,
+								i.e. to detect all the hints for the crossword.
+								All of this was implemented in Python using OpenCV.
+							</p>
+						</div>
+						<div class="flex imageContainer singleImage">
+							<img src="images/crossword/full_cross.jpeg" />
+							<span class="imageDescription">From left to right: original crossword, detected text,
+								cropped
+								crossword, and the identified crossword shape.
+							</span>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
 
 
-		<div class="flexColumn projectContainer">
-			<div class="projectHeader">
-				<div>
-					<h2>Mt Bachelor Parking</h2>
-					<span class="projectDate">2020</span>
+
+			<div class="flexColumn projectContainer">
+				<div class="projectHeader">
+					<div>
+						<h2>3D Scene Reconstruction</h2>
+						<span class="projectDate">2020</span>
+					</div>
+					<div>
+						<ul>
+							<li>Python</li>
+							<li title="Machine Learning, Deep Learning, and Artificial Intelligence">ML, DL, AI</li>
+							<li>Computer Vision</li>
+							<li>PyTorch</li>
+							<li>CUDA</li>
+							<li>Distributed Computing</li>
+						</ul>
+						<span class="projectType">Grad School</span>
+					</div>
 				</div>
-				<div>
-					<ul>
-						<li>Python</li>
-						<li>REST</li>
-						<li>Networking</li>
-					</ul>
-					<span class="projectType">For Fun</span>
+				<div class="projectContent">
+					<div class="flex imageAndDescriptionContainer">
+						<div class="descriptionContainer">
+							<p>
+								AI agents that can interact with physical environments are often trained in perceptually
+								rich simulations before being deployed into the real world. To mimic affordances of
+								physical
+								environments such as unconstrained movement and vision, simulated 3D scenes can be
+								reconstructed from real-world scenes using sparsely- captured high-resolution RGBD
+								images.
+								In this work, we analyze the discrepancy of visual fidelity between camera captures in
+								reconstructed scenes and raw RGBD images of the Matterport3D dataset, home to many
+								embodied
+								AI tasks such as vision-and-language navigation, PointGoal navigation, and embodied
+								question
+								answering. We show that a classifier can be trained to discriminate between
+								reconstructed
+								scene viewpoints and raw RGBD images. Further, we rank scenes by reconstruction quality
+								using a keypoint matching algorithm. Finally, we apply a domain adaptation method,
+								“Goggles”, to improve the visual quality of agent perception used previously on the
+								Gibson
+								dataset.
+							</p>
+							<div class="flexColumn extraDocs">
+								<h4>Extras:</h4>
+								<ul>
+									<li><a class="link" href="docs/CV1_Final_Project.pdf" target="_blank">
+											Final Paper
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="flex imageContainer singleImage">
+							<img src="images/scene_reconstruction_rect.jpg" />
+							<span class="imageDescription">A qualitative example of the reconstruction improvement.
+								From left to right: sim reconstruction, autoencoder, our improvement,
+								original image.
+							</span>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="projectContent">
-				<div class="descriptionContainer">
-					<p>
-						As an avid alpine skier, the past year of covid made access to skiing more difficult,
-						with Mt. Bachelor offering only limited parking reservations.
-						Therefore, I developed this simple Python Flask http server,
-						to poll Mt. Bachelor's parking system through Parkwhiz's REST API.
-						<br /><br />
-						This simple web server allows the user to enter requested parking dates,
-						and then once the system finds a parking reservations,
-						it texts the user's cell phone using Twilio.
-						The Twilio texting interface also lets the user add, accept or cancel
-						parking reservations via text.
-						This was a great side project for learning about simple web servers,
-						Twilio's texting interface, and integrating with standard REST APIs.
-					</p>
-				</div>
-			</div>
-		</div>
 
-		<div class="flexColumn projectContainer">
-			<div class="projectHeader">
-				<div>
-					<h2>Crossword Recognition</h2>
-					<span class="projectDate">2020</span>
+
+			<div class="flexColumn projectContainer">
+				<div class="projectHeader">
+					<div>
+						<h2>Superlative Learning</h2>
+						<span class="projectDate">2020</span>
+					</div>
+					<div>
+						<ul>
+							<li>Python</li>
+							<li title="Machine Learning, Deep Learning, and Artificial Intelligence">ML, DL, AI</li>
+							<li>Computer Vision</li>
+							<li>PyTorch</li>
+							<li>CUDA</li>
+							<li>Distributed Computing</li>
+						</ul>
+						<span class="projectType">Grad School</span>
+					</div>
 				</div>
-				<div>
-					<ul>
-						<li>Python</li>
-						<li>Computer Vision</li>
-						<li title="Machine Learning, Deep Learning, and Artificial Intelligence">ML, DL, AI</li>
-					</ul>
-					<span class="projectType">For Fun</span>
+				<div class="projectContent">
+					<div class="flex imageAndDescriptionContainer">
+						<div class="descriptionContainer">
+							<p>
+								Superlative reasoning, which requires identifying an instance from a set with the
+								highest
+								or lowest degree of some attribute, is often overlooked in the analysis of deep
+								networks,
+								despite the increased complexity of superlative tasks as compared to non-superlative
+								tasks.
+								We attempt to determine whether deep networks can learn superlative tasks and whether
+								the
+								increased complexity results in decreased performance. We first test a simple visual
+								superlative task by teaching a CNN to identify the longest lines or largest polygons in
+								an
+								image. Our simple CNN learns this task easily. We further extend the problem to semantic
+								goal navigation (SGN), where an agent must navigate an environment following language
+								instructions. We extend the gym-miniworld virtual environment to support language
+								grounding
+								and superlative instructions, and train a Gated-Attention network using PPO on both
+								superlative and non-superlative instructions. Unfortunately, results indicate that our
+								agent was unable to learn SGN in this environment, eliminating our ability to analyze
+								the
+								performance of the network on superlative tasks.
+							</p>
+							<div class="flexColumn extraDocs">
+								<h4>Extras:</h4>
+								<ul>
+									<li><a class="link" href="docs/Deep_Learning_Final_Paper.pdf" target="_blank">
+											Final Paper
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="flex imageContainer singleImage">
+							<img src="images/superlative_gym_env.jpg" />
+							<span class="imageDescription">An example scene from our custom gym-miniworld environment,
+								for which an example instruction could be "Go to the tallest green object."
+							</span>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="projectContent">
-				<div class="flex imageAndDescriptionContainer">
+
+
+			<div class="flexColumn projectContainer">
+				<div class="projectHeader">
+					<div>
+						<h2 id="SmartHelmet">The Smart Helmet</h2>
+						<span class="projectDate">2018-2019</span>
+					</div>
+					<div>
+						<ul>
+							<li>Java</li>
+							<li>C/C++</li>
+							<li>Embedded</li>
+							<li>Unit Testing</li>
+							<li title="Real Time Operation Systems">RTOS</li>
+						</ul>
+						<span class="projectType">Undergrad</span>
+					</div>
+				</div>
+				<div class="projectContent">
+					<div class="flex imageAndDescriptionContainer">
+						<div class="descriptionContainer">
+							<p>
+								For my year-long senior design project at Gonzaga,
+								two fellow engineers and I designed, developed, and built the Smart Helmet.
+								The Smart Helmet is a helmet for cyclists that uses vehicle-to-everything
+								communication (V2X) to communicate with nearby vehicles and provide collision warnings
+								to
+								the biker.
+								<br>
+								<br>
+								For this project, my two teammates and I built the hardware for the helmet, including 3
+								revision of PCBs,
+								designed and wrote the core firmware in C on the ultra low power Apollo 2 Blue
+								microcontroller,
+								and also wrote a Java desktop Traffic Simulator which provides an advanced GUI
+								for generating and driving cars, which we used for testing the Smart Helmet. I focused
+								on
+								the
+								core firmware, which uses FreeRTOS as its real time operating system. I designed and
+								wrote
+								the logic and
+								advanced collision detection on the helmet and in the Traffic Simulator, and I also
+								helped
+								write part of
+								the GUI for the Simulator.
+								<br>
+								<br>
+							</p>
+							<div class="flexAlignCenter">
+								<a class="link clickable"
+									onclick="$('#abstract, #dropDownIcon, #dropUpIcon').toggle();">Abstract:</a>
+								<i id="dropDownIcon" class="material-icons">arrow_drop_down</i>
+								<i id="dropUpIcon" class="material-icons hidden">arrow_drop_up</i>
+							</div>
+							<p id="abstract" class="hidden standardPadding">
+								As emerging smart vehicle technologies enter our roadways, Vehicle-to-Everything (V2X)
+								communication
+								will become essential for improving the safety of road users. However, as such
+								technological
+								advances are made in cars and trucks, which have ample power and space for advanced
+								electronics,
+								cyclists can easily be left behind. In this study, we attempt to incorporate cyclists in
+								the
+								growing
+								V2X ecosystem by developing a prototype 'Smart Helmet'. This product broadcasts
+								positional
+								and
+								inertial data about the cyclist to nearby cars using the predefined Dedicated Short
+								Range
+								Communications (DSRC) standard, and receives similar data from nearby cars in order to
+								provide the
+								cyclist with haptic and audible collision warnings from the helmet. We attempt to
+								construct
+								a custom
+								printed circuit board for the system so that it can be easily incorporated into a bike
+								helmet as a
+								consumer product. Furthermore, we develop a traffic simulator program that can be easily
+								used to
+								test traffic scenarios with the product. Simulation results show that even with the
+								limited
+								processing power available, this product can adequately detect harmful collisions.
+								Limited
+								usability
+								testing shows that the haptic and audible warnings could function well in a consumer
+								product.
+								However, the technologies involved, such as the V2X communication and advanced GPS, are
+								still
+								immature, and creating effective yet unobtrusive audio warnings will require much
+								testing.
+								Overall,
+								this study proves that this V2X system could greatly increase cyclist safety and
+								possibly
+								become a
+								common feature on roadways in the next decade as smart vehicle technologies continue to
+								mature.
+							</p>
+
+							<div class="flexColumn extraDocs">
+								<h4>Extras:</h4>
+								<ul>
+									<li><a class="link" href="docs/Design_Expo_Poster_ENSC02.pdf"
+											target="_blank">Poster</a>
+									</li>
+									<li><a class="link" href="docs/Final_Report_ENSC02.pdf" target="_blank">Final
+											Report</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="flexColumn imageContainer singleImage">
+							<img src="images/senior_design/collage.jpg" />
+							<span class="imageDescription">From left to right, top to bottom:
+								The Smart Helmet, the perfboard prototype, the PCB design, the Traffic Simulator</span>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="flexColumn projectContainer">
+				<div class="projectHeader">
+					<div>
+						<h2 id="Skyware">Skyware Inventory 2</h2>
+						<span class="projectDate">Summers 2018-2019</span>
+					</div>
+					<div>
+						<ul>
+							<li>Full Stack Web Dev</li>
+							<li>Java</li>
+							<li>MySQL</li>
+							<li>HTML, CSS & JS</li>
+							<li>Spring Framework</li>
+							<li>HTML Templating</li>
+							<li title="Object Relational Mapper">ORM</li>
+							<li>Agile</li>
+							<li>REST</li>
+						</ul>
+						<span class="projectType">Industry</span>
+					</div>
+				</div>
+				<div class="projectContent">
+					<div class="flex imageAndDescriptionContainer">
+
+						<div class="descriptionContainer">
+							<p>
+								As a Software Development Intern at
+								<a class="link" href="https://www.openskysoftware.com" target="_blank">Open Sky
+									Software,
+									Inc.</a>,
+								I spent multiple summers upgrading their flagship inventory tracking product,
+								<a class="link" href="https://www.skywareinventory.com" target="_blank">Skyware
+									Inventory</a>.
+
+								<br /><br />
+								As a full stack Java web developer, I used the Spring Framework, along with Hibernate
+								and
+								Thymeleaf,
+								to completely redesign the entire application. I designed and coded an advanced
+								transaction
+								manager
+								in Java and MySQL that tracks inventory through time across multiple items, users, and
+								locations.
+								I incorporated industry standard reporting, such as LIFO, FIFO, and AVG costing. I also
+								developed
+								advanced front-end Javascript to handle editable tables with custom fields, ajax
+								autocomplete,
+								and flexible form validation.
+								<br /><br />
+								This version 2.0 of Skyware Inventory was just released in Spring 2021!
+								It is very slick, especially the new mobile version (which I designed and implemented
+								almost
+								completely by myself).
+							</p>
+						</div>
+						<div class="flex imageContainer singleImage">
+							<img src="images/skyware.png" />
+							<span class="imageDescription">The new mobile-friendly Skyware Inventory interface.
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="flexColumn projectContainer">
+				<div class="projectHeader">
+					<div>
+						<h2>Othello AI</h2>
+						<span class="projectDate">2019</span>
+					</div>
+					<div>
+						<ul>
+							<li>Java</li>
+							<li>Graph Search</li>
+							<li>Swing</li>
+						</ul>
+						<span class="projectType">Undergrad</span>
+					</div>
+				</div>
+				<div class="projectContent">
+					<div class="flex imageAndDescriptionContainer">
+						<div class="descriptionContainer">
+							<p>
+								During my last semester at Gonzaga as an undergraduate,
+								my teammate and I built an Othello playing AI for my Artificial Intelligence elective.
+								I wrote this in Java, using Swing for the simple interface.
+								The program allows the user to play against the AI.
+								At the end of the class, all the teams competed in a tournament
+								to determine the best AI, and mine won 1st!
+								<br>
+								<br>
+								This AI uses best first search with alpha-beta pruning to search the state space.
+								Each move by the AI was required to complete within ten seconds, allowing this AI
+								to search about 8-10 steps ahead in the game. The search uses an advanced heuristic
+								value function that uses 8 different characteristics of the board to determine the
+								value of the board's configuration. These characteristics include the score, the number
+								of
+								moves available,
+								the number of corners taken or available, and the number of stable and unstable tokens.
+								The AI also uses Zobrist Hashing to store all calculated heuristics in a hash table
+								to increase the efficiency of the search.
+							</p>
+							<div class="flexColumn extraDocs">
+								<h4>Extras:</h4>
+								<ul>
+									<li><a class="link" href="docs/AI_Final_Project_Summary.pdf" target="_blank">Final
+											Report</a>
+									</li>
+									<li><a class="link" href="https://github.com/DamonGeorge/AI-CPSC427"
+											target="_blank">
+											Github Repo</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="flex imageContainer singleImage">
+							<img src="images/othello/othello.jpeg" />
+							<span class="imageDescription">The Othello Swing UI</span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+
+			<div class="flexColumn projectContainer">
+				<div class="projectHeader">
+					<div>
+						<h2>Ethernet FPGA Communication</h2>
+						<span class="projectDate">2018</span>
+					</div>
+					<div>
+						<ul>
+							<li title="VHSIC Hardware Description Language">VHDL</li>
+							<li title="Field Programmable Gate Arrays">FPGA</li>
+							<li>Networking</li>
+						</ul>
+						<span class="projectType">Undergrad</span>
+					</div>
+				</div>
+				<div class="projectContent">
+					<div class="flex imageAndDescriptionContainer">
+						<div class="descriptionContainer">
+							<p>
+								As the final project for my senior year Digital Design class at Gonzaga,
+								a fellow student and I successfully designed and programmed two FPGA dev boards in VHDL
+								to use high speed Ethernet communication. The communication allowed the two dev boards
+								to turn each other's LEDs on in different patterns using their switches.
+								For this project we used Intel's Ethernet IP in Quartus to program the Ethernet hardware
+								onto the FPGA.
+								<br><br>
+								This was one of my hardest projects at Gonzaga University. We were the only team in the
+								class
+								to successfully commplete the project according the original specifications. Completing
+								the
+								project
+								required a ton of extra hours before the deadline(most of which was spent reading the
+								Ethernet
+								Hardware specifications),
+								but it was definitely worth it when we were able to show off our working design to the
+								class.
+							</p>
+							<div class="flexColumn extraDocs">
+								<h4>Extras:</h4>
+								<ul>
+									<li><a class="link" href="docs/Final_Lab_Digital_Design.pdf" target="_blank">Final
+											Report</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="flex imageContainer singleImage">
+							<img src="images/altera_de2-115_fpga_board.jpeg" />
+							<span class="imageDescription">The Altera FPGA development board</span>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+
+
+			<div class="flexColumn projectContainer">
+				<div class="projectHeader">
+					<div>
+						<h2>Association Rule Mining</h2>
+						<span class="projectDate">2018</span>
+					</div>
+					<div>
+						<ul>
+							<li>Java</li>
+							<li>Hadoop</li>
+							<li title="Amazon Web Services">AWS</li>
+							<li>Distributed Computing</li>
+						</ul>
+						<span class="projectType">Undergrad</span>
+					</div>
+				</div>
+				<div class="projectContent">
 					<div class="descriptionContainer">
 						<p>
-							For this fun project, I used my computer vision skills to create a crossword
-							recognizer.
-							This recognizer uses standard computer vision techniques, such as image filtering, contour
-							and keypoint detection, and perspective transformations, to first straighten and crop the
-							crossword.
-							Then the individual cells of the crossword are detected using similar techniques.
-							Lastly, I used a pretrained deep network for optical character recognition,
-							i.e. to detect all the hints for the crossword.
-							All of this was implemented in Python using OpenCV.
-						</p>
-					</div>
-					<div class="flex imageContainer singleImage">
-						<img src="images/crossword/full_cross.jpeg" />
-						<span class="imageDescription">From left to right: original crossword, detected text, cropped
-							crossword, and the identified crossword shape.
-						</span>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-
-
-		<div class="flexColumn projectContainer">
-			<div class="projectHeader">
-				<div>
-					<h2>3D Scene Reconstruction</h2>
-					<span class="projectDate">2020</span>
-				</div>
-				<div>
-					<ul>
-						<li>Python</li>
-						<li title="Machine Learning, Deep Learning, and Artificial Intelligence">ML, DL, AI</li>
-						<li>Computer Vision</li>
-						<li>PyTorch</li>
-						<li>CUDA</li>
-						<li>Distributed Computing</li>
-					</ul>
-					<span class="projectType">Grad School</span>
-				</div>
-			</div>
-			<div class="projectContent">
-				<div class="flex imageAndDescriptionContainer">
-					<div class="descriptionContainer">
-						<p>
-							AI agents that can interact with physical environments are often trained in perceptually
-							rich simulations before being deployed into the real world. To mimic affordances of physical
-							environments such as unconstrained movement and vision, simulated 3D scenes can be
-							reconstructed from real-world scenes using sparsely- captured high-resolution RGBD images.
-							In this work, we analyze the discrepancy of visual fidelity between camera captures in
-							reconstructed scenes and raw RGBD images of the Matterport3D dataset, home to many embodied
-							AI tasks such as vision-and-language navigation, PointGoal navigation, and embodied question
-							answering. We show that a classifier can be trained to discriminate between reconstructed
-							scene viewpoints and raw RGBD images. Further, we rank scenes by reconstruction quality
-							using a keypoint matching algorithm. Finally, we apply a domain adaptation method,
-							“Goggles”, to improve the visual quality of agent perception used previously on the Gibson
-							dataset.
+							This was the final project for my Parallel and Cloud Computing Elective.
+							This is a Java Hadoop MapReduce program to mine the confidence of
+							association rules that we ran on AWS. These association rules were parsed
+							from large input files of concept identification codes. On
+							the AWS EMR clusters, the execution time of the program was tested for different cluster
+							sizes,
+							for
+							different amounts of input files, and using both the Hadoop file system and the Amazon S3
+							file
+							system.
 						</p>
 						<div class="flexColumn extraDocs">
 							<h4>Extras:</h4>
 							<ul>
-								<li><a class="link" href="docs/CV1_Final_Project.pdf" target="_blank">
-										Final Paper
-									</a>
-								</li>
+								<li><a class="link" href="docs/Association_Rule_Mining_Final_Project_Report.pdf"
+										target="_blank">Final Report</a></li>
 							</ul>
 						</div>
 					</div>
-					<div class="flex imageContainer singleImage">
-						<img src="images/scene_reconstruction_rect.jpg" />
-						<span class="imageDescription">A qualitative example of the reconstruction improvement.
-							From left to right: sim reconstruction, autoencoder, our improvement,
-							original image.
-						</span>
+				</div>
+			</div>
+
+			<div class="flexColumn projectContainer">
+				<div class="projectHeader">
+					<div>
+						<h2 id="Skyware">Template Web App</h2>
+						<span class="projectDate">Summer 2017</span>
+					</div>
+					<div>
+						<ul>
+							<li>Full Stack Web Dev</li>
+							<li>Java</li>
+							<li>MySQL</li>
+							<li>HTML, CSS & JS</li>
+							<li>Spring Framework</li>
+							<li>HTML Templating</li>
+							<li title="Object Relational Mapper">ORM</li>
+							<li>Agile</li>
+						</ul>
+						<span class="projectType">Industry</span>
 					</div>
 				</div>
-			</div>
-		</div>
-
-
-		<div class="flexColumn projectContainer">
-			<div class="projectHeader">
-				<div>
-					<h2>Superlative Learning</h2>
-					<span class="projectDate">2020</span>
-				</div>
-				<div>
-					<ul>
-						<li>Python</li>
-						<li title="Machine Learning, Deep Learning, and Artificial Intelligence">ML, DL, AI</li>
-						<li>Computer Vision</li>
-						<li>PyTorch</li>
-						<li>CUDA</li>
-						<li>Distributed Computing</li>
-					</ul>
-					<span class="projectType">Grad School</span>
-				</div>
-			</div>
-			<div class="projectContent">
-				<div class="flex imageAndDescriptionContainer">
-					<div class="descriptionContainer">
-						<p>
-							Superlative reasoning, which requires identifying an instance from a set with the highest
-							or lowest degree of some attribute, is often overlooked in the analysis of deep networks,
-							despite the increased complexity of superlative tasks as compared to non-superlative tasks.
-							We attempt to determine whether deep networks can learn superlative tasks and whether the
-							increased complexity results in decreased performance. We first test a simple visual
-							superlative task by teaching a CNN to identify the longest lines or largest polygons in an
-							image. Our simple CNN learns this task easily. We further extend the problem to semantic
-							goal navigation (SGN), where an agent must navigate an environment following language
-							instructions. We extend the gym-miniworld virtual environment to support language grounding
-							and superlative instructions, and train a Gated-Attention network using PPO on both
-							superlative and non-superlative instructions. Unfortunately, results indicate that our
-							agent was unable to learn SGN in this environment, eliminating our ability to analyze the
-							performance of the network on superlative tasks.
-						</p>
-						<div class="flexColumn extraDocs">
-							<h4>Extras:</h4>
-							<ul>
-								<li><a class="link" href="docs/Deep_Learning_Final_Paper.pdf" target="_blank">
-										Final Paper
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="flex imageContainer singleImage">
-						<img src="images/superlative_gym_env.jpg" />
-						<span class="imageDescription">An example scene from our custom gym-miniworld environment,
-							for which an example instruction could be "Go to the tallest green object."
-						</span>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="flexColumn projectContainer">
-			<div class="projectHeader">
-				<div>
-					<h2 id="SmartHelmet">The Smart Helmet</h2>
-					<span class="projectDate">2018-2019</span>
-				</div>
-				<div>
-					<ul>
-						<li>Java</li>
-						<li>C/C++</li>
-						<li>Embedded</li>
-						<li>Unit Testing</li>
-						<li title="Real Time Operation Systems">RTOS</li>
-					</ul>
-					<span class="projectType">Undergrad</span>
-				</div>
-			</div>
-			<div class="projectContent">
-				<div class="flex imageAndDescriptionContainer">
-					<div class="descriptionContainer">
-						<p>
-							For my year-long senior design project at Gonzaga,
-							two fellow engineers and I designed, developed, and built the Smart Helmet.
-							The Smart Helmet is a helmet for cyclists that uses vehicle-to-everything
-							communication (V2X) to communicate with nearby vehicles and provide collision warnings to
-							the biker.
-							<br>
-							<br>
-							For this project, my two teammates and I built the hardware for the helmet, including 3
-							revision of PCBs,
-							designed and wrote the core firmware in C on the ultra low power Apollo 2 Blue
-							microcontroller,
-							and also wrote a Java desktop Traffic Simulator which provides an advanced GUI
-							for generating and driving cars, which we used for testing the Smart Helmet. I focused on
-							the
-							core firmware, which uses FreeRTOS as its real time operating system. I designed and wrote
-							the logic and
-							advanced collision detection on the helmet and in the Traffic Simulator, and I also helped
-							write part of
-							the GUI for the Simulator.
-							<br>
-							<br>
-						</p>
-						<div class="flexAlignCenter">
-							<a class="link clickable"
-								onclick="$('#abstract, #dropDownIcon, #dropUpIcon').toggle();">Abstract:</a>
-							<i id="dropDownIcon" class="material-icons">arrow_drop_down</i>
-							<i id="dropUpIcon" class="material-icons hidden">arrow_drop_up</i>
-						</div>
-						<p id="abstract" class="hidden standardPadding">
-							As emerging smart vehicle technologies enter our roadways, Vehicle-to-Everything (V2X)
-							communication
-							will become essential for improving the safety of road users. However, as such technological
-							advances are made in cars and trucks, which have ample power and space for advanced
-							electronics,
-							cyclists can easily be left behind. In this study, we attempt to incorporate cyclists in the
-							growing
-							V2X ecosystem by developing a prototype 'Smart Helmet'. This product broadcasts positional
-							and
-							inertial data about the cyclist to nearby cars using the predefined Dedicated Short Range
-							Communications (DSRC) standard, and receives similar data from nearby cars in order to
-							provide the
-							cyclist with haptic and audible collision warnings from the helmet. We attempt to construct
-							a custom
-							printed circuit board for the system so that it can be easily incorporated into a bike
-							helmet as a
-							consumer product. Furthermore, we develop a traffic simulator program that can be easily
-							used to
-							test traffic scenarios with the product. Simulation results show that even with the limited
-							processing power available, this product can adequately detect harmful collisions. Limited
-							usability
-							testing shows that the haptic and audible warnings could function well in a consumer
-							product.
-							However, the technologies involved, such as the V2X communication and advanced GPS, are
-							still
-							immature, and creating effective yet unobtrusive audio warnings will require much testing.
-							Overall,
-							this study proves that this V2X system could greatly increase cyclist safety and possibly
-							become a
-							common feature on roadways in the next decade as smart vehicle technologies continue to
-							mature.
-						</p>
-
-						<div class="flexColumn extraDocs">
-							<h4>Extras:</h4>
-							<ul>
-								<li><a class="link" href="docs/Design_Expo_Poster_ENSC02.pdf" target="_blank">Poster</a>
-								</li>
-								<li><a class="link" href="docs/Final_Report_ENSC02.pdf" target="_blank">Final Report</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="flexColumn imageContainer singleImage">
-						<img src="images/senior_design/collage.jpg" />
-						<span class="imageDescription">From left to right, top to bottom:
-							The Smart Helmet, the perfboard prototype, the PCB design, the Traffic Simulator</span>
-
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="flexColumn projectContainer">
-			<div class="projectHeader">
-				<div>
-					<h2 id="Skyware">Skyware Inventory 2</h2>
-					<span class="projectDate">Summers 2018-2019</span>
-				</div>
-				<div>
-					<ul>
-						<li>Full Stack Web Dev</li>
-						<li>Java</li>
-						<li>MySQL</li>
-						<li>HTML, CSS & JS</li>
-						<li>Spring Framework</li>
-						<li>HTML Templating</li>
-						<li title="Object Relational Mapper">ORM</li>
-						<li>Agile</li>
-						<li>REST</li>
-					</ul>
-					<span class="projectType">Industry</span>
-				</div>
-			</div>
-			<div class="projectContent">
-				<div class="flex imageAndDescriptionContainer">
-
+				<div class="projectContent">
 					<div class="descriptionContainer">
 						<p>
 							As a Software Development Intern at
 							<a class="link" href="https://www.openskysoftware.com" target="_blank">Open Sky Software,
 								Inc.</a>,
-							I spent multiple summers upgrading their flagship inventory tracking product,
-							<a class="link" href="https://www.skywareinventory.com" target="_blank">Skyware
-								Inventory</a>.
-
-							<br /><br />
-							As a full stack Java web developer, I used the Spring Framework, along with Hibernate and
-							Thymeleaf,
-							to completely redesign the entire application. I designed and coded an advanced transaction
-							manager
-							in Java and MySQL that tracks inventory through time across multiple items, users, and
-							locations.
-							I incorporated industry standard reporting, such as LIFO, FIFO, and AVG costing. I also
-							developed
-							advanced front-end Javascript to handle editable tables with custom fields, ajax
-							autocomplete,
-							and flexible form validation.
-							<br /><br />
-							This version 2.0 of Skyware Inventory was just released in Spring 2021!
-							It is very slick, especially the new mobile version (which I designed and implemented almost
-							completely by myself).
+							I helped prepare a 'Template' Web Application to serve as the scaffolding for the firm’s
+							future
+							web applications.
+							This web app runs on a Tomcat server, and uses Java for server side business logic along
+							with a
+							MySQL database,
+							and employs HTML5, CSS Flex, and Javascript for the front end.
+							Over the course of this project, I
 						</p>
-					</div>
-					<div class="flex imageContainer singleImage">
-						<img src="images/skyware.png" />
-						<span class="imageDescription">The new mobile-friendly Skyware Inventory interface.
-						</span>
+						<ul>
+							<li>Implemented the Model-View-Controller architecture in Java using the Spring Framework,
+								with
+								Hibernate to interface between Java entities and the MySQL database;</li>
+							<li>Incorporated the Thymeleaf HTML5 templating framework to create and serve views;</li>
+							<li>Learned best practices in HTML5/CSS leveraging the LESS pre-processor;</li>
+							<li>Tested the application for all interface modes (desktop, tablet, and mobile);</li>
+							<li>Developed custom error handling and detailed audit logging;</li>
+							<li>and lastly, learned the agile development framework Kanban.</li>
+						</ul>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="flexColumn projectContainer">
-			<div class="projectHeader">
-				<div>
-					<h2>Othello AI</h2>
-					<span class="projectDate">2019</span>
+			<div class="flexColumn projectContainer">
+				<div class="projectHeader">
+					<div>
+						<h2>Zoolander</h2>
+						<span class="projectDate">2017</span>
+					</div>
+					<div>
+						<ul>
+							<li>Java</li>
+							<li>Spring Framework</li>
+							<li>MySQL</li>
+						</ul>
+						<span class="projectType">Undergrad</span>
+					</div>
 				</div>
-				<div>
-					<ul>
-						<li>Java</li>
-						<li>Graph Search</li>
-						<li>Swing</li>
-					</ul>
-					<span class="projectType">Undergrad</span>
-				</div>
-			</div>
-			<div class="projectContent">
-				<div class="flex imageAndDescriptionContainer">
+				<div class="projectContent">
 					<div class="descriptionContainer">
 						<p>
-							During my last semester at Gonzaga as an undergraduate,
-							my teammate and I built an Othello playing AI for my Artificial Intelligence elective.
-							I wrote this in Java, using Swing for the simple interface.
-							The program allows the user to play against the AI.
-							At the end of the class, all the teams competed in a tournament
-							to determine the best AI, and mine won 1st!
+							This final project for my Database Management class at Gonzaga
+							is a Java command line interface that allows the user to interact
+							with a custom Zoo database. This imitates a program that might exist
+							for a Zoo to keep track of all its animals, their feeding patterns, and the feed purchases.
 							<br>
 							<br>
-							This AI uses best first search with alpha-beta pruning to search the state space.
-							Each move by the AI was required to complete within ten seconds, allowing this AI
-							to search about 8-10 steps ahead in the game. The search uses an advanced heuristic
-							value function that uses 8 different characteristics of the board to determine the
-							value of the board's configuration. These characteristics include the score, the number of
-							moves available,
-							the number of corners taken or available, and the number of stable and unstable tokens.
-							The AI also uses Zobrist Hashing to store all calculated heuristics in a hash table
-							to increase the efficiency of the search.
+							This project was designed to incorporate many advanced SQL queries,
+							such as joins, groups, aggregates, and subqueries. This program was written
+							using the Spring Shell, which provides a very nice CLI.
 						</p>
 						<div class="flexColumn extraDocs">
 							<h4>Extras:</h4>
 							<ul>
-								<li><a class="link" href="docs/AI_Final_Project_Summary.pdf" target="_blank">Final
-										Report</a>
-								</li>
-								<li><a class="link" href="https://github.com/DamonGeorge/AI-CPSC427" target="_blank">
+								<li><a class="link" href="https://github.com/DamonGeorge/Zoolander" target="_blank">
 										Github Repo</a>
 								</li>
 							</ul>
 						</div>
 					</div>
-					<div class="flex imageContainer singleImage">
-						<img src="images/othello/othello.jpeg" />
-						<span class="imageDescription">The Othello Swing UI</span>
+				</div>
+			</div>
+
+
+			<div class="flexColumn projectContainer">
+				<div class="projectHeader">
+					<div>
+						<h2 id="Skyware">Password Manager</h2>
+						<span class="projectDate">Summer 2016</span>
+					</div>
+					<div>
+						<ul>
+							<li>Java</li>
+							<li>Spring Framework</li>
+							<li>Encryption</li>
+							<li>Agile</li>
+						</ul>
+						<span class="projectType">Industry</span>
 					</div>
 				</div>
-
-			</div>
-		</div>
-
-
-
-		<div class="flexColumn projectContainer">
-			<div class="projectHeader">
-				<div>
-					<h2>Ethernet FPGA Communication</h2>
-					<span class="projectDate">2018</span>
-				</div>
-				<div>
-					<ul>
-						<li title="VHSIC Hardware Description Language">VHDL</li>
-						<li title="Field Programmable Gate Arrays">FPGA</li>
-						<li>Networking</li>
-					</ul>
-					<span class="projectType">Undergrad</span>
-				</div>
-			</div>
-			<div class="projectContent">
-				<div class="flex imageAndDescriptionContainer">
+				<div class="projectContent">
 					<div class="descriptionContainer">
 						<p>
-							As the final project for my senior year Digital Design class at Gonzaga,
-							a fellow student and I successfully designed and programmed two FPGA dev boards in VHDL
-							to use high speed Ethernet communication. The communication allowed the two dev boards
-							to turn each other's LEDs on in different patterns using their switches.
-							For this project we used Intel's Ethernet IP in Quartus to program the Ethernet hardware
-							onto the FPGA.
-							<br><br>
-							This was one of my hardest projects at Gonzaga University. We were the only team in the
-							class
-							to successfully commplete the project according the original specifications. Completing the
-							project
-							required a ton of extra hours before the deadline(most of which was spent reading the
-							Ethernet
-							Hardware specifications),
-							but it was definitely worth it when we were able to show off our working design to the
-							class.
+							For my first summer as a Software Development Intern at
+							<a class="link" href="https://www.openskysoftware.com" target="_blank">Open Sky Software,
+								Inc.</a>,
+							I designed and programmed a Java command line password manager using the Spring Shell
+							Framework
+							to store and share encrypted company passwords among employees.
+							To do this, I learned cryptographic libraries and best practices for data encryption,
+							including
+							encrypting
+							data at rest and in transit.
+							I also learned Subversion and Git software version control, and I reinforced
+							proper coding practices by shadowing veteran employees.
 						</p>
-						<div class="flexColumn extraDocs">
-							<h4>Extras:</h4>
-							<ul>
-								<li><a class="link" href="docs/Final_Lab_Digital_Design.pdf" target="_blank">Final
-										Report</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="flex imageContainer singleImage">
-						<img src="images/altera_de2-115_fpga_board.jpeg" />
-						<span class="imageDescription">The Altera FPGA development board</span>
-					</div>
-				</div>
-
-
-			</div>
-		</div>
-
-
-		<div class="flexColumn projectContainer">
-			<div class="projectHeader">
-				<div>
-					<h2>Association Rule Mining</h2>
-					<span class="projectDate">2018</span>
-				</div>
-				<div>
-					<ul>
-						<li>Java</li>
-						<li>Hadoop</li>
-						<li title="Amazon Web Services">AWS</li>
-						<li>Distributed Computing</li>
-					</ul>
-					<span class="projectType">Undergrad</span>
-				</div>
-			</div>
-			<div class="projectContent">
-				<div class="descriptionContainer">
-					<p>
-						This was the final project for my Parallel and Cloud Computing Elective.
-						This is a Java Hadoop MapReduce program to mine the confidence of
-						association rules that we ran on AWS. These association rules were parsed
-						from large input files of concept identification codes. On
-						the AWS EMR clusters, the execution time of the program was tested for different cluster sizes,
-						for
-						different amounts of input files, and using both the Hadoop file system and the Amazon S3 file
-						system.
-					</p>
-					<div class="flexColumn extraDocs">
-						<h4>Extras:</h4>
-						<ul>
-							<li><a class="link" href="docs/Association_Rule_Mining_Final_Project_Report.pdf"
-									target="_blank">Final Report</a></li>
-						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-
-		<div class="flexColumn projectContainer">
-			<div class="projectHeader">
-				<div>
-					<h2 id="Skyware">Template Web App</h2>
-					<span class="projectDate">Summer 2017</span>
-				</div>
-				<div>
-					<ul>
-						<li>Full Stack Web Dev</li>
-						<li>Java</li>
-						<li>MySQL</li>
-						<li>HTML, CSS & JS</li>
-						<li>Spring Framework</li>
-						<li>HTML Templating</li>
-						<li title="Object Relational Mapper">ORM</li>
-						<li>Agile</li>
-					</ul>
-					<span class="projectType">Industry</span>
-				</div>
-			</div>
-			<div class="projectContent">
-				<div class="descriptionContainer">
-					<p>
-						As a Software Development Intern at
-						<a class="link" href="https://www.openskysoftware.com" target="_blank">Open Sky Software,
-							Inc.</a>,
-						I helped prepare a 'Template' Web Application to serve as the scaffolding for the firm’s future
-						web applications.
-						This web app runs on a Tomcat server, and uses Java for server side business logic along with a
-						MySQL database,
-						and employs HTML5, CSS Flex, and Javascript for the front end.
-						Over the course of this project, I
-					</p>
-					<ul>
-						<li>Implemented the Model-View-Controller architecture in Java using the Spring Framework, with
-							Hibernate to interface between Java entities and the MySQL database;</li>
-						<li>Incorporated the Thymeleaf HTML5 templating framework to create and serve views;</li>
-						<li>Learned best practices in HTML5/CSS leveraging the LESS pre-processor;</li>
-						<li>Tested the application for all interface modes (desktop, tablet, and mobile);</li>
-						<li>Developed custom error handling and detailed audit logging;</li>
-						<li>and lastly, learned the agile development framework Kanban.</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-
-		<div class="flexColumn projectContainer">
-			<div class="projectHeader">
-				<div>
-					<h2>Zoolander</h2>
-					<span class="projectDate">2017</span>
-				</div>
-				<div>
-					<ul>
-						<li>Java</li>
-						<li>Spring Framework</li>
-						<li>MySQL</li>
-					</ul>
-					<span class="projectType">Undergrad</span>
-				</div>
-			</div>
-			<div class="projectContent">
-				<div class="descriptionContainer">
-					<p>
-						This final project for my Database Management class at Gonzaga
-						is a Java command line interface that allows the user to interact
-						with a custom Zoo database. This imitates a program that might exist
-						for a Zoo to keep track of all its animals, their feeding patterns, and the feed purchases.
-						<br>
-						<br>
-						This project was designed to incorporate many advanced SQL queries,
-						such as joins, groups, aggregates, and subqueries. This program was written
-						using the Spring Shell, which provides a very nice CLI.
-					</p>
-					<div class="flexColumn extraDocs">
-						<h4>Extras:</h4>
-						<ul>
-							<li><a class="link" href="https://github.com/DamonGeorge/Zoolander" target="_blank">
-									Github Repo</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="flexColumn projectContainer">
-			<div class="projectHeader">
-				<div>
-					<h2 id="Skyware">Password Manager</h2>
-					<span class="projectDate">Summer 2016</span>
-				</div>
-				<div>
-					<ul>
-						<li>Java</li>
-						<li>Spring Framework</li>
-						<li>Encryption</li>
-						<li>Agile</li>
-					</ul>
-					<span class="projectType">Industry</span>
-				</div>
-			</div>
-			<div class="projectContent">
-				<div class="descriptionContainer">
-					<p>
-						For my first summer as a Software Development Intern at
-						<a class="link" href="https://www.openskysoftware.com" target="_blank">Open Sky Software,
-							Inc.</a>,
-						I designed and programmed a Java command line password manager using the Spring Shell Framework
-						to store and share encrypted company passwords among employees.
-						To do this, I learned cryptographic libraries and best practices for data encryption, including
-						encrypting
-						data at rest and in transit.
-						I also learned Subversion and Git software version control, and I reinforced
-						proper coding practices by shadowing veteran employees.
-					</p>
-				</div>
-			</div>
-		</div>
-
-
+		<footer class="footer">
+			<span>
+				&copy;2021 Damon George
+			</span>
+		</footer>
 	</div>
+
 
 
 </body>
