@@ -13,21 +13,21 @@
 	<link rel="stylesheet" type="text/css" href="src/main.css" />
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"
-		integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
-	<script src="src/scripts/hero.js"></script>
+	<!--<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"
+		integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script> -->
+	<!-- <script src="src/scripts/hero.js"></script> -->
 	<title>Damon George | Oregon State Computer Science MS Student</title>
 </head>
 
 <body>
-	<header class="navbar" style="opacity: 0.0; pointer-events: none;">
+	<header class="navbar">
 		<div class="flex navbarTitle">
-			<h1 class="name">Damon George</h1>
+			<h1 class="name">Damon George, MS</h1>
 			<h1 class="pageTitle">Home</h1>
 		</div>
-		<i class="mobilePulldownIcon material-icons clickable" style="pointer-events: all;"
+		<i class="mobilePulldownIcon material-icons clickable"
 			onclick="$('#navbarLinks').toggleClass('visible');">menu</i>
-		<nav id="navbarLinks" class="flex navbarLinks" style="pointer-events: all;">
+		<nav id="navbarLinks" class="flex navbarLinks">
 			<a href="index.html#center" class="active">Home</a>
 			<a href="src/news.html">News</a>
 			<a href="src/projects.html">Projects</a>
@@ -42,63 +42,62 @@
 	</header>
 
 
-	<div id="heroScrollContainer" class="mainContent scrollContainer">
+	<div class="scrollContainer mainContent">
 		<div id="hero" class="hero">
 			<div class="heroTitle">
-				<h1 class="title">
+				<!-- <h1 class="title">
 					Damon George
-				</h1>
+				</h1> -->
 				<!-- <div class="heroTitleSpacer"></div> -->
-				<div class="subtitleLarge flexColumn flexAlignCenter">
-					<h2>&mdash; Computer Engineer & Software Developer &mdash;</h2>
-					<h2>&mdash; Machine Learning Researcher &mdash;</h2>
-					<h2>&mdash; Oregon State MS Student &mdash;</h2>
-					<h2>&mdash; Gonzaga Alumn &mdash;</h2>
+				<div class="subtitleLarge flexColumn">
+					<h2>Computer Engineer & Software Developer </h2>
+					<h2>Machine Learning Researcher </h2>
+					<h2>Oregon State MS Student </h2>
+					<h2>Gonzaga Alumn </h2>
 				</div>
 
 				<div class="subtitleSmall flexColumn">
-					<h2>- Computer Engineer</h2>
-					<h2>- Software Developer</h2>
-					<h2>- Machine Learning Researcher</h2>
-					<h2>- Oregon State MS Student</h2>
-					<h2>- Gonzaga Alumn</span>
+					<h2>Computer Engineer</h2>
+					<h2>Software Developer</h2>
+					<h2>Machine Learning Researcher</h2>
+					<h2>Oregon State MS Student</h2>
+					<h2>Gonzaga Alumn</span>
 				</div>
 
-				<div class="heroScrollHelper">
+				<!-- <div class="heroScrollHelper">
 					<div class="flexAlignCenter flexColumn">
 						<i class="material-icons">keyboard_arrow_down</i>
 						<span>Scroll for more</span>
 					</div>
-				</div>
+				</div> -->
 
 			</div>
+		</div>
 
+
+		<div class="intro flexAlignCenter fullWidth mainContentPadding">
+			<div class="profileImg"></div>
+			<div class="description">
+				<h2>Welcome!</h2>
+				<p>
+					I am currently a graduate student at Oregon State University
+					finishing my Masters in Computer Science with a focus on machine learning.
+					Before this, I graduated top of my class from Gonzaga University with a
+					BS in Computer Engineering. I love programming, just as much
+					as I love skiing and fly fishing in the Pacific Northwest.
+					<br>
+					<br>
+					Right now, I am very interested in applying machine learning to important societal issues.
+					For example, as part of the <a class="link" href="http://ipg.oregonstate.edu"
+						target="_blank">Information
+						Processing Group</a> at OSU, I am researching deep networks and online learning algorithms
+					that enable amputees and quadriplegics to control robotic hands.
+				</p>
+			</div>
 
 		</div>
 
-		<div style="position: relative; z-index: 1; background-color: white;" class="standardPadding">
-			<div class="intro flexAlignCenter fullWidth">
-				<div class="profileImg"></div>
-				<div class="description">
-					<h2>Welcome!</h2>
-					<p>
-						I am currently a graduate student at Oregon State University
-						finishing my Masters in Computer Science with a focus on machine learning.
-						Before this, I graduated top of my class from Gonzaga University with a
-						BS in Computer Engineering. I love programming, just as much
-						as I love skiing and fly fishing in the Pacific Northwest.
-						<br>
-						<br>
-						Right now, I am very interested in applying machine learning to important societal issues.
-						For example, as part of the <a class="link" href="http://ipg.oregonstate.edu"
-							target="_blank">Information
-							Processing Group</a> at OSU, I am researching deep networks and online learning algorithms
-						that enable amputees and quadriplegics to control robotic hands.
-					</p>
-				</div>
-
-			</div>
-
+		<div class="aboutMeBulletsContainer fullWidth">
 			<div class="aboutMeBullets flex fullWidth">
 				<div class="flexColumn">
 					<h3>Interests</h3>
@@ -169,6 +168,9 @@
 
 
 		<footer class="footer">
+			<span>
+				&copy;2021 Damon George
+			</span>
 		</footer>
 	</div>
 </body>

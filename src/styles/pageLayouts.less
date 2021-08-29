@@ -4,10 +4,12 @@
 }
 
 .mainContent {
-	margin-top: 60px;
-	height: calc(100% - 60px);
+	margin-top: @navbar-height;
+	height: calc(100% - @navbar-height);
 	width: 100%;
+ }
 
+ .mainContentPadding {
 	padding: 1rem;
 
 	@media @small-down {

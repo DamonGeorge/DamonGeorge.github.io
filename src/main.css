@@ -13,7 +13,16 @@ body {
   color: #000000;
 }
 p {
-  font-size: 1.08rem;
+  font-size: 18px;
+}
+h1 {
+  font-size: 24px;
+}
+h2 {
+  font-size: 22px;
+}
+h3 {
+  font-size: 20px;
 }
 a {
   text-decoration: none;
@@ -103,13 +112,15 @@ h3 {
   width: 100%;
 }
 .mainContent {
-  margin-top: 60px;
-  height: calc(100% - 60px);
+  margin-top: 70px;
+  height: calc(100% - 70px);
   width: 100%;
+}
+.mainContentPadding {
   padding: 1rem;
 }
 @media only screen and (max-width: 480px) {
-  .mainContent {
+  .mainContentPadding {
     padding: 1rem 0.5rem;
   }
 }
@@ -128,25 +139,25 @@ h3 {
   top: 0px;
   left: 0px;
   width: 100%;
-  height: 60px;
+  height: 70px;
   display: flex;
   align-items: center;
   background-color: #ffffff;
-  box-shadow: 0px 2px 4px #7b7b7b;
+  box-shadow: 0px 2px 4px #414141;
   z-index: 10;
 }
 .navbar .navbarTitle {
-  margin-left: 1rem;
+  margin-left: 4rem;
   overflow: hidden;
 }
 .navbar .navbarTitle .name {
   padding-right: 1rem;
   margin-right: 1rem;
-  border-right: 3px solid #07a0c3;
   font-size: 2rem;
   font-weight: 600;
 }
 .navbar .navbarTitle .pageTitle {
+  display: none;
   color: #ca1666;
   font-size: 2rem;
   font-weight: 600;
@@ -160,13 +171,13 @@ h3 {
   margin-left: auto;
 }
 .navbar .navbarLinks a {
-  padding: 0.8rem 1rem;
-  border-top: 2px solid #ffffff;
+  padding: 0.2rem 1rem;
+  border-bottom: 3px solid #ffffff;
   font-size: 1.3rem;
 }
 .navbar .navbarLinks a.active {
   color: #07a0c3;
-  border-top: 2px solid #07a0c3;
+  border-bottom: 3px solid #07a0c3;
   font-weight: bold;
 }
 .navbar .navbarLinks .iconLinks {
@@ -185,22 +196,22 @@ h3 {
   background-size: 100%;
 }
 @media only screen and (max-width: 992px) {
-  .navbar {
-    opacity: 1 !important;
-  }
   .navbar .navbarTitle {
-    margin-left: 0.5rem;
+    margin-left: 2rem;
   }
   .navbar .navbarTitle .name {
     padding-right: 0.5rem;
     margin-right: 0.5rem;
     border-right: 3px solid #07a0c3;
   }
+  .navbar .navbarTitle .pageTitle {
+    display: flex;
+  }
   .navbar .navbarLinks {
     display: none;
     position: fixed;
     right: 0px;
-    top: 60px;
+    top: 70px;
     width: 200px;
     padding: 0 1rem;
     flex-direction: column;
@@ -209,38 +220,38 @@ h3 {
   }
   .navbar .navbarLinks .iconLinks {
     padding-bottom: 1em;
+    display: block;
   }
   .navbar .mobilePulldownIcon {
     display: inline;
   }
 }
-#heroScrollContainer {
-  height: 100%;
-  margin-top: 0px;
-  padding: 0 !important;
+@media only screen and (max-width: 768px) {
+  .navbar .navbarTitle {
+    margin-left: 1rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .navbar .navbarTitle {
+    margin-left: 0.5rem;
+  }
 }
 .hero {
   background: url('images/hero/coast_desktop.jpeg') no-repeat center;
   background-size: 100%;
-  height: 58.8vw;
+  height: 59vw;
+  max-height: 70vh;
   width: 100%;
   display: flex;
-  background-position-y: 0px;
-}
-.hero.fixed {
-  background-attachment: fixed;
-  background-position-y: -6vw;
+  background-position-y: 35%;
 }
 .hero .heroTitle {
-  position: fixed;
-  top: 8vw;
   color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 2vw;
-  pointer-events: none;
-  height: calc(100% - 8vw - 60px);
+  margin-left: 4rem;
+  margin-top: 6%;
 }
 .hero .heroTitle .title {
   text-align: center;
@@ -248,11 +259,6 @@ h3 {
   font-weight: 600;
   color: #ffffff;
   text-shadow: 0 0 3px #000000;
-}
-.hero .heroTitle .subtitleLarge,
-.hero .heroTitle .subtitleSmall {
-  pointer-events: none;
-  margin-bottom: auto;
 }
 .hero .heroTitle .subtitleLarge > *,
 .hero .heroTitle .subtitleSmall > * {
@@ -262,7 +268,7 @@ h3 {
   font-weight: 600;
 }
 .hero .heroTitle .subtitleLarge h2 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 .hero .heroTitle .subtitleSmall {
   display: none;
@@ -270,25 +276,10 @@ h3 {
 .hero .heroTitle .subtitleSmall h2 {
   font-size: 1.3rem;
 }
-.hero .heroTitle .heroScrollHelper {
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  opacity: 0.5;
-  visibility: hidden;
-}
-.hero .heroTitle .heroScrollHelper i.material-icons {
-  font-size: 10rem;
-}
-.hero .heroTitle .heroScrollHelper span {
-  font-size: 1.23rem;
-  font-weight: bold;
-  margin-top: -2rem;
-}
-.hero .heroTitle .heroScrollHelper:hover {
-  opacity: 1;
-}
 @media only screen and (max-width: 992px) {
+  .hero .heroTitle {
+    margin-left: 2rem;
+  }
   .hero .heroTitle .title {
     font-size: 2.5rem;
   }
@@ -300,19 +291,16 @@ h3 {
 @media only screen and (max-width: 768px) {
   .hero {
     background: url('images/hero/coast_mobile_v2.jpeg') no-repeat center;
-    background-attachment: scroll !important;
-    background-position-y: 60px !important;
     background-size: 100%;
-    height: 93vw;
+    height: 85vw;
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    background-position-y: 30%;
   }
   .hero .heroTitle {
-    position: relative;
-    top: 12vw;
-    height: calc(100% - 12vw - 60px);
+    margin-left: 1rem;
     align-items: flex-start;
   }
   .hero .heroTitle .subtitleLarge {
@@ -320,19 +308,15 @@ h3 {
   }
   .hero .heroTitle .subtitleSmall {
     display: flex;
-    margin-bottom: -1rem;
   }
 }
 @media only screen and (max-width: 480px) {
   .hero {
-    height: 100vw;
+    background-position-y: center;
   }
   .hero .heroTitle {
-    align-items: flex-start;
     margin-left: 0.5rem;
-    top: 22vw;
-    justify-content: space-between;
-    height: calc(100% - 12vw - 60px);
+    margin-top: 30%;
   }
   .hero .heroTitle .title {
     margin-bottom: 1rem;
@@ -350,7 +334,7 @@ h3 {
   width: 22vw;
   height: 22vw;
   border-radius: 500px;
-  margin: 2vw 4vw;
+  margin: 1rem 3rem;
   min-width: 200px;
   min-height: 200px;
 }
@@ -366,21 +350,33 @@ h3 {
     width: auto;
   }
 }
-.aboutMeBullets {
+.aboutMeBulletsContainer {
+  padding: 1rem 1rem 1rem 4rem;
+  background-color: #e6e6e6;
+  font-size: 18px;
+}
+.aboutMeBulletsContainer .aboutMeBullets {
   display: flex;
   align-content: flex-start;
-  padding: 1rem 0;
+  padding-bottom: 1rem;
 }
-.aboutMeBullets h3 {
+.aboutMeBulletsContainer .aboutMeBullets h3 {
   color: #ca1666;
 }
-.aboutMeBullets > * {
+.aboutMeBulletsContainer .aboutMeBullets > * {
   padding: 0.5rem;
   flex: 1;
 }
 @media only screen and (max-width: 768px) {
-  .aboutMeBullets {
+  .aboutMeBulletsContainer {
+    padding: 1rem 0;
+  }
+  .aboutMeBulletsContainer .aboutMeBullets {
+    padding-bottom: 0;
     flex-direction: column;
+  }
+  .aboutMeBulletsContainer .aboutMeBullets h3 {
+    text-align: center;
   }
 }
 .newsContainer .newsTable {
@@ -618,4 +614,13 @@ h3 {
     padding: 0.5em;
     margin-bottom: 1em;
   }
+}
+.footer {
+  width: 100%;
+  background-color: #3d3d3d;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  height: 30px;
 }
