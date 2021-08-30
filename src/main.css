@@ -12,7 +12,10 @@ body {
   background: #ffffff;
   color: #000000;
 }
-p {
+p,
+span,
+div,
+td {
   font-size: 18px;
 }
 h1 {
@@ -117,7 +120,17 @@ h3 {
   width: 100%;
 }
 .mainContentPadding {
-  padding: 1rem;
+  padding: 1rem 2rem 1rem 4rem;
+}
+@media only screen and (max-width: 992px) {
+  .mainContentPadding {
+    padding: 1rem 2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mainContentPadding {
+    padding: 1rem 1rem;
+  }
 }
 @media only screen and (max-width: 480px) {
   .mainContentPadding {
@@ -150,16 +163,17 @@ h3 {
   margin-left: 4rem;
   overflow: hidden;
 }
+.navbar .navbarTitle > * {
+  font-size: 2rem;
+}
 .navbar .navbarTitle .name {
   padding-right: 1rem;
   margin-right: 1rem;
-  font-size: 2rem;
   font-weight: 600;
 }
 .navbar .navbarTitle .pageTitle {
   display: none;
   color: #B01C4D;
-  font-size: 2rem;
   font-weight: 600;
 }
 .navbar .mobilePulldownIcon {
@@ -218,8 +232,12 @@ h3 {
     background: #ffffff;
     box-shadow: -2px 3px 4px #7b7b7b;
   }
+  .navbar .navbarLinks a {
+    padding: 0.5rem 1rem;
+  }
   .navbar .navbarLinks .iconLinks {
-    padding-bottom: 1em;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
     display: block;
   }
   .navbar .mobilePulldownIcon {
@@ -229,6 +247,9 @@ h3 {
 @media only screen and (max-width: 768px) {
   .navbar .navbarTitle {
     margin-left: 1rem;
+  }
+  .navbar .navbarTitle > * {
+    font-size: 1.8rem;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -240,7 +261,7 @@ h3 {
   background: url('images/hero/coast_desktop.jpeg') no-repeat center;
   background-size: 100%;
   height: 59vw;
-  max-height: 70vh;
+  max-height: 75vh;
   width: 100%;
   display: flex;
   background-position-y: 35%;
@@ -351,8 +372,7 @@ h3 {
   }
 }
 .aboutMeBulletsContainer {
-  padding: 1rem 1rem 1rem 4rem;
-  background-color: #e6e6e6;
+  background-color: #eeeeee;
   font-size: 18px;
 }
 .aboutMeBulletsContainer .aboutMeBullets {
