@@ -62,7 +62,7 @@ p {
 h1,
 h2,
 h3 {
-  color: #277ac5;
+  color: #296EB4;
   white-space: nowrap;
 }
 /* Flex */
@@ -100,7 +100,7 @@ h3 {
   display: flex !important;
 }
 .link {
-  color: #277ac5;
+  color: #296EB4;
 }
 .link:hover,
 .link:focus,
@@ -173,7 +173,7 @@ h3 {
 }
 .navbar .navbarTitle .pageTitle {
   display: none;
-  color: #B01C4D;
+  color: #C42348;
   font-weight: 600;
 }
 .navbar .mobilePulldownIcon {
@@ -190,8 +190,8 @@ h3 {
   font-size: 1.3rem;
 }
 .navbar .navbarLinks a.active {
-  color: #277ac5;
-  border-bottom: 3px solid #277ac5;
+  color: #C42348;
+  border-bottom: 3px solid #C42348;
   font-weight: bold;
 }
 .navbar .navbarLinks .iconLinks {
@@ -216,7 +216,7 @@ h3 {
   .navbar .navbarTitle .name {
     padding-right: 0.5rem;
     margin-right: 0.5rem;
-    border-right: 3px solid #277ac5;
+    border-right: 3px solid #296EB4;
   }
   .navbar .navbarTitle .pageTitle {
     display: flex;
@@ -381,7 +381,7 @@ h3 {
   padding-bottom: 1rem;
 }
 .aboutMeBulletsContainer .aboutMeBullets h3 {
-  color: #B01C4D;
+  color: #C42348;
 }
 .aboutMeBulletsContainer .aboutMeBullets > * {
   padding: 0.5rem;
@@ -405,7 +405,7 @@ h3 {
 .newsContainer .newsTable td {
   padding: 0.5rem;
   vertical-align: top;
-  border-top: 4px solid #277ac5;
+  border-top: 4px solid #296EB4;
 }
 .newsContainer .newsTable td:first-child {
   padding-right: 2rem;
@@ -426,11 +426,11 @@ h3 {
   align-items: flex-end;
 }
 .newsContainer .newsTable h3 {
-  color: #B01C4D;
+  color: #C42348;
 }
 @media only screen and (max-width: 768px) {
   .newsContainer .newsTable tr {
-    border-top: 4px solid #277ac5;
+    border-top: 4px solid #296EB4;
     display: flex;
     flex-direction: column;
   }
@@ -439,7 +439,7 @@ h3 {
   }
 }
 .projectContainer {
-  border-top: 4px solid #277ac5;
+  border-top: 4px solid #296EB4;
   margin: 1em 0;
 }
 .projectContainer .projectHeader {
@@ -452,11 +452,11 @@ h3 {
   align-items: baseline;
 }
 .projectContainer .projectHeader h2 {
-  color: #B01C4D;
+  color: #C42348;
 }
 .projectContainer .projectHeader .projectType,
 .projectContainer .projectHeader .projectDate {
-  color: #277ac5;
+  color: #296EB4;
   margin-left: auto;
   white-space: nowrap;
   padding-left: 0.5em;
@@ -478,7 +478,7 @@ h3 {
   padding-left: 0.5em;
 }
 .projectContainer .projectHeader ul li.active {
-  background: #cdefd7;
+  background: #caf3e7;
 }
 .projectContainer .projectContent {
   padding: 1rem 1rem;
@@ -527,21 +527,21 @@ h3 {
   padding: 0.5em 1em;
   border-radius: 5px;
   margin-bottom: 1em;
-  border: 2px solid #11A777;
+  border: 2px solid #08AF80;
 }
 .projectFilteringContainer h2 {
-  color: #11A777;
+  color: #08AF80;
 }
 .projectFilteringContainer #filterSearchInput {
   width: 250px;
   height: 2em;
   border-radius: 4px;
-  border: 1px solid #11A777;
+  border: 1px solid #08AF80;
   outline: 0 none;
 }
 .projectFilteringContainer #filterSearchInput:focus,
 .projectFilteringContainer #filterSearchInput:focus-visible {
-  box-shadow: 0 0 1px 1px #11A777;
+  box-shadow: 0 0 1px 1px #08AF80;
 }
 .projectFilteringContainer #filterSearchClearIcon {
   margin-left: -30px;
@@ -584,11 +584,11 @@ h3 {
 }
 .projectFilteringContainer ul li.active {
   border-radius: 20px;
-  background: #cdefd7;
+  background: #caf3e7;
 }
 .projectFilteringContainer ul li.active i {
   display: block;
-  color: #277ac5;
+  color: #296EB4;
 }
 .projectFilteringContainer ul li.active::after {
   content: none;
@@ -597,7 +597,7 @@ h3 {
 @media only screen and (min-width: 768px) {
   .projectFilteringContainer ul li:hover {
     border-radius: 20px;
-    background: #cdefd7;
+    background: #caf3e7;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -610,10 +610,10 @@ h3 {
   padding: 0.5em 1em;
   border-radius: 5px;
   margin-bottom: 2em;
-  border: 2px solid #11A777;
+  border: 2px solid #08AF80;
 }
 .topProjectsContainer h2 {
-  color: #11A777;
+  color: #08AF80;
 }
 .topProjectsContainer a {
   cursor: pointer;
@@ -622,7 +622,7 @@ h3 {
 @media only screen and (min-width: 768px) {
   .topProjectsContainer a:hover {
     border-radius: 20px;
-    background: #cdefd7;
+    background: #caf3e7;
   }
 }
 .topProjectsContainer a:not(:last-child):after {
