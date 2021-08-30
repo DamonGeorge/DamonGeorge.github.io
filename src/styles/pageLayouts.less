@@ -4,16 +4,25 @@
 }
 
 .mainContent {
-	margin-top: 60px;
-	height: calc(100% - 60px);
+	margin-top: @header-height;
+	height: calc(100% - @header-height);
 	width: 100%;
+ }
 
-	padding: 1rem;
+.mainContentPadding {
+	padding: 1rem 2rem 1rem 4rem; // top, right, bottom, left
 
+	
+	@media @large-down {
+		padding: 1rem 2rem;
+	}
+	@media @medium-down {
+		padding: 1rem 1rem;
+	}
 	@media @small-down {
 		padding: 1rem 0.5rem;
 	}
- }
+}
 
 .scrollContainer {
 	overflow: auto;

@@ -4,7 +4,8 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
 		href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,700&display=swap"
 		rel="stylesheet">
@@ -12,19 +13,19 @@
 	<link rel="stylesheet" type="text/css" href="main.css" />
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<title>Damon George | Recent News</title>
+	<title>Damon George, MS | Recent News</title>
 </head>
 
 <body>
 	<header class="navbar">
 		<div class="flex navbarTitle">
-			<h1 class="name">Damon George</h1>
+			<h1 class="name">Damon George, MS</h1>
 			<h1 class="pageTitle">News</h1>
 		</div>
 		<i class="mobilePulldownIcon material-icons clickable"
 			onclick="$('#navbarLinks').toggleClass('visible');">menu</i>
 		<nav id="navbarLinks" class="flex navbarLinks">
-			<a href="../index.html#center">Home</a>
+			<a href="../index.html">Home</a>
 			<a href="news.html" class="active">News</a>
 			<a href="projects.html">Projects</a>
 			<!-- <a href="publications.html">Publications</a> -->
@@ -39,7 +40,7 @@
 
 
 	<div class="mainContent scrollContainer">
-		<div class="newsContainer">
+		<div class="newsContainer mainContentPadding">
 			<table class="newsTable">
 				<tbody>
 					<tr>
@@ -191,6 +192,11 @@
 				</tbody>
 			</table>
 		</div>
+		<footer class="footer">
+			<span>
+				&copy;2021 Damon George
+			</span>
+		</footer>
 	</div>
 
 </body>
