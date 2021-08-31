@@ -256,6 +256,14 @@ h3 {
   .navbar .navbarTitle {
     margin-left: 0.5rem;
   }
+  .navbar .navbarTitle .name {
+    padding-right: 0;
+    margin-right: 0;
+    border-right: none;
+  }
+  .navbar .navbarTitle .pageTitle {
+    display: none;
+  }
 }
 .hero {
   background: url('images/hero/coast_desktop.jpeg') no-repeat center;
@@ -334,10 +342,11 @@ h3 {
 @media only screen and (max-width: 480px) {
   .hero {
     background-position-y: center;
+    align-items: center;
   }
   .hero .heroTitle {
     margin-left: 0.5rem;
-    margin-top: 30%;
+    margin-top: 0;
   }
   .hero .heroTitle .title {
     margin-bottom: 1rem;
