@@ -120,9 +120,9 @@ h3 {
   width: 100%;
 }
 .mainContentPadding {
-  padding: 1rem 2rem 1rem 4rem;
+  padding: 1rem 4rem 1rem 4rem;
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1200px) {
   .mainContentPadding {
     padding: 1rem 2rem;
   }
@@ -196,6 +196,7 @@ h3 {
 }
 .navbar .navbarLinks .iconLinks {
   display: flex;
+  margin-right: 3rem;
 }
 .navbar .navbarLinks .iconLinks a {
   margin: 0 1em 0 1em;
@@ -209,10 +210,15 @@ h3 {
   background: url('images/icons/LI-In-Bug.png') no-repeat center;
   background-size: 100%;
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1200px) {
   .navbar .navbarTitle {
     margin-left: 2rem;
   }
+  .navbar .navbarLinks .iconLinks {
+    margin-right: 1rem;
+  }
+}
+@media only screen and (max-width: 992px) {
   .navbar .navbarTitle .name {
     padding-right: 0.5rem;
     margin-right: 0.5rem;
@@ -364,20 +370,27 @@ h3 {
   width: 22vw;
   height: 22vw;
   border-radius: 500px;
-  margin: 1rem 3rem;
   min-width: 200px;
   min-height: 200px;
 }
 .intro .description {
   max-width: 700px;
+  margin-left: 4rem;
+  flex-shrink: 1;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
+  .intro .description {
+    margin-left: 2rem;
+  }
+}
+@media only screen and (max-width: 992px) {
   .intro {
     flex-wrap: wrap-reverse;
     justify-content: center;
   }
   .intro .description {
     width: auto;
+    margin-left: 0;
   }
 }
 .aboutMeBulletsContainer {

@@ -53,6 +53,7 @@
 
 		.iconLinks {
 			display: flex;
+			margin-right: 3rem;
 
 			a {
 				margin: 0 1em 0 1em;
@@ -70,11 +71,18 @@
 		}
 	}
 
-	
+	@media @xlarge-down {		
+		.navbarTitle {
+			margin-left: 2rem;
+		}
+
+		.navbarLinks .iconLinks {
+			margin-right: 1rem;
+		}
+	}
 
 	@media @large-down {		
 		.navbarTitle {
-			margin-left: 2rem;
 	
 			.name {
 				padding-right: 0.5rem;
